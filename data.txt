@@ -1,0 +1,41 @@
+const header = [
+        {
+            Header: "No."
+        },
+        {
+            Header: "Detail"
+        },
+        {
+            Header: "Status"
+        },
+        {
+            Header: "Date"
+        },
+        {
+            Header: "Total"
+        }
+]
+
+const fakeData = [
+    {
+        NO : '1',
+        Detail:'Red',
+        Status : "Quality Control",
+        DATE : "12/02/22",
+        TOTAL : 4
+    },
+    {
+        NO : '2',
+        Detail:'Red',
+        Status : "Quality Control",
+        DATE : "12/02/22",
+        TOTAL : 4
+    },
+    {
+        NO : '3',
+        Detail:'Green',
+        Status : "Quality Control",
+        DATE : "12/02/22",
+        TOTAL : 4
+    }
+]
