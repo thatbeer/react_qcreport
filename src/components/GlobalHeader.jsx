@@ -17,7 +17,7 @@ const navigation = [
 const GlobalHeader = () =>  {
     return (
         <>
-        <header className='sticky top-0 z-40 w-full '>
+        <header className='fixed top-0 z-40 w-full '>
         <Disclosure as="nav" className="bg-blue-600">
         {({ open }) => (
             <>

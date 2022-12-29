@@ -44,7 +44,7 @@ function TableContent(props) {
                     
                     <tr className='my-4 h-[80px]' >
                         <td>
-                            <Link to={`/project/pileid${id}`}>id: 1</Link>
+                            <Link to={`/project/report?pileid=${id}`}>id: 1</Link>
                         </td>
                         <td className='overflow-x-auto'>
                             {/* <StepBarUse/> */}

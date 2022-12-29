@@ -1,5 +1,5 @@
-import React from 'react'
-import { Routes , Route } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Routes , Route, useNavigate } from 'react-router-dom'
 import GlobalHeader from './components/GlobalHeader'
 import DetailPage from './page/DetailPage'
 import LoginPage from './page/Login'
@@ -8,13 +8,26 @@ import ProjectPage from './page/ProjectPage'
 // import SidePage from './page/SidePage'
 import Protected from './utils/protected'
 
+const token = true
 
 function App() {
+  const navigate = useNavigate();
+
+  useEffect( () => {
+    if (!token) {
+      navigate('/auth')
+    } 
+  })
+
+
   return (
     <Routes>
-      <Route path='/' element={<div className=' w-screen'>
-        <GlobalHeader />
-        </div>} >
+      <Route path='/' 
+        element={
+          <div className=''>
+            <GlobalHeader />
+          </div>
+        }>
         <Route index element={<Mainpage/>} />
         <Route path="/project" exact element={<ProjectPage/>} />
         <Route path="/project/:report" element={<DetailPage/>} />

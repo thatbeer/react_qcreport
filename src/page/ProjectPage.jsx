@@ -26,7 +26,7 @@ function ProjectPage() {
 
   return (
     <>
-        <div className="w-full flex flex-col flex-grow h-screen ">
+        <div className="w-full flex flex-col flex-grow h-screen relative lg:top-14 top-16">
             <div className='fixed top-[55px] w-full items-center mx-auto bg-green-200 h-[50px] z-30 py-1  '>
                 <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-red-200'>
                     {/* filter bar for pc */}

@@ -4,6 +4,7 @@ import Maincard from "../components/Maincard"
 function Mainpage() {
     return (
         < > 
+        <div className="relative top-12">
             <div className="mx-auto max-w-full py-2 sm:py-2 " >
                 <div className="px-4 py-2 sm:px-0">
                     <div className=" mx-auto">
@@ -36,6 +37,7 @@ function Mainpage() {
                     </div>
                 </div>
             </div>
+        </div>
         </>
 )
 }
