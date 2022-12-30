@@ -13,6 +13,13 @@ const navigation = [
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
   }
+
+  const LogoutHandler = () => {
+    localStorage.removeItem("accessToken");
+    localStorage.removeItem("user");
+    window.location.href = "/auth";
+  }
+
   
 const GlobalHeader = () =>  {
     return (
@@ -142,12 +149,12 @@ const GlobalHeader = () =>  {
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
-                            <Link
-                                to="/auth"
+                            <button
+                                onClick={LogoutHandler}
                                 className={classNames(active ? 'bg-blue-100 shadow-md' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
-                                Log in(Log out)
-                            </Link>
+                                Logout
+                            </button>
                             )}
                         </Menu.Item>
                         </Menu.Items>

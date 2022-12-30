@@ -13,6 +13,8 @@ const token = true
 function App() {
   const navigate = useNavigate();
 
+  const token = localStorage.getItem("accessToken")
+
   useEffect( () => {
     if (!token) {
       navigate('/auth')

@@ -64,17 +64,17 @@ const Step7 = () => {
 
 
             <div className='overflow-x-auto my-2 '>  
-            <table className=" w-full">
-                <thead className='bg-blue-200 rounded'>
-                    <tr>
-                        <th className='p-5 text-sm w-1/6 text-center border border-gray-700 '>โครง</th>
-                        <th className='p-5 w-1/5 text-sm  text-center border border-gray-700 '>ลงโครงเหล็ก</th>
-                        <th className='p-5 w-1/5 text-sm  text-center border border-gray-700 '>ลูกปูน</th>
-                        <th className='p-5 text-sm  text-center border border-gray-700 '><pre className='border-b border-dashed border-gray-600 text-md'>MainBar</pre><pre className='text-md'>Spiral</pre></th>
-                        
-                    </tr>
-                </thead>
-                <tbody className=' '>
+                <table className=" w-full">
+                    <thead className='bg-blue-200 rounded'>
+                        <tr>
+                            <th className='p-5 text-sm w-1/6 text-center border border-gray-700 '>โครง</th>
+                            <th className='p-5 w-1/5 text-sm  text-center border border-gray-700 '>ลงโครงเหล็ก</th>
+                            <th className='p-5 w-1/5 text-sm  text-center border border-gray-700 '>ลูกปูน</th>
+                            <th className='p-5 text-sm  text-center border border-gray-700 '><pre className='border-b border-dashed border-gray-600 text-md'>MainBar</pre><pre className='text-md'>Spiral</pre></th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody className=' '>
                         <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
                             <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>6</td>
                             <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-6 h-6 mx-auto"/></td>

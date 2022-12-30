@@ -3,6 +3,7 @@ import { Dialog , Transition } from '@headlessui/react';
 import { LockClosedIcon } from '@heroicons/react/20/solid'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import swal from 'sweetalert';
+import { useNavigate } from 'react-router-dom';
 
 const InitialForm = {
     username:'',
@@ -11,6 +12,9 @@ const InitialForm = {
 
 
 const LoginPage = () => {
+    const navigate = useNavigate();
+
+
     const [isOpen , setIsOpen ] = useState(false);
     const [formfields , setFormfields] = useState(InitialForm);
     const {username, password} = formfields;
@@ -55,7 +59,7 @@ const LoginPage = () => {
             localStorage.setItem('accessToken', response['accessToken']);
             localStorage.setItem('user', JSON.stringify(response['user']));
             resetFormFields();
-            window.location.href = "/";
+            navigate('/')
             });
         } else {
             swal("Failed", response.message, "error");
@@ -63,8 +67,12 @@ const LoginPage = () => {
         }
     }
 
+    const token = localStorage.getItem("accessToken")
     useEffect(() => {
         console.log(formfields)
+        if (token) {
+            navigate('/')
+        }
     })
 
 
