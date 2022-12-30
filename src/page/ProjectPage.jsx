@@ -1,8 +1,10 @@
 import React , {useMemo} from 'react'
-import { useLocation } from 'react-router-dom';
-import { MagnifyingGlassCircleIcon } from '@heroicons/react/24/outline'
+import { useLocation , Link } from 'react-router-dom';
+import { MagnifyingGlassCircleIcon , CheckIcon } from '@heroicons/react/24/outline'
 import TableContent from '../components/tablecotent';
 import Progressbar from '../components/progressbar';
+import { StepBarUse } from '../components/StepBar';
+
 
 function useQuery() {
     const { search } = useLocation();
@@ -55,16 +57,136 @@ function ProjectPage() {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-1 mx-auto mt-4 lg:mt-1'>
-                <main role="main" className="lg:w-full w-screen h-full flex-grow px-2 py-1 ">
-                    <div className='flex flex-col lg:flex-row justify-between pt-[64px] mx-auto'>
-                        <div className='w-full '>
-                            <Progressbar id={id}/>
+            <div className='flex flex-1 mx-auto mt-4 lg:mt-4'>
+                <main role="main" className="flex flex-col w-screen h-full  px-2  pt-[64px] ">
+                    
+                  
+
+                
+                       
+    
+                    <div className='w-full lg:w-2/3  mx-auto'> 
+                        {/* <TableContent id={id}/> */}
+                        <Progressbar id={id}/>
+                    </div>
+                    <div className='overflow-x-auto mx-0 lg:mx-auto '>  
+                        <table className=" w-full overflow-x-auto">
+                            <thead className='bg-blue-200 rounded'>
+                                <tr>
+                                    <th className='p-5 text-sm  text-center border border-gray-700 '>PileNo.</th>
+                                    {/* <th colSpan={11} className='p-5 text-sm  text-center border border-gray-700 '>Step</th> */}
+                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step1</th>
+                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step2</th>
+                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step3</th>
+                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step4</th>
+                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step5</th>
+                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step6</th>
+                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step7</th>
+                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step8</th>
+                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step9</th>
+                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step10</th>
+                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step11</th>
+                                    <th className='p-5 text-sm  text-center border border-gray-700 '>Updated</th>
+                                </tr>
+                            </thead>
+                            <tbody className=' '>
+                                <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                                    <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>
+                                        <Link to="/project/report?pileid=26" className='hover:text-blue-400 hover:underline'>
+                                            PB-26
+                                        </Link>
+                                    </td>
+                                    <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td>
+                                    <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>XXX</td>
+                                </tr>
+                                <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                                    <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>
+                                        <Link to="/project/report?pileid=26" className='hover:text-blue-400 hover:underline'>
+                                            PB-26
+                                        </Link>
+                                    </td>
+                                    <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td>
+                                    <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>XXX</td>
+                                </tr>
+                                <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                                    <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>
+                                        <Link to="/project/report?pileid=26" className='hover:text-blue-400 hover:underline'>
+                                            PB-26
+                                        </Link>
+                                    </td>
+                                    <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td>
+                                    <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>XXX</td>
+                                </tr>
+                                <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                                    <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>
+                                        <Link to="/project/report?pileid=26" className='hover:text-blue-400 hover:underline'>
+                                            PB-26
+                                        </Link>
+                                    </td>
+                                    <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td>
+                                    <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>XXX</td>
+                                </tr>
+                                <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                                    <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>
+                                        <Link to="/project/report?pileid=26" className='hover:text-blue-400 hover:underline'>
+                                            PB-26
+                                        </Link>
+                                    </td>
+                                    <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td>
+                                    <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>XXX</td>
+                                </tr>
+                                <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                                    <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>
+                                        <Link to="/project/report?pileid=26" className='hover:text-blue-400 hover:underline'>
+                                            PB-26
+                                        </Link>
+                                    </td>
+                                    <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td>
+                                    <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>XXX</td>
+                                </tr>
+                                <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                                    <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>
+                                        <Link to="/project/report?pileid=26" className='hover:text-blue-400 hover:underline'>
+                                            PB-26
+                                        </Link>
+                                    </td>
+                                    <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td>
+                                    <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>XXX</td>
+                                </tr>
+                                
+                                      
+                            </tbody>
+                        </table>
+                    </div>
+                    {/* <div className='w-full '> 
+                        <div className='overflow-x-auto my-2 '>  
+                            <table className=" w-full">
+                                <thead className='bg-blue-200 rounded'>
+                                    <tr className=''>
+                                        <th className='p-5 text-sm w-1/6 text-center border border-gray-700 '>ลำดับ</th>
+                                        <th className='p-5 text-sm w-1/4 text-center border border-gray-700 '>ขนาดท่อ(นิ้ว)</th>
+                                        <th className='p-5 text-sm w-1/4 text-center border border-gray-700 '>ความยาว(ม.)</th>
+                                        <th className='p-5 text-sm w-1/4 text-center border border-gray-700 '>ท่อสุดท้าย</th>
+                                    </tr>
+                                </thead>
+                                <tbody className=' '>
+                                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>13</td>
+                                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-400 '>10</td>
+                                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>1.10</td>
+                                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 relative justify-center '><CheckIcon className='mx-auto w-5 h-5'/></td>
+                                        </tr>
+                                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>1</td>
+                                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-400 '>10</td>
+                                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>6.10</td>
+                                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700    '></td>
+                                        </tr>
+                                        
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-                    <div className='w-full '> 
-                        <TableContent id={id}/>
-                    </div>
+                    </div> */}
                 </main>
             </div>
         </div>

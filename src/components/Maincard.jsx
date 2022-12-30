@@ -11,7 +11,7 @@ const Maincard = (props) => {
                             shadow-none hover:shadow-sm bg-blue-100 hover:bg-gray-100">
                 <Link to={`/project?pileid=${projectid}`}>
                     <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-800 dark:text-whte truncate ">
-                    Lorem ipsum
+                    Click here to go second page
                     </h5>
                 </Link>
                 <p className="text-gray-700 dark:text-gray-400 truncate overflow-auto my-2">
