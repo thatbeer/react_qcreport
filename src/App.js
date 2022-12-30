@@ -29,7 +29,7 @@ function App() {
           </div>
         }>
         <Route index element={<Mainpage/>} />
-        <Route path="/project" exact element={<ProjectPage/>} />
+        <Route path="/:project" exact element={<ProjectPage/>} />
         <Route path="/project/:report" element={<DetailPage/>} />
         {/* <Route path="/side" element={<SidePage/>} /> */}
       </Route>
