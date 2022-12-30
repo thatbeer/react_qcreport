@@ -1,5 +1,7 @@
-import React , { useMemo , useRef } from 'react'
-import { useLocation } from 'react-router-dom'
+import React , { useEffect, useMemo , useRef } from 'react'
+import { useLocation  } from 'react-router-dom'
+import useQuery from '../utils/use-query'
+
 
 import Step1 from '../components/details/step1'
 import Step2 from '../components/details/step2'
@@ -18,50 +20,76 @@ import Statcard from '../components/Statcard';
 
 
 const DetailPage = () => {
-    const { search } = useLocation();
+    // const { search } = useLocation();
+    const location = useLocation()
+    // const hash = location.hash.substring(1);
+    // console.log(hash)
+    const query = useQuery();
+    const step2view = query.get("step")
 
-    const query = useMemo(
-        () => new URLSearchParams(search) , [search]
-    )
+
+
+    useEffect(() => {
+        const tagname = location.hash.substring(1);
+
+        if (tagname) {
+            const element = document.querySelector(`#${tagname}`);
+            if (element) {
+                element.scrollIntoView({block:'center'})
+            }
+        }
+
+
+    },[])
     
-    console.log(query)
+    
+    // useEffect(() => {
+    //     step2view.current?.scrollIntoView({behavior: 'smooth' ,block: 'end'})
+    // })
 
-    const data = useMemo(
-        () => [
-            {
-                col1:"hello",
-                col2:"word"
-            },
-            {
-                col1:"react",
-                col2:"table"
-            },
-            {
-                col1:"hello",
-                col2:"word"
-            },
 
-        ],
-        []
-    )
+    // const query = useMemo(
+    //     () => new URLSearchParams(search) , [search]
+    // )
+    
+    // console.log(query)
 
-    const columns = useMemo(
-        () => [
-            {
-                Header:"Column 1",
-                accessor:"col1"
-            },
-            {
-                Header:"Column 2",
-                accessor:"col2"
-            },
-        ],
-        []
-    )
+    // const data = useMemo(
+    //     () => [
+    //         {
+    //             col1:"hello",
+    //             col2:"word"
+    //         },
+    //         {
+    //             col1:"react",
+    //             col2:"table"
+    //         },
+    //         {
+    //             col1:"hello",
+    //             col2:"word"
+    //         },
+
+    //     ],
+    //     []
+    // )
+
+    // const columns = useMemo(
+    //     () => [
+    //         {
+    //             Header:"Column 1",
+    //             accessor:"col1"
+    //         },
+    //         {
+    //             Header:"Column 2",
+    //             accessor:"col2"
+    //         },
+    //     ],
+    //     []
+    // )
 
     const ref1 = useRef(null)
     const ref2 = useRef(null)
-    const ref3 = useRef(null)
+    const ref3 = useRef(null)   
     const ref4 = useRef(null)
     const ref5 = useRef(null)
     const ref6 = useRef(null)
@@ -122,7 +150,6 @@ const DetailPage = () => {
                         <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref9}><a className='text-blue-800'>Step9</a></li>
                         <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref10}><a className='text-blue-800'>Step10</a></li>
                         <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref11}><a className='text-blue-800'>Step11</a></li>
-                        
                     </ul>
                 </div>
             </div>
@@ -134,37 +161,37 @@ const DetailPage = () => {
                 {/* Search Container as SIDE BAR */}
                     <div className='pt-[40px]'>
                         <Statcard className=""/>
-                        <h1 ref={ref1}  className='text-3xl font-bold'>1. เตรียมโครงเหล็ก</h1>
+                        <h1 ref={ref1} id="step1" className='text-3xl font-bold'>1. เตรียมโครงเหล็ก</h1>
                         <Step1    />
                         <hr className='my-2 '/>
-                        <h1 ref={ref2}  className='text-3xl font-bold'>2. ปักเคสซิ่ง</h1>
+                        <h1 ref={ref2} id="step2" className='text-3xl font-bold'>2. ปักเคสซิ่ง</h1>
                         <Step2 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref3}  className='text-3xl font-bold'>3. วัดตำแหน่งก่อนเจาะ</h1>
+                        <h1 ref={ref3} id="step3" className='text-3xl font-bold'>3. วัดตำแหน่งก่อนเจาะ</h1>
                         <Step3 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref4} className='text-3xl font-bold'>4. ทดสอบของเหลว</h1>
+                        <h1 ref={ref4} id="step4" className='text-3xl font-bold'>4. ทดสอบของเหลว</h1>
                         <Step4 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref5}  className='text-3xl font-bold'>5. เจาะเสาเข็ม</h1>
+                        <h1 ref={ref5} id="step5" className='text-3xl font-bold'>5. เจาะเสาเข็ม</h1>
                         <Step5 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref6}  className='text-3xl font-bold'>6. เก็บตะกอน</h1>
+                        <h1 ref={ref6} id="step6" className='text-3xl font-bold'>6. เก็บตะกอน</h1>
                         <Step6 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref7} className='text-3xl font-bold'>7. ลงโครงเหล็ก</h1>
+                        <h1 ref={ref7} id="step7" className='text-3xl font-bold'>7. ลงโครงเหล็ก</h1>
                         <Step7 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref8} className='text-3xl font-bold'>8. ลงท่อเทรมี่ / เม็ดโฟม</h1>
+                        <h1 ref={ref8} id="step8" className='text-3xl font-bold'>8. ลงท่อเทรมี่ / เม็ดโฟม</h1>
                         <Step8 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref9} className='text-3xl font-bold'>9. ทดสอบคอนกรีต</h1>
+                        <h1 ref={ref9} id="step9" className='text-3xl font-bold'>9. ทดสอบคอนกรีต</h1>
                         <Step9 />
                         <hr className='my-2 '/>
-                        <h1  ref={ref10} className='text-3xl font-bold'>10. เทคอนกรีต</h1>
+                        <h1  ref={ref10} id="step10" className='text-3xl font-bold'>10. เทคอนกรีต</h1>
                         <Step10 />
                         <hr className='my-2 '/>
-                        <h1  ref={ref11} className='text-3xl font-bold'>11. ถอนเคสซิ่ง</h1>
+                        <h1  ref={ref11} id="step11" className='text-3xl font-bold'>11. ถอนเคสซิ่ง</h1>
                         <Step11    /> 
                     </div>
                 </div >

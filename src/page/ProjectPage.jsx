@@ -1,5 +1,5 @@
-import React , {useMemo} from 'react'
-import { useLocation , Link } from 'react-router-dom';
+import React , {useMemo } from 'react'
+import { useLocation , Link , useNavigate } from 'react-router-dom';
 import { MagnifyingGlassCircleIcon , CheckIcon } from '@heroicons/react/24/outline'
 import TableContent from '../components/tablecotent';
 import Progressbar from '../components/progressbar';
@@ -15,11 +15,18 @@ function useQuery() {
 
 
 function ProjectPage() {
+    const navigate = useNavigate();
 
     let query = useQuery();
 
     const id = query.get("pileid")
     console.log(query.get("pileid"))
+
+    const handleClickOnStep = ({id,step}) => {
+        // navigate(`/project/report?pileid${id}#scroll-target${step}`)
+        navigate(`/project/report?pileid1#step8`)
+    }
+    const pileid = 2
 
     if (id == null) {
         return <h1>None</h1>
@@ -67,7 +74,7 @@ function ProjectPage() {
                         <table className=" w-full overflow-x-auto">
                             <thead className='bg-blue-200 rounded'>
                                 <tr>
-                                    <th className='p-5 text-sm  text-center border border-gray-700 '>PileNo.</th>
+                                    <th className='p-5 text-sm  text-center border border-gray-700 ' onClick={handleClickOnStep}>PileNo.</th>
                                     {/* <th colSpan={11} className='p-5 text-sm  text-center border border-gray-700 '>Step</th> */}
                                     <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step1</th>
                                     <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step2</th>
@@ -92,213 +99,42 @@ function ProjectPage() {
                                         </Link>
                                     </td>
                                     {/* <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td> */}
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=1" className='hover:text-blue-400 hover:underline'>Step1</Link>
+                                    <td className='p-5 text-sm  text-center border-t border-gray-700'>
+                                        <Link tag={1} to={`/project/report?pileid=1#scroll-target`} className='hover:text-blue-400 hover:underline'>Step1</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=2" className='hover:text-blue-400 hover:underline'>Step2</Link>
+                                        <Link to="/project/report?pileid=26#step2" className='hover:text-blue-400 hover:underline'>Step2</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=3" className='hover:text-blue-400 hover:underline'>Step3</Link>
+                                        <Link to="/project/report?pileid=26#step3" className='hover:text-blue-400 hover:underline'>Step3</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=4" className='hover:text-blue-400 hover:underline'>Step4</Link>
+                                        <Link to="/project/report?pileid=26#step4" className='hover:text-blue-400 hover:underline'>Step4</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=5" className='hover:text-blue-400 hover:underline'>Step5</Link>
+                                        <Link to="/project/report?pileid=26#step5" className='hover:text-blue-400 hover:underline'>Step5</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=6" className='hover:text-blue-400 hover:underline'>Step6</Link>
+                                        <Link to="/project/report?pileid=1#step6" className='hover:text-blue-400 hover:underline'>Step6</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=7" className='hover:text-blue-400 hover:underline'>Step7</Link>
+                                        <Link to="/project/report?pileid=26#step7" className='hover:text-blue-400 hover:underline'>Step7</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=8" className='hover:text-blue-400 hover:underline'>Step8</Link>
+                                        <Link to="/project/report?pileid=26#step8" className='hover:text-blue-400 hover:underline'>Step8</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=9" className='hover:text-blue-400 hover:underline'>Step9</Link>
+                                        <Link to="/project/report?pileid=26#step9" className='hover:text-blue-400 hover:underline'>Step9</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=19" className='hover:text-blue-400 hover:underline'>Step10</Link>
+                                        <Link to="/project/report?pileid=26#step19" className='hover:text-blue-400 hover:underline'>Step10</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=11" className='hover:text-blue-400 hover:underline'>Step11</Link>
+                                        <Link to="/project/report?pileid=26#step11" className='hover:text-blue-400 hover:underline'>Step11</Link>
                                     </td>
                                     <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>12/12/22 09:11:11</td>
                                 </tr>
-                                {/* Row */}
-                                <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                                    <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>
-                                        <Link to="/project/report?pileid=26" className='hover:text-blue-400 hover:underline'>
-                                            PB-26
-                                        </Link>
-                                    </td>
-                                    {/* <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td> */}
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=1">Step1</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=2">Step2</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=3">Step3</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=4">Step4</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=5">Step5</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=6">Step6</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=7">Step7</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=8">Step8</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=9">Step9</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=19">Step10</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=11">Step11</Link>
-                                    </td>
-                                    <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>12/12/22 09:11:11</td>
-                                </tr>
-                                {/* Row */}
-                                <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                                    <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>
-                                        <Link to="/project/report?pileid=26" className='hover:text-blue-400 hover:underline'>
-                                            PB-26
-                                        </Link>
-                                    </td>
-                                    {/* <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td> */}
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=1">Step1</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=2">Step2</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=3">Step3</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=4">Step4</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=5">Step5</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=6">Step6</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=7">Step7</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=8">Step8</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=9">Step9</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=19">Step10</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=11">Step11</Link>
-                                    </td>
-                                    <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>12/12/22 09:11:11</td>
-                                </tr>
-                                {/* Row */}
-                                <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                                    <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>
-                                        <Link to="/project/report?pileid=26" className='hover:text-blue-400 hover:underline'>
-                                            PB-26
-                                        </Link>
-                                    </td>
-                                    {/* <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td> */}
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=1">Step1</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=2">Step2</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=3">Step3</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=4">Step4</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=5">Step5</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=6">Step6</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=7">Step7</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=8">Step8</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=9">Step9</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=19">Step10</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=11">Step11</Link>
-                                    </td>
-                                    <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>12/12/22 09:11:11</td>
-                                </tr>
-                                {/* Row */}
-                                <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                                    <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>
-                                        <Link to="/project/report?pileid=26" className='hover:text-blue-400 hover:underline'>
-                                            PB-26
-                                        </Link>
-                                    </td>
-                                    {/* <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td> */}
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=1">Step1</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=2">Step2</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=3">Step3</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=4">Step4</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=5">Step5</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=6">Step6</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=7">Step7</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=8">Step8</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=9">Step9</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=19">Step10</Link>
-                                    </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26&step=11">Step11</Link>
-                                    </td>
-                                    <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>12/12/22 09:11:11</td>
-                                </tr>
+                              
                                 
                                 
                                       

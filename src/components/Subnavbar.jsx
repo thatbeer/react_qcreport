@@ -1,16 +1,21 @@
 import React from 'react'
 import { FolderArrowDownIcon , ChevronUpDownIcon} from '@heroicons/react/24/outline'
-
+import { useNavigate } from 'react-router-dom'
 
 
 const Subnavbar = () => {
+  const navigate = useNavigate();
+
+  const onClickTitle = () => {navigate(-1)};
+
+
   return (
     <>
         <div className='relatvie mx-auto  min-h-[40px] bg-blue-100 border border-blue-300'>
             <div className='flex px-6 mx-auto py-1 justify-center items-center '>
                 <div className='flex flex-col mx-auto items-center w-3/4
                 justify-center sm:justify-start sm:items-stretch text-xl font-bold mt-2 lg:m-0 '>
-                  <p className='truncate w-full text-center lg:text-start'>โครงการ Aspire Sukhumvit - Rama 4</p>
+                  <p className='truncate w-full text-center lg:text-start hover:text-blue-700 z-40 hover:cursor-pointer' onClick={onClickTitle}>โครงการ Aspire Sukhumvit - Rama 4</p>
                   <p className='truncate w-full text-center lg:hidden'>PA48 </p>
                 </div>
 
