@@ -100,7 +100,7 @@ function ProjectPage() {
                                     </td>
                                     {/* <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td> */}
                                     <td className='p-5 text-sm  text-center border-t border-gray-700'>
-                                        <Link tag={1} to={`/project/report?pileid=1#scroll-target`} className='hover:text-blue-400 hover:underline'>Step1</Link>
+                                        <Link tag={1} to={`/project/report?pileid=1`} className='hover:text-blue-400 hover:underline'>Step1</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
                                         <Link to="/project/report?pileid=26#step2" className='hover:text-blue-400 hover:underline'>Step2</Link>
