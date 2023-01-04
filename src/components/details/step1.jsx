@@ -42,13 +42,13 @@ const Step1 = () => {
           
 
             <div className='overflow-x-auto my-2 '>  
-            <table className=" w-full">
+            <table className=" w-full ">
                 <thead className='bg-blue-200 rounded'>
                     <tr>
                         <th className='p-5 text-sm w-1/7 text-center border border-gray-700 '>โครง</th>
                         <th className='p-5 text-sm w-1/7 text-center border border-gray-700 '>ตามแบบ</th>
                         <th className='p-5 text-sm w-1/7 text-center border border-gray-700 '>ลูกปูน</th>
-                        <th className='p-5 text-sm  text-center border border-gray-700 '><pre className='border-b border-dashed border-gray-600 text-md'>MainBar</pre><pre className='text-md'>Spiral</pre></th>
+                        <th className='p-5 text-sm  text-center border  border-gray-700 '><pre className='border-b border-dashed border-gray-600 text-md'>MainBar</pre><pre className='text-md'>Spiral</pre></th>
                         
                     </tr>
                 </thead>
@@ -72,11 +72,11 @@ const Step1 = () => {
                             <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
                             <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '><pre className='border-b border-dashed border-gray-600'>หลัก: 12-DB20 SD40 x 8.9500 m.</pre>ช่วงที่ 1: RB9 SR24 x 7.500 m. @0.200</td>
                         </tr>
-                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                        <tr  className="text-center border-y border-gray-700 rounded  my-auto items-center justify-center">
                             <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>4</td>
                             <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
                             <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '><pre className='border-b border-dashed border-gray-600'>หลัก: 12-DB20 SD40 x 8.9500 m.</pre>ช่วงที่ 1: RB9 SR24 x 7.500 m. @0.200</td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r  border-gray-700   '><pre className='border-b border-dashed border-gray-600'>หลัก: 12-DB20 SD40 x 8.9500 m.</pre>ช่วงที่ 1: RB9 SR24 x 7.500 m. @0.200</td>
                         </tr>
                
         
@@ -98,7 +98,7 @@ const Step1 = () => {
             </div>
             
             {/* green/red tab */}
-            <CheckTab note={"จะขึ้นแถบสีแดงเมื่อมีการป้อนข้อมูลในหมายเหตุ"} />
+            <CheckTab className='flex items-center' note={"จะขึ้นแถบสีแดงเมื่อมีการป้อนข้อมูลในหมายเหตุจะขึ้นแถบสีแดงเมื่อมีการป้อนข้อมูลในหมายเหตุจะขึ้นแถบสีแดงเมื่อมีการป้อนข้อมูลในหมายเหตุจะขึ้นแถบสีแดงเมื่อมีการป้อนข้อมูลในหมายเหตุ"} />
         </div>
     </>
   )

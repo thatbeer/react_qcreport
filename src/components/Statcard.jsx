@@ -17,12 +17,12 @@ function Statcard() {
                         <p className='text-sm'>(m.)</p>
                     </div>
                     <div className='flex flex-col w-full items-center justify-center mx-auto my-2'>
-                        <h1 className='text-sm'>Cutoff</h1>
+                        <h1 className='text-sm'>Cut off</h1>
                         <p className='text-xl  font-bold'>2</p>
                         <p className='text-sm'>(m.)</p>
                     </div>
                     <div className='flex flex-col w-full items-center justify-center mx-auto my-2'>
-                        <h1 className='text-sm'>PileTip</h1>
+                        <h1 className='text-sm'>Pile Tip</h1>
                         <p className='text-xl  font-bold'>56</p>
                         <p className='text-sm'>(m.)</p>
                     </div>

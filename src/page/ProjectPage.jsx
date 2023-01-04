@@ -4,7 +4,7 @@ import { MagnifyingGlassCircleIcon , CheckIcon } from '@heroicons/react/24/outli
 import TableContent from '../components/tablecotent';
 import Progressbar from '../components/progressbar';
 import { StepBarUse } from '../components/StepBar';
-
+import Subnavbar from '../components/Subnavbar';
 
 function useQuery() {
     const { search } = useLocation();
@@ -36,7 +36,8 @@ function ProjectPage() {
   return (
     <>
         <div className="w-full flex flex-col flex-grow h-screen relative lg:top-14 top-16">
-            <div className='fixed top-[55px] w-full items-center mx-auto bg-blue-100 h-[50px] z-30 py-1  '>
+            <div className='fixed top-[52px] w-full items-center mx-auto bg-blue-100 h-[50px] z-30 py-1  '>
+                <Subnavbar titleback={false}/>
                 <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-blue-100'>
                     {/* filter bar for pc */}
                     <div className=' w-1/3 justify-center hidden lg:flex mx-auto '>
@@ -51,7 +52,7 @@ function ProjectPage() {
                         <input type={'search'} name="search" placeholder='search'
                             className='border-2 lg:w-full  border-gray-300 bg-white h-8  px-1 rounded-lg text-sm focus:outline-none'/>
                         <button type='submit' className='relative '>
-                            <MagnifyingGlassCircleIcon onClick={() => console.log('click search')} className='w-8 h-8 ml-1 hover:text-white' />
+                            <MagnifyingGlassCircleIcon onClick={() => console.log('click search')} className='w-8 h-8 ml-1 text-blue-600 hover:text-blue-300 focus:ring-2 focus:ring-offset-2 focus:ring-white' />
                         </button>
                     </div>
 
@@ -64,7 +65,7 @@ function ProjectPage() {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-1 mx-auto mt-4 lg:mt-4'>
+            <div className='flex flex-1 mx-auto mt-10 lg:mt-4 pt-[64px]'>
                 <main role="main" className="flex flex-col w-screen h-full  px-2  pt-[64px] mb-4">
                     <div className='w-full lg:w-2/3  mx-auto'> 
                         {/* <TableContent id={id}/> */}
@@ -100,37 +101,37 @@ function ProjectPage() {
                                     </td>
                                     {/* <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td> */}
                                     <td className='p-5 text-sm  text-center border-t border-gray-700'>
-                                        <Link tag={1} to={`/project/report?pileid=1`} className='hover:text-blue-400 hover:underline'>Step1</Link>
+                                        <Link tag={1} to={`/project/report?pileid=1`} className='hover:text-blue-400 hover:underline'>1</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step2" className='hover:text-blue-400 hover:underline'>Step2</Link>
+                                        <Link to="/project/report?pileid=26#step2" className='hover:text-blue-400 hover:underline'>2</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step3" className='hover:text-blue-400 hover:underline'>Step3</Link>
+                                        <Link to="/project/report?pileid=26#step3" className='hover:text-blue-400 hover:underline'>3</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step4" className='hover:text-blue-400 hover:underline'>Step4</Link>
+                                        <Link to="/project/report?pileid=26#step4" className='hover:text-blue-400 hover:underline'>4</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step5" className='hover:text-blue-400 hover:underline'>Step5</Link>
+                                        <Link to="/project/report?pileid=26#step5" className='hover:text-blue-400 hover:underline'>5</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=1#step6" className='hover:text-blue-400 hover:underline'>Step6</Link>
+                                        <Link to="/project/report?pileid=1#step6" className='hover:text-blue-400 hover:underline'>6</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step7" className='hover:text-blue-400 hover:underline'>Step7</Link>
+                                        <Link to="/project/report?pileid=26#step7" className='hover:text-blue-400 hover:underline'>7</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step8" className='hover:text-blue-400 hover:underline'>Step8</Link>
+                                        <Link to="/project/report?pileid=26#step8" className='hover:text-blue-400 hover:underline'>8</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step9" className='hover:text-blue-400 hover:underline'>Step9</Link>
+                                        <Link to="/project/report?pileid=26#step9" className='hover:text-blue-400 hover:underline'>9</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step19" className='hover:text-blue-400 hover:underline'>Step10</Link>
+                                        <Link to="/project/report?pileid=26#step19" className='hover:text-blue-400 hover:underline'>10</Link>
                                     </td>
                                     <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step11" className='hover:text-blue-400 hover:underline'>Step11</Link>
+                                        <Link to="/project/report?pileid=26#step11" className='hover:text-blue-400 hover:underline'>11</Link>
                                     </td>
                                     <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>12/12/22 09:11:11</td>
                                 </tr>

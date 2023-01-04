@@ -5,8 +5,9 @@ import DetailPage from './page/DetailPage'
 import LoginPage from './page/Login'
 import Mainpage from './page/MainPage'
 import ProjectPage from './page/ProjectPage'
-// import SidePage from './page/SidePage'
+import SidePage from './page/SidePage'
 import Protected from './utils/protected'
+
 
 const token = true
 
@@ -33,7 +34,7 @@ function App() {
         <Route index element={<Mainpage/>} />
         <Route path="/:project" exact element={<ProjectPage/>} />
         <Route path="/project/:report" element={<DetailPage/>} />
-        {/* <Route path="/side" element={<SidePage/>} /> */}
+        <Route path="/side" element={<SidePage/>} />
       </Route>
       <Route element={<h1>error 404</h1>} path="*" />
       <Route path='/auth' element={<LoginPage/>} />

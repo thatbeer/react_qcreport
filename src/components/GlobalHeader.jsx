@@ -28,8 +28,8 @@ const GlobalHeader = () =>  {
         <Disclosure as="nav" className="bg-blue-600">
         {({ open }) => (
             <>
-            <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                <div className="relative flex h-16 items-center justify-between">
+            <div className="mx-auto max-w-6xl px-2 sm:px-6 lg:px-8">
+                <div className="relative flex h-14 items-center justify-between">
                     {/* Mobile menu button*/}
                     {/* <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -41,7 +41,7 @@ const GlobalHeader = () =>  {
                         )}
                         </Disclosure.Button>
                     </div> */}
-                <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div className="flex flex-1 items-center   sm:justify-start">
                     <div className="flex flex-shrink-0 items-center">
                     {/* <img
                         className="block h-8 w-auto "
@@ -50,7 +50,7 @@ const GlobalHeader = () =>  {
                     /> */}
                     <button className=' flex top-2 w-auto text-3xl text-white text-bold'>
                         <Link to="/">
-                        PYLON
+                            PYLON
                         </Link>
                     </button>
                     {/* <img
@@ -84,7 +84,7 @@ const GlobalHeader = () =>  {
                     {/* Notification button for later add ons */} 
                     <button
                     type="button"
-                    className="lg:flex hidden rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                    className="flex rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                     >
                     <span className="sr-only">View notifications</span>
                     <div className='flex flex-row'>
@@ -130,7 +130,7 @@ const GlobalHeader = () =>  {
                         <Menu.Item>
                             {({ active }) => (
                             <Link
-                                href="/side"
+                                to="/side"
                                 className={classNames(active ? 'bg-blue-200 shadow-md' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
                                 Your Profile
@@ -140,7 +140,7 @@ const GlobalHeader = () =>  {
                         <Menu.Item>
                             {({ active }) => (
                             <Link
-                                href="/side"
+                                to="/side"
                                 className={classNames(active ? 'bg-blue-100 shadow-md' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
                                 Settings

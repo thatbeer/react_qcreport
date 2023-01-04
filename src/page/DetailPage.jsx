@@ -135,21 +135,21 @@ const DetailPage = () => {
   return (
     <>
         <div className='fixed w-screen z-30 '>
-            <div className='relative lg:top-16 top-14'>
-                <Subnavbar />
+            <div className='relative lg:top-14 top-12'>
+                <Subnavbar titleback={true}/>
                 <div className="overflow-x-auto fixed min-h-6  left-0 px-1 py-1 bg-blue-100 border-b border-blue-300 w-screen z-20 ">
-                    <ul className='flex px-1 flex-row mx-auto items-center lg:justify-center sm:justify-start'>
-                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref1}><a className='text-blue-800'>Step1</a></li>
-                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref2}><a className='text-blue-800' >Step2</a></li>
-                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref3}><a className='text-blue-800'>Step3</a></li>
-                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref4}><a className='text-blue-800'>Step4</a></li>
-                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref5}><a className='text-blue-800'>Step5</a></li>
-                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref6}><a className='text-blue-800'>Step6</a></li>
-                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref7}><a className='text-blue-800'>Step7</a></li>
-                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref8}><a className='text-blue-800'>Step8</a></li>
-                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref9}><a className='text-blue-800'>Step9</a></li>
-                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref10}><a className='text-blue-800'>Step10</a></li>
-                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref11}><a className='text-blue-800'>Step11</a></li>
+                    <ul className='flex px-1 flex-row mx-auto items-center justify-center '>
+                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref1}><a className='text-blue-800'>1</a></li>
+                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref2}><a className='text-blue-800' >2</a></li>
+                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref3}><a className='text-blue-800'>3</a></li>
+                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref4}><a className='text-blue-800'>4</a></li>
+                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref5}><a className='text-blue-800'>5</a></li>
+                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref6}><a className='text-blue-800'>6</a></li>
+                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref7}><a className='text-blue-800'>7</a></li>
+                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref8}><a className='text-blue-800'>8</a></li>
+                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref9}><a className='text-blue-800'>9</a></li>
+                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref10}><a className='text-blue-800'>10</a></li>
+                        <li className='p-2 hover:cursor-pointer   z-30' onClick={handleClick2Ref11}><a className='text-blue-800'>11</a></li>
                     </ul>
                 </div>
             </div>
