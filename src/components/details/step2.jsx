@@ -5,6 +5,7 @@ import HeadlessTable from '../headlesstable';
 
 
 const Step2 = () => {
+  const isBoredPile = true;
   return (
     <>
         <div className='flex flex-col'>

@@ -22,15 +22,15 @@ function App() {
     } 
   })
 
+  // if (!token) {
+  //   return <LoginPage />
+  // }
+
 
   return (
     <Routes>
       <Route path='/' 
-        element={
-          <div className=''>
-            <GlobalHeader />
-          </div>
-        }>
+        element={<GlobalHeader />}>
         <Route index element={<Mainpage/>} />
         <Route path="/:project" exact element={<ProjectPage/>} />
         <Route path="/project/:report" element={<DetailPage/>} />

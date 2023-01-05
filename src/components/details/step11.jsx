@@ -4,6 +4,7 @@ import { CheckIcon } from '@heroicons/react/24/outline'
 
 
 const Step11 = () => {
+    const isBoredPile = true;
   return (
     <>
         <div className='flex flex-col'>
@@ -17,29 +18,33 @@ const Step11 = () => {
                         <tbody className=' '>
                         <tr className='  border border-x border-gray-600 text-sm '>
                             <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-green-200 border-gray-600'>วันที่เริ่ม</th>
-                            <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>	26 ธ.ค. 2565 (14:29)</td>
+                            <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>4 ม.ค. 2566 (18:01)</td>
                             
                         </tr>
                         <tr className='  border border-x border-gray-600 text-sm '>
                             <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-green-200 border-gray-600'>วันที่เสร็จ	</th>
-                            <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>	26 ธ.ค. 2565 (14:02)</td>
+                            <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>4 ม.ค. 2566 (18:07)</td>
                         </tr>
                         <tr className='  border border-x border-gray-600 text-sm '>
                             <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-green-200 border-gray-600'>เครื่องจักร/เครน No.	</th>
-                            <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>CR-20</td>
+                            <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>CR-31</td>
+                        </tr>
+                        <tr className='  border border-x border-gray-600 text-sm '>
+                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-green-200 border-gray-600'>ไวโบรแฮมเมอร์ No.</th>
+                            <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>VH-14</td>
                         </tr>
                         <tr className='  border border-x border-gray-600 text-sm '>
                             <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-green-200 border-gray-600'>ผู้ขับ</th>
-                            <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>โบ-พงษ์เทพ คิดดีจริง</td>
+                            <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>รั้ว พัดภู่</td>
                         </tr>
                         <tr className='  border border-x border-gray-600 text-sm '>
                             <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-green-200 border-gray-600'>ความลึกคอนกรีต วัดจากผิวดิน (ม.)</th>
-                            <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>3.000</td>
+                            <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>11.790</td>
                         </tr>
                         <tr className='  border border-x border-gray-600 text-sm '>
                             <th className='px-2 py-1   w-1/2 lg:w-1/3 text-start border-r bg-green-200 border-gray-600'>ความสูงหัวเข็มหลังถอนเคสซิ่ง (ม.)</th>
                             {/* ##### RED GREEN */}
-                            <td className='px-2 py-1   w-1/2 lg:w-2/3 text-start  bg-red-200'>200</td>
+                            <td className='px-2 py-1   w-1/2 lg:w-2/3 text-start  bg-red-400 text-white'>1.900</td>
                         </tr>
                         <tr className='  border border-x border-gray-600 text-sm '>
                             <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-green-200 border-gray-600'>ระยะเยิ้มตัวของคอนกรีต (ม.)</th>

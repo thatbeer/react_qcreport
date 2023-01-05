@@ -1,7 +1,23 @@
 import CheckTab from '../checktab';
 
 
+const itemsX = [
+    { id: { first: "1", second: '741'}, cfconcrete: '6.0' , depthconFromtop: "-" , diameter:"-",tremyLength : "4.91" , Ncut:'0', cut:'4.91',left:'62',sinkAfterCut:'5',time: {start:'4 ม.ค. 2566 (15:48)',end:'4 ม.ค. 2566 (15:48)'},last: true },
+    { id: { first: "1", second: '741'}, cfconcrete: '6.0' , depthconFromtop: "-" , diameter:"-",tremyLength : "4.91" , Ncut:'0', cut:'4.91',left:'62',sinkAfterCut:'5',time: {start:'4 ม.ค. 2566 (15:48)',end:'4 ม.ค. 2566 (15:48)'},last: true },
+    { id: { first: "1", second: '741'}, cfconcrete: '6.0' , depthconFromtop: "-" , diameter:"-",tremyLength : "4.91" , Ncut:'0', cut:'4.91',left:'62',sinkAfterCut:'5',time: {start:'4 ม.ค. 2566 (15:48)',end:'4 ม.ค. 2566 (15:48)'},last: true },
+    { id: { first: "1", second: '741'}, cfconcrete: '6.0' , depthconFromtop: "-" , diameter:"-",tremyLength : "4.91" , Ncut:'0', cut:'4.91',left:'62',sinkAfterCut:'5',time: {start:'4 ม.ค. 2566 (15:48)',end:'4 ม.ค. 2566 (15:48)'},last: true },
+    { id: { first: "1", second: '741'}, cfconcrete: '6.0' , depthconFromtop: "-" , diameter:"-",tremyLength : "4.91" , Ncut:'0', cut:'4.91',left:'62',sinkAfterCut:'5',time: {start:'4 ม.ค. 2566 (15:48)',end:'4 ม.ค. 2566 (15:48)'},last: true },
+    { id: { first: "1", second: '741'}, cfconcrete: '6.0' , depthconFromtop: "-" , diameter:"-",tremyLength : "4.91" , Ncut:'0', cut:'4.91',left:'62',sinkAfterCut:'5',time: {start:'4 ม.ค. 2566 (15:48)',end:'4 ม.ค. 2566 (15:48)'},last: true },
+    { id: { first: "1", second: '741'}, cfconcrete: '6.0' , depthconFromtop: "-" , diameter:"-",tremyLength : "4.91" , Ncut:'0', cut:'4.91',left:'62',sinkAfterCut:'5',time: {start:'4 ม.ค. 2566 (15:48)',end:'4 ม.ค. 2566 (15:48)'},last: true },
+    { id: { first: "1", second: '741'}, cfconcrete: '6.0' , depthconFromtop: "-" , diameter:"-",tremyLength : "4.91" , Ncut:'0', cut:'4.91',left:'62',sinkAfterCut:'5',time: {start:'4 ม.ค. 2566 (15:48)',end:'4 ม.ค. 2566 (15:48)'},last: true },
+    { id: { first: "1", second: '741'}, cfconcrete: '6.0' , depthconFromtop: "-" , diameter:"-",tremyLength : "4.91" , Ncut:'0', cut:'4.91',left:'62',sinkAfterCut:'5',time: {start:'4 ม.ค. 2566 (15:48)',end:'4 ม.ค. 2566 (15:48)'},last: true },
+    { id: { first: "1", second: '741'}, cfconcrete: '6.0' , depthconFromtop: "-" , diameter:"-",tremyLength : "4.91" , Ncut:'0', cut:'4.91',left:'62',sinkAfterCut:'5',time: {start:'4 ม.ค. 2566 (15:48)',end:'4 ม.ค. 2566 (15:48)'},last: true },{ id: { first: "1", second: '741'}, cfconcrete: '6.0' , depthconFromtop: "-" , diameter:"-",tremyLength : "4.91" , Ncut:'0', cut:'4.91',left:'62',sinkAfterCut:'5',time: {start:'4 ม.ค. 2566 (15:48)',end:'4 ม.ค. 2566 (15:48)'},last: true },
+    
+];
+
+
 const Step10 = () => {
+    const isBoredPile = true;
   return (
     <>
         <div className='flex flex-col' >
@@ -15,27 +31,15 @@ const Step10 = () => {
                         <tbody className=' '>
                         <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
                             <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r text-start bg-green-200 border-gray-600'>ชุดโฟร์แมน</th>
-                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start '>ชุดที่ 1 นาย-สมพร</td>
+                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start '>ชุดที่ 5 ฤาษี-สำฤทธิ์</td>
                         </tr>
                         <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
                             <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r text-start bg-green-200 border-gray-600'>โฟร์แมนควบคุมงาน</th>
-                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start '>กุศล อยู่เป็นสุข</td>
+                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start '>ประหยัด สืบเสาะเสมอ</td>
                         </tr>
                         <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
-                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r text-start bg-green-200 border-gray-600'>ท้องฟ้าโปร่ง</th>
-                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start '>Yes</td>
-                        </tr>
-                        <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
-                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r text-start bg-green-200 border-gray-600'>มีเมฆมาก</th>
-                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start '>CR-20</td>
-                        </tr>
-                        <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
-                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r text-start bg-green-200 border-gray-600'>ฝนตก</th>
-                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start '>-</td>
-                        </tr>
-                        <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
-                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r text-start bg-green-200 border-gray-600'>ลมแรง</th>
-                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start '>-</td>
+                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r text-start bg-green-200 border-gray-600'>สภาพอากาศ</th>
+                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start '>ท้องฟ้าปรอดโปร่ง</td>
                         </tr>
                         </tbody>
                     </table>
@@ -70,7 +74,7 @@ const Step10 = () => {
                         </tr>
                     </thead>
                     <tbody className=' '>   
-                            <tr  className="text-start border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            {/* <tr  className="text-start border-y border-gray-700 rounded-t  my-auto items-center justify-center">
                                 <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '><pre>1</pre>1425</th>
                                 <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '>6.00</th>
                                 <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '>-</th>
@@ -82,7 +86,24 @@ const Step10 = () => {
                                 <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 bg-green-200'>5</th>
                                 <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '><pre>1</pre>1425</th>
                                 <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '></th>
-                            </tr>
+                            </tr> */}
+                            
+                            { itemsX.map((item,idx) => (
+                                <tr  className="text-start border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                                    <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '><pre>{item.id.first}</pre>{item.id.second}</th>
+                                    <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '>{item.cfconcrete}</th>
+                                    <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '>{item.depthconFromtop}</th>
+                                    <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 bg-green-200'>{item.diameter}</th>
+                                    <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 bg-green-200'>{item.tremyLength}</th>
+                                    <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 bg-green-200'>{item.Ncut}</th>
+                                    <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '>{item.cut}</th>
+                                    <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '>{item.left}</th>
+                                    <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 bg-green-200'>{item.sinkAfterCut}</th>
+                                    <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '><pre>{item.time.start}</pre><pre>{item.time.end}</pre></th>
+                                    <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '>{item.cut}</th>
+                                </tr>
+                            ))}
+                            
                         
                             
                     </tbody>
@@ -123,11 +144,11 @@ const Step10 = () => {
                     </div>
                     <table className='w-full'>
                         <tbody className=' '>
-                        <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
+                        <tr className=' flex border-x  border-gray-600 items-center text-start justify-between '>
                             <td className='px-2 py-1 text-sm w-2/3 lg:w-1/3 text-start border-r bg-green-200 border-gray-600'>ปริมาณคอนกรีตที่เหลือ (ม3)</td>
-                            <td className='px-2 py-1 text-sm w-1/3 lg:w-2/3 text-start '>0.00</td>
+                            <td className='px-2 py-1 text-sm w-1/3 lg:w-2/3 text-start '>3.00</td>
                         </tr>
-                        <tr className=' flex border border-x border-gray-600 items-center text-start justify-between '>
+                        <tr className=' flex border  border-gray-600 items-center text-start justify-between '>
                             <td className='px-2 py-1 text-sm w-2/3 lg:w-1/3 text-start border-r bg-green-200 border-gray-600'>นำคอนกรีตที่เหลือไปใช้</td>
                             <td className='px-2 py-1 text-sm w-1/3 lg:w-2/3 text-start '>-</td>
                         </tr>
