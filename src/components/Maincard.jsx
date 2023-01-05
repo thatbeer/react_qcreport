@@ -37,6 +37,9 @@ const Maincard = (props) => {
                     {/* <Dropdownlist className="  bg-gray-100 " /> */}
                 </div>
                 <hr style={{ color: 'red' }}/>
+                <div className="px-2 py-1 block text-start text mx-auto w-auto bg--200 border border-gray-200">
+                    <p className="flex flex-inline">จำนวนเสาเข็มเจาะที่เสร็จ 75/100 <FingerPrintIcon className="h-6 w-6 pl-2 text-green"/></p>
+                </div>
                 <div className=" bg-gray-200 h-6 rounded-2xl my-2 flex border-t outline-offset-4	
                 flex-inline justify-start items-center mx-auto" style={{width: "100%"}} >
                     <div 
@@ -45,9 +48,6 @@ const Maincard = (props) => {
                         style={{width: "75%"}}>
                         75%
                     </div> 
-                </div>
-                <div className="px-2 py-1 block text-start text-sm mx-auto w-auto bg--200 border border-gray-200">
-                    <p className="flex flex-inline">จำนวนเสาเข็มเจาะที่เสร็จ 75/100 <FingerPrintIcon className="h-6 w-6 pl-2 text-green"/></p>
                 </div>
                 {/* <Progressbar/> */}
             </div>
