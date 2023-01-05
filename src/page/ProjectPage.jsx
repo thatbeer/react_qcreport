@@ -5,6 +5,11 @@ import TableContent from '../components/tablecotent';
 import Progressbar from '../components/progressbar';
 import { StepBarUse } from '../components/StepBar';
 import Subnavbar from '../components/Subnavbar';
+import WaitingStage from '../img/S020A.png';
+import WaitingStep1 from '../img/S010A.png';
+import WaitingStep11 from '../img/S110A.png';
+
+
 
 function useQuery() {
     const { search } = useLocation();
@@ -95,19 +100,19 @@ function ProjectPage() {
                         <table className=" w-full overflow-x-auto">
                             <thead className='bg-blue-200 rounded'>
                                 <tr>
-                                    <th className='p-5 text-sm  text-center border border-gray-700 ' onClick={handleClickOnStep}>PileNo.</th>
+                                    <th className=' text-sm  text-center border border-gray-700 ' onClick={handleClickOnStep}>PileNo.</th>
                                     {/* <th colSpan={11} className='p-5 text-sm  text-center border border-gray-700 '>Step</th> */}
                                     <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step1</th>
-                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step2</th>
-                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step3</th>
-                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step4</th>
-                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step5</th>
-                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step6</th>
-                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step7</th>
-                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step8</th>
-                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step9</th>
-                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step10</th>
-                                    <th className='p-5 text-sm  text-center border-t border-gray-700  '>Step11</th>
+                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step2</th>
+                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step3</th>
+                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step4</th>
+                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step5</th>
+                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step6</th>
+                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step7</th>
+                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step8</th>
+                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step9</th>
+                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step10</th>
+                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step11</th>
                                     <th className='p-5 text-sm  text-center border border-gray-700 '>Updated</th>
                                 </tr>
                             </thead>
@@ -119,112 +124,112 @@ function ProjectPage() {
                                             PB-26
                                         </Link>
                                     </td>
-                                    <td colSpan={11} className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 '>XXX</td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700'>
-                                        <Link tag={1} to={`/project/report?pileid=1`} className='hover:text-blue-400 hover:underline'>1</Link>
+                                    <td className=' text-sm  text-center border-t border-gray-700'>
+                                        <Link tag={1} to={`/project/report?pileid=1`} className='hover:text-blue-400 hover:underline'><img src={WaitingStep1} alt="step1"/></Link>
                                     </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step2" className='hover:text-blue-400 hover:underline'>2</Link>
+                                    <td className=' text-sm  text-center border-t border-gray-700  '>
+                                        <Link to="/project/report?pileid=26#step2" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step2"/></Link>
                                     </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step3" className='hover:text-blue-400 hover:underline'>3</Link>
+                                    <td className=' text-sm  text-center border-t border-gray-700  '>
+                                        <Link to="/project/report?pileid=26#step3" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step3"></img></Link>
                                     </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step4" className='hover:text-blue-400 hover:underline'>4</Link>
+                                    <td className=' text-sm  text-center border-t border-gray-700  '>
+                                        <Link to="/project/report?pileid=26#step4" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step4"/></Link>
                                     </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step5" className='hover:text-blue-400 hover:underline'>5</Link>
+                                    <td className=' text-sm  text-center border-t border-gray-700  '>
+                                        <Link to="/project/report?pileid=26#step5" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step5"/></Link>
                                     </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=1#step6" className='hover:text-blue-400 hover:underline'>6</Link>
+                                    <td className=' text-sm  text-center border-t border-gray-700  '>
+                                        <Link to="/project/report?pileid=1#step6" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step6"/></Link>
                                     </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step7" className='hover:text-blue-400 hover:underline'>7</Link>
+                                    <td className=' text-sm  text-center border-t border-gray-700  '>
+                                        <Link to="/project/report?pileid=26#step7" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step7"/></Link>
                                     </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step8" className='hover:text-blue-400 hover:underline'>8</Link>
+                                    <td className=' text-sm  text-center border-t border-gray-700  '>
+                                        <Link to="/project/report?pileid=26#step8" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step8"/></Link>
                                     </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step9" className='hover:text-blue-400 hover:underline'>9</Link>
+                                    <td className=' text-sm  text-center border-t border-gray-700  '>
+                                        <Link to="/project/report?pileid=26#step9" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step9"/></Link>
                                     </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step19" className='hover:text-blue-400 hover:underline'>10</Link>
+                                    <td className=' text-sm  text-center border-t border-gray-700  '>
+                                        <Link to="/project/report?pileid=26#step19" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step10"/></Link>
                                     </td>
-                                    <td className='p-5 text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step11" className='hover:text-blue-400 hover:underline'>11</Link>
+                                    <td className=' text-sm  text-center border-t border-gray-700  '>
+                                        <Link to="/project/report?pileid=26#step11" className='hover:text-blue-400 hover:underline'><img src={WaitingStep11} alt="step11"/></Link>
                                     </td>
-                                    <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>12/12/22 09:11:11</td>
+                                    <td className=' mx-auto my-1 text-sm  border-x border-gray-700  '>12/12/22 09:11:11</td>
                                 </tr> */}
+                                {/* Real table */}
                                 { projectListX ? projectListX.map((list) => (
                                     <tr key={list.pileno}  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                                        <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>
+                                        <td className='p-3 mx-auto my-1 text-sm  border-x border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}`} title={`pileId${list.pileno}`} className='hover:text-blue-400 hover:underline'>
                                                 {list.pileno}
                                             </Link>
                                         </td>
-                                        <td className='p-5 text-sm  text-center border-t border-gray-700'>
+                                        <td className=' text-sm  text-center border-t border-gray-700'>
                                             <Link tag={1} to={`/project/report?pileid=${list.pileno}`} title={`step1`}
                                             className='hover:text-blue-400 hover:underline'>
-                                                {list.step1 > 0 ? <p className="text-green-400">green</p> : <p className='text-red-400'>red</p>}</Link>
+                                                {list.step1 > 0 ? <p className="text-green-400">green</p> : <img src={WaitingStep1} alt="step1"/>}</Link>
                                         </td>
-                                        <td className='p-5 text-sm  text-center border-t border-gray-700  '>
+                                        <td className=' text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step2`} title={`step2`}
                                             className='hover:text-blue-400 hover:underline'>
-                                                {list.step2 > 0 ? <p className="text-green-400">green</p> : <p className='text-red-400'>red</p>}</Link>
+                                                {list.step2 > 0 ? <p className="text-green-400">green</p> : <img src={WaitingStage} alt="step2"/>}</Link>
                                         </td>
-                                        <td className='p-5 text-sm  text-center border-t border-gray-700  '>
+                                        <td className=' text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step3`} title={`step3`}
                                             className='hover:text-blue-400 hover:underline'>
-                                                {list.step3 > 0 ? <p className="text-green-400">green</p> : <p className='text-red-400'>red</p>}</Link>
+                                                {list.step3 > 0 ? <p className="text-green-400">green</p> : <img src={WaitingStage} alt="step3"/>}</Link>
                                         </td>
-                                        <td className='p-5 text-sm  text-center border-t border-gray-700  '>
+                                        <td className=' text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step4`} title={`step4`}
                                             className='hover:text-blue-400 hover:underline'>
-                                                {list.step4 > 0 ? <p className="text-green-400">green</p> : <p className='text-red-400'>red</p>}</Link>
+                                                {list.step4 > 0 ? <p className="text-green-400">green</p> : <img src={WaitingStage} alt="step4"/>}</Link>
                                         </td>
-                                        <td className='p-5 text-sm  text-center border-t border-gray-700  '>
+                                        <td className=' text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step5`} title={`step5`}
                                             className='hover:text-blue-400 hover:underline'>
-                                                {list.step5 > 0 ? <p className="text-green-400">green</p> : <p className='text-red-400'>red</p>}
+                                                {list.step5 > 0 ? <p className="text-green-400">green</p> : <img src={WaitingStage} alt="step5"/>}
                                             </Link>
                                         </td>
-                                        <td className='p-5 text-sm  text-center border-t border-gray-700  '>
+                                        <td className=' text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step6`} title={`step6`}
                                             className='hover:text-blue-400 hover:underline'>
-                                                {list.step6 > 0 ? <p className="text-green-400">green</p> : <p className='text-red-400'>red</p>}
+                                                {list.step6 > 0 ? <p className="text-green-400">green</p> : <img src={WaitingStage} alt="step6"/>}
                                             </Link>
                                         </td>
-                                        <td className='p-5 text-sm  text-center border-t border-gray-700  '>
+                                        <td className=' text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step7`} title={`step7`}
                                             className='hover:text-blue-400 hover:underline'>
-                                                {list.step7 > 0 ? <p className="text-green-400">green</p> : <p className='text-red-400'>red</p>}
+                                                {list.step7 > 0 ? <p className="text-green-400">green</p> : <img src={WaitingStage} alt="step7"/>}
                                             </Link>
                                         </td>
-                                        <td className='p-5 text-sm  text-center border-t border-gray-700  '>
+                                        <td className=' text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step8`} title={`step8`}
                                             className='hover:text-blue-400 hover:underline'>
-                                                {list.step8 > 0 ? <p className="text-green-400">green</p> : <p className='text-red-400'>red</p>}
+                                                {list.step8 > 0 ? <p className="text-green-400">green</p> : <img src={WaitingStage} alt="step8"/>}
                                             </Link>
                                         </td>
-                                        <td className='p-5 text-sm  text-center border-t border-gray-700  '>
+                                        <td className=' text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step9`} title={`step9`}
                                             className='hover:text-blue-400 hover:underline'>
-                                                {list.step9 > 0 ? <p className="text-green-400">green</p> : <p className='text-red-400'>red</p>}
+                                                {list.step9 > 0 ? <p className="text-green-400">green</p> : <img src={WaitingStage} alt="step9"/>}
                                             </Link>
                                         </td>
-                                        <td className='p-5 text-sm  text-center border-t border-gray-700  '>
+                                        <td className=' text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step19`} title={`step10`}
                                             className='hover:text-blue-400 hover:underline'>
-                                                {list.step10 > 0 ? <p className="text-green-400">green</p> : <p className='text-red-400'>red</p>}
+                                                {list.step10 > 0 ? <p className="text-green-400">green</p> : <img src={WaitingStage} alt="step10"/>}
                                             </Link>
                                         </td>
-                                        <td className='p-5 text-sm  text-center border-t border-gray-700  '>
+                                        <td className=' text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step11`} title={`step11`}
                                             className='hover:text-blue-400 hover:underline'>
-                                                {list.step11 > 0 ? <p className="text-green-400">green</p> : <p className='text-red-400'>red</p>}
+                                                {list.step11 > 0 ? <p className="text-green-400">green</p> : <img src={WaitingStep11} alt="step11"/>}
                                             </Link>
                                         </td>
-                                        <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>
+                                        <td className='p-3 mx-auto my-1 text-sm  border-x border-gray-700  '>
                                             {list.updated}
                                         </td>
                                     </tr>
