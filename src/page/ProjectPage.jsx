@@ -48,7 +48,7 @@ function ProjectPage() {
                     </div>
 
                     {/* search bar section */}
-                    <div className='relative flex  text-gray-700 mx-auto lg:mx-2'>
+                    <div className='relative lg:absolute lg:right-[7.5rem] flex  text-gray-700 mx-auto lg:mx-2'>
                         <input type={'search'} name="search" placeholder='search'
                             className='border-2 lg:w-full  border-gray-300 bg-white h-8  px-1 rounded-lg text-sm focus:outline-none'/>
                         <button type='submit' className='relative '>
