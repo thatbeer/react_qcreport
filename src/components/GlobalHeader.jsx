@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, ArrowUpCircleIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { Link, Outlet } from 'react-router-dom';
-
+import Logo from '../img/brand.png';
 const navigation = [
     { name: 'Sub', to: '/project', current: false },
     { name: 'Detail', to: '/project/id', current: false },
@@ -52,7 +52,11 @@ const GlobalHeader = () =>  {
                     text-white text-bold focus:outline-none focus:ring-1
                     focus:ring-gray-800 focus:ring-offset-1 focus:ring-offset-white'>
                         <Link to="/">
-                            PYLON
+                            <img
+                                className="h-6 w-45 "
+                                src={Logo}
+                                alt=""
+                            />
                         </Link>
                     </button>
                     {/* <img
