@@ -48,7 +48,9 @@ const GlobalHeader = () =>  {
                         src="https://www.pylon.co.th/en/contact-us"
                         alt="Logo"
                     /> */}
-                    <button className=' flex top-2 w-auto text-3xl text-white text-bold'>
+                    <button className='hover:text-blue-200 flex top-2 w-auto text-3xl 
+                    text-white text-bold focus:outline-none focus:ring-1
+                    focus:ring-gray-800 focus:ring-offset-1 focus:ring-offset-white'>
                         <Link to="/">
                             PYLON
                         </Link>

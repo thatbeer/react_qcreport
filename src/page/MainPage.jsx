@@ -1,43 +1,47 @@
 import Maincard from "../components/Maincard"
 
 
+const projectX = [
+    { projectId: "1", erp:"0" , coin:"0", name: "63-09 ทางพิเศษพระราม 3 สัญญาที่/ (MLp 06 to MLP 07)"},
+    { projectId: "2", erp:"0" , coin:"0", zone: [{zname: "Facility 1"} ,{zname:"Office"} , {zname:"Facility 2"}, {zname:"Facility 3"}] ,name: "64-16 skyrise Avenue Sukhimvit 642"},
+    { projectId: "3", erp:"0" , coin:"0", name: "65-16 North Pole"},
+    { projectId: "4", erp:"0" , coin:"1", name: "65-12 Xim Rama3-Suksawat"},
+    { projectId: "5", erp:"0" , coin:"0", name: "64-16 Skyrise Avenue Sukhumvit 64 Phase 2"},
+    { projectId: "6", erp:"0" , coin:"0", zone: [{zname: "Rig1" } , {zname: "Rig2"} , {zname: "Rig3"}] ,name: "65-01 ทางพิเศษสายพระราม3 สัญญาที่ 1"},
+    { projectId: "7", erp:"2" , coin:"0", name: "65-05 Aspire Sukhumvit-Rama4"},
+    { projectId: "8", erp:"0" , coin:"0", name: "65-09 ทางพิเศษสายพระราม 3 - ดาวคะนอง - วงแหวนรอบนอกกรุงเทพมหานครด้านตะวันตก สัญญาที่ 2"},
+    { projectId: "9", erp:"0" , coin:"0", name: "65-11 Grande Centre Point Ratchadamri 2"},
+    { projectId: "10", erp:"0" , coin:"0", name: "65-13 King's College International School Bangkok (Phase 3), B7 Building" },
+]
+  
+// const dummy = [
+//     {name :"A" , zone:[
+//         {name:"facility"},{name:"playard"}
+//     ]},
+//     {name : "B" }
+// ]
+
+
+
+
 function Mainpage() {
     return (
         < > 
-        <div className="relative top-12">
-            <div className="mx-auto max-w-full py-2 sm:py-2 " >
-                <div className="px-4 py-2 sm:px-0">
-                    <div className=" mx-auto">
-                        <div className="flex flex-wrap items-center justify-center mx-auto ">
-                            {/* {demo.map((item) => (
-                                <Maincard key={item.item} />
-                            ))} */}
-                            <Maincard key={1} projectid={1} />
-                            <Maincard key={2} projectid={2} />
-                            <Maincard key={3} projectid={3}/>
-                            <Maincard key={4} projectid={4}/>
-                            <Maincard key={5} projectid={5}/>
-                            <Maincard key={6} projectid={6}/>
-                            <Maincard key={1} />
-                            <Maincard key={1} />
-                            <Maincard key={1} />
-                            <Maincard key={1} />
-                            <Maincard key={1} />
-                            <Maincard key={1} />
-                            <Maincard key={1} />
-                            <Maincard key={1} />
-                            <Maincard key={1} />
-                            <Maincard key={1} />
-                            <Maincard key={1} />
-                            <Maincard key={1} />
-                            
-
-                        
+            <div className="relative top-12">
+                <div className="mx-auto max-w-full py-2 sm:py-2 " >
+                    <div className="px-4 py-2 sm:px-0">
+                        <div className=" mx-auto">
+                            <div className="flex flex-wrap items-center justify-center mx-auto ">
+                                {projectX.map((list,idx) => (
+                                    <ul key={idx} className="lg:mx-auto mx-1">
+                                        <li className=""><Maincard projectid={list.projectId} erp={list.erp} coin={list.coin} projName={list.name} zone={list.zone} /></li>
+                                    </ul>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </>
 )
 }

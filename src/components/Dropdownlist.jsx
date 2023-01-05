@@ -1,20 +1,22 @@
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import { Link } from 'react-router-dom'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Dropdownlist() {
+export default function Dropdownlist(props) {
+  const { zone } =props
   return (
-    <Menu as="div" className="hidden md:flex flex-inline ">
+    <Menu as="div" className="relative md:flex flex-inline ">
       <div>
         <Menu.Button className="inline-flex w-full justify-center 
-        rounded-md border border-gray-300 bg-white px-4 py-2 text-sm 
+        rounded-md border border-gray-300 bg-white text-sm px-2 pt-1
         font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2
          focus:ring-sky-300 focus:ring-offset-1 focus:ring-offset-blue-100">
-          Options
+          Zones
           <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
         </Menu.Button>
       </div>
@@ -31,10 +33,25 @@ export default function Dropdownlist() {
         <Menu.Items className="absolute  z-10 mt-[40px] w-56 lg:w-32 
         origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="py-1">
-            <Menu.Item>
+            { zone?.map((zname) => (
+              <div>
+                <Menu.Item>
+                  {({ active }) => (
+                    <Link
+                      className={classNames(
+                        active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+                        'block px-4 py-2 text-sm'
+                      )}
+                    >
+                      {zname.zname}
+                    </Link>
+                  )}
+                </Menu.Item>
+              </div>
+            ))}
+            {/* <Menu.Item>
               {({ active }) => (
                 <a
-                  href="#"
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm'
@@ -69,22 +86,7 @@ export default function Dropdownlist() {
                   License
                 </p>
               )}
-            </Menu.Item>
-            <form method="POST" action="#">
-              <Menu.Item>
-                {({ active }) => (
-                  <button
-                    type="submit"
-                    className={classNames(
-                      active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                      'block w-full px-4 py-2 text-left text-sm'
-                    )}
-                  >
-                    Sign out
-                  </button>
-                )}
-              </Menu.Item>
-            </form>
+            </Menu.Item> */}
           </div>
         </Menu.Items>
       </Transition>

@@ -18,16 +18,16 @@ const Step3 = () => {
                     <table className='w-full'>
                         <tbody className=' '>
                         <tr className='  border border-x border-gray-600  '>
-                            <th className='px-2 py-1 text-sm w-1/2 text-start border-r border-gray-600'>วันที่เริ่ม</th>
-                            <td className='px-2 py-1 text-sm w-1/2 text-start  bg-white'>3 ม.ค. 2566 (11:02)</td>
+                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-gray-600'>วันที่เริ่ม</th>
+                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3  bg-white'>3 ม.ค. 2566 (11:02)</td>
                         </tr>
                         <tr className='  border border-x border-gray-600  '>
-                            <th className='px-2 py-1 text-sm w-1/2 text-start border-r border-gray-600'>วันที่เสร็จ	</th>
-                            <td className='px-2 py-1 text-sm w-1/2 text-start  bg-white'>3 ม.ค. 2566 (11:04)</td>
+                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-gray-600'>วันที่เสร็จ	</th>
+                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-white'>3 ม.ค. 2566 (11:04)</td>
                         </tr>
                         <tr className='  border border-x border-gray-600  '>
-                            <th className='px-2 py-1 text-sm w-1/2 text-start border-r border-gray-600'>ช่างสำรวจ</th>
-                            <td className='px-2 py-1 text-sm w-1/2 text-start  bg-white'>โชคทวี มีโสม</td>
+                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-gray-600'>ช่างสำรวจ</th>
+                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3  bg-white'>โชคทวี มีโสม</td>
                         </tr>
                         <tr className=' border-b border-x border-gray-600   '>
                             <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-gray-600'>ตำแหน่งตั้งกล้อง</th>
