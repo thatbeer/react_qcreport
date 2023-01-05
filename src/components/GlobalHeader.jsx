@@ -28,7 +28,7 @@ const GlobalHeader = () =>  {
         <Disclosure as="nav" className="bg-blue-600">
         {({ open }) => (
             <>
-            <div className="mx-auto max-w-6xl px-2 sm:px-6 lg:px-8">
+            <div className="mx-auto w-screen px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-14 items-center justify-between">
                     {/* Mobile menu button*/}
                     {/* <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
