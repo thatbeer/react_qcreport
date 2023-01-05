@@ -23,7 +23,7 @@ const Maincard = (props) => {
     return (
         <>
             <div className="block px-4 py-3 my-1 border  rounded-lg w-screen lg:w-[630px] mx-auto  h-auto 
-                            shadow-none hover:shadow-lg bg-blue-300 hover:bg-blue-100 transition-all duration-150">
+                            shadow-none hover:shadow-lg bg-gray-300 hover:bg-blue-200 transition-all duration-300">
                 <Link to={`/project?projectid=${projectid}`}>
                     <h5 className="mb-2  px-1 text-lg font-bold  text-gray-800 dark:text-whte hover:underline hover:text-blue-600 truncate ">
                         {projName}
