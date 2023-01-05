@@ -46,20 +46,20 @@ const Step1 = () => {
             <table className=" w-full ">
                 <thead className='bg-blue-200 rounded'>
                     <tr>
-                        <th className='p-5 text-sm w-1/7 text-center border border-gray-700 '>โครง</th>
-                        <th className='p-5 text-sm w-1/7 text-center border border-gray-700 '>ตามแบบ</th>
-                        <th className='p-5 text-sm w-1/7 text-center border border-gray-700 '>ลูกปูน</th>
-                        <th className='p-5 text-sm  text-center border  border-gray-700 '><pre className='border-b border-dashed border-gray-600 text-md'>MainBar</pre><pre className='text-md'>Spiral</pre></th>
+                        <th className='p-4 text-sm w-1/7 text-center border border-gray-700 '>โครง</th>
+                        <th className='p-4 text-sm w-1/7 text-center border border-gray-700 '>ตามแบบ</th>
+                        <th className='p-4 text-sm w-1/7 text-center border border-gray-700 '>ลูกปูน</th>
+                        <th className='p-4 text-sm  text-center border  border-gray-700 '><pre className='border-b border-dashed border-gray-600 text-md'>MainBar</pre><pre className='text-md'>Spiral</pre></th>
                         
                     </tr>
                 </thead>
                 <tbody className=' '>
                    
                         <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>1</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>1</td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700   '>
                                 <pre className='border-b border-dashed border-gray-600'>
                                     หลัก: 30-DB28 SD50 x 12.0000 m.
                                 </pre>
@@ -67,46 +67,46 @@ const Step1 = () => {
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>2</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>2</td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700   '>
                                 <pre className='border-b border-dashed border-gray-600'>หลัก: 20-DB28 SD50 x 12.0000 m.</pre>
                                 ช่วงที่ 1: RB9 SR24 x 10.200 m. @0.150
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>3</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>3</td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700   '>
                                 <pre className='border-b border-dashed border-gray-600'>หลัก: 16-DB28 SD50 x 12.0000 m.</pre>
                                 ช่วงที่ 1: RB9 SR24 x 10.200 m. @0.300
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-gray-700 rounded  my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>4</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r  border-gray-700   '>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>4</td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r  border-gray-700   '>
                                 <pre className='border-b border-dashed border-gray-600'>หลัก: 8-DB25 SD40 x 10.0000 m.</pre>
                                 ช่วงที่ 1: RB9 SR24 x 8.200 m. @0.300
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-gray-700 rounded  my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>5</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r  border-gray-700   '>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>5</td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r  border-gray-700   '>
                                 <pre className='border-b border-dashed border-gray-600'>หลัก: 8-DB25 SD40 x 10.0000 m.</pre>
                                 ช่วงที่ 1: RB9 SR24 x 8.800 m. @0.300
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-gray-700 rounded  my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>6</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r  border-gray-700   '>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>6</td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r  border-gray-700   '>
                                 <pre className='border-b border-dashed border-gray-600'>หลัก: 8-DB25 SD40 x 7.6500 m.</pre>
                                 ช่วงที่ 1: RB9 SR24 x 6.450 m. @0.300
                             </td>

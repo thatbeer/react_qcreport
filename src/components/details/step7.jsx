@@ -77,14 +77,14 @@ const Step7 = () => {
                     </thead>
                     <tbody className=' '>
                     <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>6</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>6</td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700   '>
                                 <pre className='border-b border-dashed border-gray-600'>
                                     หลัก: 8-DB25 SD40 x 7.6500 m.
                                     </pre>
@@ -92,14 +92,14 @@ const Step7 = () => {
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>5</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>5</td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700   '>
                                 <pre className='border-b border-dashed border-gray-600'>
                                  หลัก: 8-DB25 SD40 x 10.0000 m.
                                     </pre>
@@ -107,14 +107,14 @@ const Step7 = () => {
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>4</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>4</td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700   '>
                                 <pre className='border-b border-dashed border-gray-600'>
                                 หลัก: 8-DB25 SD40 x 10.0000 m.
                                     </pre>
@@ -122,14 +122,14 @@ const Step7 = () => {
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>3</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>3</td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700   '>
                                 <pre className='border-b border-dashed border-gray-600'>
                                 หลัก: 16-DB28 SD50 x 12.0000 m.
                                     </pre>
@@ -137,14 +137,14 @@ const Step7 = () => {
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>2</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>2</td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700   '>
                                 <pre className='border-b border-dashed border-gray-600'>
                                 หลัก: 20-DB28 SD50 x 12.0000 m.
                                     </pre>
@@ -152,14 +152,14 @@ const Step7 = () => {
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>1</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>1</td>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   '>
+                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700   '>
                                 <pre className='border-b border-dashed border-gray-600'>
                                 หลัก: 30-DB28 SD50 x 12.0000 m.
                                     </pre>
