@@ -69,7 +69,7 @@ function ProjectPage() {
                 <main role="main" className="flex flex-col w-screen h-full  px-2  pt-[64px] mb-4">
                     <div className='w-full lg:w-2/3  mx-auto'> 
                         {/* <TableContent id={id}/> */}
-                        <Progressbar id={id}/>
+                        {/* <Progressbar id={id}/> */}
                     </div>
                     <div className='overflow-x-auto mx-0 lg:mx-auto '>  
                         <table className=" w-full overflow-x-auto">

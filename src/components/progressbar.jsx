@@ -7,9 +7,9 @@ function Progressbar(props) {
         flex flex-col items-center'>
             <div className='w-full my-2 h-auto bg-gray-100 rounded-lg border border-offset-3 border-gray-600'>
                 {/* Progress Bar */}
-                {/* <div className='title my-2 rounded flex flex-start justify-center '>
+                <div className='title my-2 rounded flex flex-start justify-center '>
                     <h1 className='p-1 font-bold text-xl text-blue-900 truncate'>Project Name: XIm Suksawat rama3 onnnui</h1>
-                </div> */}
+                </div>
                 <div className=" bg-gray-200 h-6 rounded-2xl my-2 flex 
                 flex-inline justify-start items-center mx-auto" style={{width: "95%"}} >
                     <div 
