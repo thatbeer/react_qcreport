@@ -23,7 +23,7 @@ const Maincard = (props) => {
     return (
         <>
             <div className="block px-4 py-3 my-1 border  rounded-lg w-screen lg:w-[630px] mx-auto  h-auto 
-                            shadow-none hover:shadow-lg bg-gray-300 hover:bg-blue-200 transition-all duration-300">
+                            shadow-none hover:shadow-lg bg-sky-200 hover:bg-blue-200 transition-all duration-300">
                 <Link to={`/project?projectid=${projectid}`}>
                     <h5 className="mb-2  px-1 text-lg font-bold  text-gray-800 dark:text-whte hover:underline hover:text-blue-600 truncate ">
                         {projName}
@@ -55,7 +55,7 @@ const Maincard = (props) => {
                     { zone ? <Dropdownlist zone={zone}  className="bg-gray-100 " /> : null}
                 </div>
                 <hr style={{ color: 'red' }}/>
-                <div className=" bg-gray-200 h-6 rounded-2xl my-2 flex border-t outline-offset-4	
+                <div className=" bg-gray-600 h-6 rounded-2xl my-2 flex border-t outline-offset-4	
                 flex-inline justify-start items-center mx-auto" style={{width: "100%"}} >
                     <div 
                         className="bg-green-400 duration-100 animate-pulse h-6  flex flex-start items-center justify-center 

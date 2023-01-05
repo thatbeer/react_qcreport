@@ -45,7 +45,10 @@ const Subnavbar = (props) => {
                     <ul tabIndex={0} className="absolute dropdown-content menu divider-y
                         p-2 bg-blue-100 w-auto border border-gray-600">
                         { projectX.map((project) => (
-                          <Link to={`/project?projectid=${project.projectId}`} className='p-2 border-b border-gray-700 truncate text-sm'>{project.name}</Link>
+                          <Link to={`/project?projectid=${project.projectId}`} 
+                          className='p-1 border-b border-gray-700 truncate text-sm'>
+                            {project.name}
+                          </Link>
                         ))}
                       {/* <li className='border-b border-gray-700'><a>Item 1</a></li>
                       <li><a>Item 2</a></li> */}

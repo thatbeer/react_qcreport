@@ -158,7 +158,7 @@ const DetailPage = (props) => {
                 <div className='pt-[66px] lg:pt-[60px] '>
                 {' '}
                 {/* Search Container as SIDE BAR */}
-                    <div className='pt-[40px]'>
+                    <div className='pt-[30px] lg:pt-[10px]'>
                         <Statcard className=""/>
                         <h1 ref={ref1} id="step1" className='text-3xl font-bold'>1. เตรียมโครงเหล็ก</h1>
                         <Step1    />
