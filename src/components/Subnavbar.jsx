@@ -38,14 +38,14 @@ const Subnavbar = (props) => {
                    sm:ml-6 sm:pr-0 lg:mb-2 mb-0"
               >
                   <>
-                <div className=' w-screen pt-4 absolute'>
+                <div className=' w-screen pt-5 absolute'>
                   <div className="dropdown dropdown-bottom ">
-                    <label tabIndex={0} className="hover:cursor-pointer focus:border rounded-full">
-                      <Bars3Icon className=" h-10 w-10 text-blue-600 z-40"/></label>
+                    <label tabIndex={1} className="hover:cursor-pointer focus:border rounded-full">
+                      <Bars3Icon className=" h-10 w-10 text-gray-100 z-40"/></label>
                     <ul tabIndex={0} className="absolute dropdown-content menu divider-y
                         p-2 bg-blue-100 w-auto border border-gray-600">
                         { projectX.map((project) => (
-                          <li className='border-b border-gray-700 truncate'>{project.name}</li>
+                          <li className='p-3 border-b border-gray-700 truncate text-sm'>{project.name}</li>
                         ))}
                       {/* <li className='border-b border-gray-700'><a>Item 1</a></li>
                       <li><a>Item 2</a></li> */}
