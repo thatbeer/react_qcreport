@@ -3,6 +3,19 @@ import { FolderArrowDownIcon , ChevronUpDownIcon , Bars3Icon} from '@heroicons/r
 import { useNavigate } from 'react-router-dom'
 
 
+const projectX = [
+  {name: "63-09 ทางพิเศษพระราม 3 สัญญาที่/ (MLp 06 to MLP 07)"},
+  {name: "64-16 skyrise Avenue Sukhimvit 642"},
+  {name: "65-16 North Pole"},
+  {name: "65-12 Xim Rama3-Suksawat"},
+  {name: "64-16 Skyrise Avenue Sukhumvit 64 Phase 2"},
+  {name: "65-01 ทางพิเศษสายพระราม3 สัญญาที่ 1"},
+  {name: "65-05 Aspire Sukhumvit-Rama4"},
+  {name: "65-09 ทางพิเศษสายพระราม 3 - ดาวคะนอง - วงแหวนรอบนอกกรุงเทพมหานครด้านตะวันตก สัญญาที่ 2"},
+  {name: "65-11 Grande Centre Point Ratchadamri 2"},
+  {name: "65-13 King's College International School Bangkok (Phase 3), B7 Building"},
+]
+
 const Subnavbar = (props) => {
   const navigate = useNavigate();
 
@@ -30,9 +43,12 @@ const Subnavbar = (props) => {
                     <label tabIndex={0} className="hover:cursor-pointer focus:border rounded-full">
                       <Bars3Icon className=" h-10 w-10 text-blue-600 z-40"/></label>
                     <ul tabIndex={0} className="absolute dropdown-content menu divider-y
-                        p-2 bg-blue-100 w-52 border border-gray-600">
-                      <li className='border-b border-gray-700'><a>Item 1</a></li>
-                      <li><a>Item 2</a></li>
+                        p-2 bg-blue-100 w-auto border border-gray-600">
+                        { projectX.map((project) => (
+                          <li className='border-b border-gray-700 truncate'>{project.name}</li>
+                        ))}
+                      {/* <li className='border-b border-gray-700'><a>Item 1</a></li>
+                      <li><a>Item 2</a></li> */}
                     </ul>
                   </div>
                 </div>
