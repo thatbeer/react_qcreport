@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Dropdownlist from "./Dropdownlist";
+import Progressbar from "./progressbar";
 import Statcard from "./Statcard";
 
 
@@ -32,7 +33,7 @@ const Maincard = (props) => {
                     </div>
                     <Dropdownlist className="  bg-gray-100 " />
                 </div>
-                <Statcard/>
+                <Progressbar/>
             </div>
         </>
     )
