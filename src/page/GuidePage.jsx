@@ -1,10 +1,12 @@
 import React from 'react'
+import PdfViewerComponent from '../components/pdf/PdfViewerComponent'
+
 
 const GuidePage = () => {
   return (
     <>
-        <div className='container mx-auto my-4 pt-[60px] text-center'>
-            I am your guide. 
+        <div className='flex flex-1 relative mx-auto pt-[50px] text-center h-full overflow-hidden'>
+          <PdfViewerComponent document="Guide.pdf" />
         </div>
     </>
   )

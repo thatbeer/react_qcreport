@@ -19,8 +19,8 @@ const projectX = [
 function Mainpage() {
     return (
         < > 
-            <div className="relative top-12 mx-auto max-w-full px-4 py-2 sm:px-0">
-                <div className="flex flex-wrap items-center justify-center mx-auto ">
+            <div className="relative top-12 mx-auto max-w-full px-4 py-8 sm:px-0">
+                <div className="flex flex-col items-center justify-center mx-auto ">
                     {projectX.map((list,idx) => (
                         <ul key={idx} className="lg:mx-auto ">
                             <li className=""><Maincard projectid={list.projectId} erp={list.erp} coin={list.coin} projName={list.name} zone={list.zone} /></li>

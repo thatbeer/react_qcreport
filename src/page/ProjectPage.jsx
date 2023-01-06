@@ -101,13 +101,13 @@ function ProjectPage() {
   return (
     <>
         <div className="w-full flex flex-col flex-grow h-screen relative lg:top-14 top-16">
-            <div className='fixed top-[52px] w-full items-center mx-auto bg-blue-100 h-[50px] z-30 py-1  '>
+            <div className='fixed top-[52px] w-full items-center mx-auto bg-blue-100 h-[50px] z-30 py-2  '>
                 <Subnavbar titleback={false} isProjectPage={true} PName={state?.projName}/>
-                <div className='flex flex-col lg:flex-row mx-auto items-center py-1 bg-blue-100'>
+                <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-blue-100'>
                     {/* filter bar for pc */}
                     <div className=' w-1/3 justify-center hidden xl:flex mx-auto '>
                         <button onClick={() => {setFilter("ทำค้าง")}}                value={"ทำค้าง"}
-                            className={`btn btn-primary mx-10 focus:bg-green-200
+                            className={`btn btn-primary mx-10 focus:bg-blue-200
                             ${  filter === "ทำค้าง" ? "bg-blue-300" : "bg-white"  } 
                             border border-gray-400 py-4 px-6 rounded-lg`}>
                                <ChartBarIcon className='w-4 h-4 relative left-0' /> ทำค้าง
@@ -134,9 +134,9 @@ function ProjectPage() {
                         </button>
                     </div>
                     {/* search bar section */}
-                    <div className='relative  xl:absolute xl:right-[5rem] flex  text-gray-700 mx-auto xl:mx-2'>
+                    <div className='relative  xl:absolute xl:right-[3.5rem] flex  text-gray-700 mx-auto xl:mx-2'>
                         <input type={'search'} name="search" placeholder='search'
-                            className='border-2 lg:w-full  border-gray-300 bg-white h-8  px-1 rounded-lg text-sm focus:outline-none'/>
+                            className='border-2 lg:w-full  border-gray-300 bg-white h-8  px-1 rounded-lg focus:outline-none'/>
                         <button type='submit' className='relative '>
                             <MagnifyingGlassCircleIcon onClick={() => console.log('click search')} className='w-8 h-8 ml-1 text-blue-600 hover:text-blue-300 focus:ring-2 focus:ring-offset-2 focus:ring-white' />
                         </button>
@@ -169,8 +169,6 @@ function ProjectPage() {
                              border border-gray-400 py-2 px-2 rounded-lg`}>
                             <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' /> เขียว-แดง
                         </button>
-                        
-                        
                     </div>
                 </div>
             </div>
@@ -181,20 +179,7 @@ function ProjectPage() {
 
             
             <div className='flex flex-1 mx-auto mt-10 lg:mt-4 pt-[60px]'>
-                <main role="main" className="flex flex-col w-screen h-full  px-2 pt-[50px] lg:pt-[40px] mb-4">
-
-
-                    {/* StatsBar container */}
-
-
-                    {/* <div className='w-full lg:w-2/3  mx-auto'> 
-                        <TableContent id={id}/>
-                        <Progressbar id={id}/>
-                    </div> */}
-             
-
-                    {/* Table container */}
-                    
+                <main role="main" className="flex flex-col w-screen h-full  px-2 pt-[50px] lg:pt-[50px] mb-4">
                     <div className='overflow-x-auto mx-0 lg:mx-auto '>  
                         <table className=" w-full overflow-x-auto border border-black bg-gray-50">
                             <thead className='bg-blue-200'>
