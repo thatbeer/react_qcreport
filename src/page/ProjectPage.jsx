@@ -8,6 +8,7 @@ import Subnavbar from '../components/Subnavbar';
 
 // stage icons
 import { StageStep1 , StageStep11 ,StageOnRail } from '../components/StageIcon';
+import ButtonFilter from '../components/button/ButtonFilter';
 
 
 
@@ -24,22 +25,22 @@ const ButtonTypes = [
     {
         name: "เสร็จแล้ว",
         status:'1',
-        color:"green"
+        color:"bg-green-300"
     },
     {
         name: "ทำค้าง",
         status:'2',
-        color:'blue'
+        color:'bg-blue-300'
     },
     {
         name: "เขียวแดง",
         status:'3',
-        color:"yellow"
+        color:"bg-yellow-300"
     },
     {
         name: "รอส่งERP",
         status:'4',
-        color:"red"
+        color:"bg-red-300"
     }
 ]
 
@@ -77,7 +78,9 @@ function ProjectPage() {
   
     const [ filter , setFilter] = useState(filterbyQuery);
     
-    
+    const onClickFilterHandler = ({name}) => {
+        setFilter(name)
+    }
     
 
 
@@ -104,6 +107,15 @@ function ProjectPage() {
             <div className='fixed top-[52px] w-full items-center mx-auto bg-blue-100 h-[50px] z-30 py-2  '>
                 <Subnavbar titleback={false} isProjectPage={true} PName={state?.projName}/>
                 <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-blue-100'>
+                    {/* {
+                        ButtonTypes.map((item) => (
+                            <ButtonFilter name={item.name} status={item.status} 
+                            onClick={onClickFilterHandler} filter={filter} color={item.color}/>
+                        ))
+                    } */}
+
+
+
                     {/* filter bar for pc */}
                     <div className=' w-1/3 justify-center hidden xl:flex mx-auto '>
                         <button onClick={() => {setFilter("ทำค้าง")}}                value={"ทำค้าง"}
@@ -184,19 +196,19 @@ function ProjectPage() {
                         <table className=" w-full overflow-x-auto border border-gray-700 bg-gray-100">
                             <thead className='bg-blue-200'>
                                 <tr>
-                                    <th className='p-3 min-w-[80px]  text-center border-y    border-gray-700 '>เลขที่เข็ม</th>
-                                    <th className='  text-center border-t border-gray-700  '>1</th>
-                                    <th className='  text-center border-t border-gray-700  '>2</th>
-                                    <th className='  text-center border-t border-gray-700  '>3</th>
-                                    <th className='  text-center border-t border-gray-700  '>4</th>
-                                    <th className='  text-center border-t border-gray-700  '>5</th>
-                                    <th className='  text-center border-t border-gray-700  '>6</th>
-                                    <th className='  text-center border-t border-gray-700  '>7</th>
-                                    <th className='  text-center border-t border-gray-700  '>8</th>
-                                    <th className='  text-center border-t border-gray-700  '>9</th>
-                                    <th className='  text-center border-t border-gray-700  '>10</th>
-                                    <th className='  text-center border-t border-gray-700  '>11</th>
-                                    <th className='p-3  text-center border-y border-gray-700 '>วันที่ (ประวัติล่าสุด)</th>
+                                    <th className='px-2 py-1 min-w-[80px]  text-center border-y    border-gray-700 '>เลขที่เข็ม</th>
+                                    <th className='min-w-10  text-center border-t border-gray-700  '>1</th>
+                                    <th className='min-w-10  text-center border-t border-gray-700  '>2</th>
+                                    <th className='min-w-10  text-center border-t border-gray-700  '>3</th>
+                                    <th className='min-w-10  text-center border-t border-gray-700  '>4</th>
+                                    <th className='min-w-10  text-center border-t border-gray-700  '>5</th>
+                                    <th className='min-w-10  text-center border-t border-gray-700  '>6</th>
+                                    <th className='min-w-10  text-center border-t border-gray-700  '>7</th>
+                                    <th className='min-w-10  text-center border-t border-gray-700  '>8</th>
+                                    <th className='min-w-10  text-center border-t border-gray-700  '>9</th>
+                                    <th className='min-w-10  text-center border-t border-gray-700  '>10</th>
+                                    <th className='min-w-10  text-center border-t border-gray-700  '>11</th>
+                                    <th className='px-2 py-1  text-center border-y border-gray-700 '>วันที่ (ประวัติล่าสุด)</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -210,77 +222,77 @@ function ProjectPage() {
                                                 {list.pileno}
                                             </Link>
                                         </td>
-                                        <td className='py-2  text-center border-t border-gray-700'>
+                                        <td className='  text-center border-t border-gray-700'>
                                             <Link tag={1} to={`/project/report?pileid=${list.pileno}`} title={`step1`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageStep1 status={list.step1} alt={"step1"} />
                                             </Link>
                                         </td>
-                                        <td className='py-2  text-center border-t border-gray-700  '>
+                                        <td className='  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step2`} title={`step2`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step2} alt={"step2"} />
                                                 </Link>
                                         </td>
-                                        <td className='py-2  text-center border-t border-gray-700  '>
+                                        <td className='  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step3`} title={`step3`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step3} alt={"step3"} />
                                                 </Link>
                                         </td>
-                                        <td className='py-2  text-center border-t border-gray-700  '>
+                                        <td className='  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step4`} title={`step4`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step4} alt={"step4"} />
                                                 </Link>
                                         </td>
-                                        <td className='py-2  text-center border-t border-gray-700  '>
+                                        <td className='  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step5`} title={`step5`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step5} alt={"step5"} />
                                             </Link>
                                         </td>
-                                        <td className='py-2  text-center border-t border-gray-700  '>
+                                        <td className='  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step6`} title={`step6`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step6} alt={"step6"} />
                                             </Link>
                                         </td>
-                                        <td className='py-2  text-center border-t border-gray-700  '>
+                                        <td className='  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step7`} title={`step7`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step7} alt={"step7"} />
                                             </Link>
                                         </td>
-                                        <td className='py-2  text-center border-t border-gray-700  '>
+                                        <td className='  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step8`} title={`step8`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                <StageOnRail status={list.step8} alt={"step8"} />
                                             </Link>
                                         </td>
-                                        <td className='py-2  text-center border-t border-gray-700  '>
+                                        <td className='  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step9`} title={`step9`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step9} alt={"step9"} />
                                             </Link>
                                         </td>
-                                        <td className='py-2  text-center border-t border-gray-700  '>
+                                        <td className='  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step10`} title={`step10`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step10} alt={"step10"} />
                                             </Link>
                                         </td>
-                                        <td className='py-2  text-center border-t border-gray-700  '>
+                                        <td className='  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step11`} title={`step11`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
