@@ -48,7 +48,7 @@ const projectListX = [
     {pileno:"PB-21",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:12:34"},
     {pileno:"PB-26",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:13:12"},
     {pileno:"PB-23",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:14:52"},
-    {pileno:"PB-26",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:21:21"},
+    {pileno:"PB-87",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:21:21"},
     {pileno:"PB-01",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:25:17"},
     {pileno:"PB-32",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:54:14"},
     {pileno:"PB-12",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:56:12"},
@@ -194,7 +194,7 @@ function ProjectPage() {
                         <table className=" w-full overflow-x-auto">
                             <thead className='bg-blue-200'>
                                 <tr>
-                                    <th className='p-3 text-sm  text-center border border-gray-700 '>เลขที่เข็ม</th>
+                                    <th className='p-3 min-w-[80px] text-sm  text-center border border-gray-700 '>เลขที่เข็ม</th>
                                     <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step1</th>
                                     <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step2</th>
                                     <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step3</th>
