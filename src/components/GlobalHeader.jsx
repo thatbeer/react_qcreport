@@ -127,7 +127,7 @@ const GlobalHeader = () =>  {
                             {({ active }) => (
                             <p
                                 
-                                className={classNames(active ? 'bg-blue-100 shadow-md' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                                className={classNames(active ? '' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
                                 {"{Name here}"}
                             </p>

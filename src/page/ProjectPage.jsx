@@ -146,26 +146,26 @@ function ProjectPage() {
                         <button onClick={() => {setFilter("ทำค้าง")}}                value={"ทำค้าง"}
                             className={`btn btn-primary mx-1 focus:bg-blue-200
                             ${  filter === "ทำค้าง" ? "bg-blue-300" : "bg-white"  } 
-                            border border-gray-400 py-2 px-4 rounded-lg`}>
-                                ทำค้าง
+                            border border-gray-400 py-2 px-2 rounded-lg`}>
+                                <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' /> ทำค้าง
                         </button>
                         <button onClick={() => {setFilter("เสร็จแล้้ว")}}                value={"เสร็จแล้ว"} 
                             className={`btn btn-primary mx-1 focus:bg-green-200
                             ${  filter === "เสร็จแล้้ว" ? "bg-green-300" : "bg-white"  } 
-                            border border-gray-400 py-2 px-4 rounded-lg`}>
-                                เสร็จแล้ว
+                            border border-gray-400 py-2 px-2 rounded-lg`}>
+                                 <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' />เสร็จแล้ว
                         </button>
                         <button onClick={() => {setFilter("รอส่งerp")}}                value={"รอส่งerp"}
                             className={`btn btn-primary mx-1 focus:bg-red-200
                             ${  filter === "รอส่งerp" ? "bg-red-300" : "bg-white"  } 
-                            border border-gray-400 py-2 px-4 rounded-lg`}>
-                                รอส่งerp
+                            border border-gray-400 py-2 px-2 rounded-lg`}>
+                              <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' />   รอส่งerp
                         </button>
                         <button onClick={() => {setFilter("เขียวแดง")}}                value={"เขียวแดง"}
                             className={`btn btn-primary mx-1 focus:bg-yellow-200
                             ${  filter === "เขียวแดง" ? "bg-yellow-300" : "bg-white"  }
-                             border border-gray-400 py-2 px-4 rounded-lg`}>
-                            เขียว-แดง
+                             border border-gray-400 py-2 px-2 rounded-lg`}>
+                            <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' /> เขียว-แดง
                         </button>
                         
                         

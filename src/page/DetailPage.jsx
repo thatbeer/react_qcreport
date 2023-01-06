@@ -1,4 +1,4 @@
-import React , { useEffect, useMemo , useRef } from 'react'
+import React , { useEffect , useRef } from 'react'
 import { useLocation  } from 'react-router-dom'
 import useQuery from '../utils/use-query'
 
@@ -25,7 +25,7 @@ const DetailPage = (props) => {
     // const hash = location.hash.substring(1);
     // console.log(hash)
     const query = useQuery();
-    const step2view = query.get("step")
+   
     const pileId = query.get("pileid")
     console.log(pileId)
     useEffect(() => {
@@ -44,52 +44,6 @@ const DetailPage = (props) => {
 
 
     },[location])
-
-    
-    
-    // useEffect(() => {
-    //     step2view.current?.scrollIntoView({behavior: 'smooth' ,block: 'end'})
-    // })
-
-
-    // const query = useMemo(
-    //     () => new URLSearchParams(search) , [search]
-    // )
-    
-    // console.log(query)
-
-    // const data = useMemo(
-    //     () => [
-    //         {
-    //             col1:"hello",
-    //             col2:"word"
-    //         },
-    //         {
-    //             col1:"react",
-    //             col2:"table"
-    //         },
-    //         {
-    //             col1:"hello",
-    //             col2:"word"
-    //         },
-
-    //     ],
-    //     []
-    // )
-
-    // const columns = useMemo(
-    //     () => [
-    //         {
-    //             Header:"Column 1",
-    //             accessor:"col1"
-    //         },
-    //         {
-    //             Header:"Column 2",
-    //             accessor:"col2"
-    //         },
-    //     ],
-    //     []
-    // )
 
     const ref1 = useRef(null)
     const ref2 = useRef(null)

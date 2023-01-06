@@ -1,7 +1,7 @@
 import React , {Fragment, useEffect, useState} from 'react'
 import { Dialog , Transition } from '@headlessui/react';
 import { LockClosedIcon } from '@heroicons/react/20/solid'
-import { XMarkIcon } from '@heroicons/react/24/outline'
+
 import swal from 'sweetalert';
 import { useNavigate } from 'react-router-dom';
 
