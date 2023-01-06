@@ -32,15 +32,15 @@ const Subnavbar = (props) => {
                   <p className={`truncate w-full text-center lg:text-start ${titleback ? "hover:text-blue-700 hover:cursor-pointer" : ""}  z-40 `}
                    onClick={titleback ? onClickTitle : null}>{PName}</p>
                   <p className='truncate w-full text-center lg:hidden'>
-                    <div className='flex items-center justify-center' >
                     { pileId ? (
+                    <div className='flex items-center justify-center' >
+                      {pileId}
+                      <FolderArrowDownIcon className='md:hidden z-30 lg:relative h-8 w-8  text-red-500 
+                    hover:cursor-pointer ' />
                       <div>
-                    {pileId}
-                    <FolderArrowDownIcon className='md:hidden z-30 lg:relative h-8 w-8  text-red-500 
-                  hover:cursor-pointer ' />
+                    </div>
                     </div>) : null
                     }
-                    </div>
                   </p>
                 </div>
 

@@ -14,14 +14,6 @@ const projectX = [
     { projectId: "10", erp:"0" , coin:"0", name: "65-13 King's College International School Bangkok (Phase 3), B7 Building" },
 ]
   
-// const dummy = [
-//     {name :"A" , zone:[
-//         {name:"facility"},{name:"playard"}
-//     ]},
-//     {name : "B" }
-// ]
-
-
 
 
 function Mainpage() {
@@ -30,7 +22,7 @@ function Mainpage() {
             <div className="relative top-12 mx-auto max-w-full px-4 py-2 sm:px-0">
                 <div className="flex flex-wrap items-center justify-center mx-auto ">
                     {projectX.map((list,idx) => (
-                        <ul key={idx} className="lg:mx-auto mx-1">
+                        <ul key={idx} className="lg:mx-auto ">
                             <li className=""><Maincard projectid={list.projectId} erp={list.erp} coin={list.coin} projName={list.name} zone={list.zone} /></li>
                         </ul>
                     ))}
