@@ -49,13 +49,14 @@ function SidePage() {
 
                     </div>
 
+                   <button className='btn border-2 btn-primary'>ทั้งหมด</button>
 
                 </div>
             </div>  
                     <hr/>
 
 
-                   <MyRadioGroup />
+
         </div>
     </>
   )

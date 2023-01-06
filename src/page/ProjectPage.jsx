@@ -1,6 +1,7 @@
 import React , {useMemo , useEffect , useState } from 'react'
 import { useLocation , Link , useNavigate } from 'react-router-dom';
-import { MagnifyingGlassCircleIcon , CheckIcon } from '@heroicons/react/24/outline'
+import { MagnifyingGlassCircleIcon , CheckIcon , ClipboardDocumentCheckIcon ,ChartBarIcon } from '@heroicons/react/24/outline'
+
 // import TableContent from '../components/tablecotent';
 // import Progressbar from '../components/progressbar';
 import Subnavbar from '../components/Subnavbar';
@@ -107,29 +108,31 @@ function ProjectPage() {
                             className={`btn btn-primary mx-10 focus:bg-green-200
                             ${  filter === "ทำค้าง" ? "bg-blue-300" : "bg-white"  } 
                             border border-gray-400 py-4 px-6 rounded-lg`}>
-                                ทำค้าง
+                               <ChartBarIcon className='w-4 h-4 relative left-0' /> ทำค้าง
                         </button>
                         <button onClick={() => {setFilter("เสร็จแล้้ว")}}                value={"เสร็จแล้ว"} 
                             className={`btn btn-primary mx-10 focus:bg-green-200
                             ${  filter === "เสร็จแล้้ว" ? "bg-green-300" : "bg-white"  } 
                             border border-gray-400 py-4 px-6 rounded-lg`}>
-                                เสร็จแล้ว
+                               <ClipboardDocumentCheckIcon className='w-4 h-4 relative left-0' /> เสร็จแล้ว
                         </button>
                         <button onClick={() => {setFilter("รอส่งerp")}}                value={"รอส่งerp"}
                             className={`btn btn-primary mx-10 focus:bg-red-200
                             ${  filter === "รอส่งerp" ? "bg-red-300" : "bg-white"  } 
                             border border-gray-400 py-4 px-6 rounded-lg`}>
-                                รอส่งerp
+                               <svg class={` rotate-45  -mt-1 w-4 h-4 text-red-500  duration-300`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg> 
+                               รอส่งerp
                         </button>
                         <button onClick={() => {setFilter("เขียวแดง")}}                value={"เขียวแดง"}
                             className={`btn btn-primary mx-10 focus:bg-yellow-200
                             ${  filter === "เขียวแดง" ? "bg-yellow-300" : "bg-white"  }
                              border border-gray-400 py-4 px-6 rounded-lg`}>
+                                <svg className={`  w-4 h-4 text-amber-500  `} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             เขียว-แดง
                         </button>
                     </div>
                     {/* search bar section */}
-                    <div className='relative  xl:absolute xl:right-[7.5rem] flex  text-gray-700 mx-auto xl:mx-2'>
+                    <div className='relative  xl:absolute xl:right-[5rem] flex  text-gray-700 mx-auto xl:mx-2'>
                         <input type={'search'} name="search" placeholder='search'
                             className='border-2 lg:w-full  border-gray-300 bg-white h-8  px-1 rounded-lg text-sm focus:outline-none'/>
                         <button type='submit' className='relative '>
