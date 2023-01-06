@@ -38,21 +38,21 @@ const projectListX = [
 ]
 
 
-const images = [
-    {id : "1" , alt:"step1" , status:"0",src:"../img/S010A.png"},
-]
+// const images = [
+//     {id : "1" , alt:"step1" , status:"0",src:"../img/S010A.png"},
+// ]
 
 
-const findIconId = (id) => {
-    return images.find(image => image?.id === id )
-}
+// const findIconId = (id) => {
+//     return images.find(image => image?.id === id )
+// }
 
-const Icons = ({id}) => {
-    const image = images.find(image => image?.id === id )
-    return (
-        <img src={image.src} alt={image.alt} className='w-12 h-10'/>
-    )
-}
+// const Icons = ({id}) => {
+//     const image = images.find(image => image?.id === id )
+//     return (
+//         <img src={image.src} alt={image.alt} className='w-12 h-10'/>
+//     )
+// }
 
 function ProjectPage() {
     const navigate = useNavigate();
@@ -61,8 +61,9 @@ function ProjectPage() {
 
     const id = query.get("projectid")
     console.log(query.get("projectid"))
-    const iconsid = findIconId(1)
-    console.log(iconsid)
+  
+
+    
     const handleClickOnStep = ({id,step}) => {
         // navigate(`/project/report?pileid${id}#scroll-target${step}`)
         navigate(`/project/report?pileid1#step8`)
@@ -75,7 +76,7 @@ function ProjectPage() {
     <>
         <div className="w-full flex flex-col flex-grow h-screen relative lg:top-14 top-16">
             <div className='fixed top-[52px] w-full items-center mx-auto bg-blue-100 h-[50px] z-30 py-1  '>
-                <Subnavbar titleback={false}/>
+                <Subnavbar titleback={false} isProjectPage={true}/>
                 <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-blue-100'>
                     {/* filter bar for pc */}
                     <div className=' w-1/3 justify-center hidden lg:flex mx-auto '>
@@ -114,23 +115,23 @@ function ProjectPage() {
                                 </div>
                             ))} */}
                     </div>
-                    {/* <hr className='bg-red-500'/> */}
+             
                     
                     <div className='overflow-x-auto mx-0 lg:mx-auto '>  
                         <table className=" w-full overflow-x-auto">
                             <thead className='bg-blue-200 rounded'>
                                 <tr>
-                                    <th className='p-3 text-sm  text-center border border-gray-700 ' onClick={handleClickOnStep}>PileNo.</th>
+                                    <th className='p-3 text-sm  text-center border border-gray-700 '>PileNo.</th>
                                     {/* <th colSpan={11} className='p-5 text-sm  text-center border border-gray-700 '>Step</th> */}
-                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step1</th>
-                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step2</th>
-                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step3</th>
-                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step4</th>
-                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step5</th>
-                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step6</th>
-                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step7</th>
-                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step8</th>
-                                    <th className=' text-sm  text-center border-t border-gray-700  '>Step9</th>
+                                    <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step1</th>
+                                    <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step2</th>
+                                    <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step3</th>
+                                    <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step4</th>
+                                    <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step5</th>
+                                    <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step6</th>
+                                    <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step7</th>
+                                    <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step8</th>
+                                    <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step9</th>
                                     <th className=' text-sm  text-center border-t border-gray-700  '>Step10</th>
                                     <th className=' text-sm  text-center border-t border-gray-700  '>Step11</th>
                                     <th className='p-3 text-sm  text-center border border-gray-700 '>Updated</th>

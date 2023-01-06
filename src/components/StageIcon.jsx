@@ -33,19 +33,19 @@ export function StageStep1(props) {
   const { status , alt  } = props
     switch (status) {
       case '0':
-        return <img src={WaitingStep1} alt={alt} className='w-12 h-10'/>;
+        return <img src={WaitingStep1} alt={alt} className='w-12 h-11'/>;
       case '1':
-        return <img src={DoneStep1} alt={alt} className='w-12 h-10'/>;
+        return <img src={DoneStep1} alt={alt} className='w-12 h-11'/>;
       case '2':
-        return <img src={DoneStep1Red} alt={alt} className='w-12 h-10'/>;
+        return <img src={DoneStep1Red} alt={alt} className='w-12 h-11'/>;
       case '3':
-        return <img src={DoneStep1Green} alt={alt} className='w-12 h-10'/>;
+        return <img src={DoneStep1Green} alt={alt} className='w-12 h-11'/>;
       case '4':
-        return <img src={onProgressStep1} alt={alt} className='w-12 h-10'/>;
+        return <img src={onProgressStep1} alt={alt} className='w-12 h-11'/>;
       case '5':
-        return <img src={onProgress1Red} alt={alt} className='w-12 h-10'/>;
+        return <img src={onProgress1Red} alt={alt} className='w-12 h-11'/>;
       case '6':
-        return <img src={onProgress1Brown} alt={alt} className='w-12 h-10'/>;
+        return <img src={onProgress1Brown} alt={alt} className='w-12 h-11'/>;
       default:
         return null;
   }
@@ -55,21 +55,21 @@ export function StageStep11(props) {
   const { status , alt  } = props
     switch (status) {
       case 0:
-        return <img src={WaitingStep11} alt={alt} className='w-12 h-10'/>;
+        return <img src={WaitingStep11} alt={alt} className='w-12 h-11'/>;
       case '1':
-        return <img src={DoneStep11} alt={alt} className='w-12 h-10'/>;
+        return <img src={DoneStep11} alt={alt} className='w-12 h-11'/>;
       case '2':
-        return <img src={DoneStep11Red} alt={alt} className='w-12 h-10'/>;
+        return <img src={DoneStep11Red} alt={alt} className='w-12 h-11'/>;
       case '3':
-        return <img src={DoneStep11Green} alt={alt} className='w-12 h-10'/>;
+        return <img src={DoneStep11Green} alt={alt} className='w-12 h-11'/>;
       case '4':
-        return <img src={onProgressStep11} alt={alt} className='w-12 h-10'/>;
+        return <img src={onProgressStep11} alt={alt} className='w-12 h-11'/>;
       case '5':
-        return <img src={onProgress11Red} alt={alt} className='w-12 h-10'/>;
+        return <img src={onProgress11Red} alt={alt} className='w-12 h-11'/>;
       case '6':
-        return <img src={onProgress11Brown} alt={alt} className='w-12 h-10'/>;
+        return <img src={onProgress11Brown} alt={alt} className='w-12 h-11'/>;
       case '7':
-        return <img src={DiableProgress11} alt={alt} className='w-12 h-10'/>;
+        return <img src={DiableProgress11} alt={alt} className='w-12 h-11'/>;
       default:
         return null;
   }
@@ -79,21 +79,21 @@ export function StageOnRail(props) {
   const { status , alt  } = props
     switch (status) {
       case '0':
-        return <img src={WaitingStep} alt={alt} className='w-12 h-10'/>;
+        return <img src={WaitingStep} alt={alt} className='w-12 h-11'/>;
       case '1':
-        return <img src={DoneStep} alt={alt} className='w-12 h-10'/>;
+        return <img src={DoneStep} alt={alt} className='w-12 h-11'/>;
       case '2':
-        return <img src={DoneStepRed} alt={alt} className='w-12 h-10'/>;
+        return <img src={DoneStepRed} alt={alt} className='w-12 h-11'/>;
       case '3':
-        return <img src={DoneStepGreen} alt={alt} className='w-12 h-10'/>;
+        return <img src={DoneStepGreen} alt={alt} className='w-12 h-11'/>;
       case '4':
-        return <img src={onProgressStep} alt={alt} className='w-12 h-10'/>;
+        return <img src={onProgressStep} alt={alt} className='w-12 h-11'/>;
       case '5':
-        return <img src={onProgressRed} alt={alt} className='w-12 h-10'/>;
+        return <img src={onProgressRed} alt={alt} className='w-12 h-11'/>;
       case '6':
-        return <img src={onProgressBrown} alt={alt} className='w-12 h-10'/>;
+        return <img src={onProgressBrown} alt={alt} className='w-12 h-11'/>;
       case '7':
-        return <img src={DiableProgress} alt={alt} className='w-12 h-10'/>;
+        return <img src={DiableProgress} alt={alt} className='w-12 h-11'/>;
       default:
         return null;
   }

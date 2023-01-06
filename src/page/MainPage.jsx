@@ -27,19 +27,13 @@ const projectX = [
 function Mainpage() {
     return (
         < > 
-            <div className="relative top-12">
-                <div className="mx-auto max-w-full py-2 sm:py-2 " >
-                    <div className="px-4 py-2 sm:px-0">
-                        <div className=" mx-auto">
-                            <div className="flex flex-wrap items-center justify-center mx-auto ">
-                                {projectX.map((list,idx) => (
-                                    <ul key={idx} className="lg:mx-auto mx-1">
-                                        <li className=""><Maincard projectid={list.projectId} erp={list.erp} coin={list.coin} projName={list.name} zone={list.zone} /></li>
-                                    </ul>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
+            <div className="relative top-12 mx-auto max-w-full px-4 py-2 sm:px-0">
+                <div className="flex flex-wrap items-center justify-center mx-auto ">
+                    {projectX.map((list,idx) => (
+                        <ul key={idx} className="lg:mx-auto mx-1">
+                            <li className=""><Maincard projectid={list.projectId} erp={list.erp} coin={list.coin} projName={list.name} zone={list.zone} /></li>
+                        </ul>
+                    ))}
                 </div>
             </div>
         </>

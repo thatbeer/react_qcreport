@@ -18,18 +18,19 @@ const projectX = [
 
 const Subnavbar = (props) => {
   const navigate = useNavigate();
+ 
 
   const onClickTitle = () => {navigate(-1)};
-  const {titleback } = props
-  const pileId = "PA23"
+  const {titleback , pileId ,isProjectPage } = props
+
   return (
     <>
         <div className='relatvie mx-auto  min-h-[40px] bg-blue-100 border border-blue-300'>
             <div className='flex px-6 mx-auto py-1 justify-center items-center '>
-                <div className='flex flex-col mx-auto items-center w-3/4
-                justify-center sm:justify-start sm:items-stretch text-xl font-bold mt-2 lg:m-0 '>
+                <div className={`flex flex-col mx-auto items-center ${ isProjectPage ? "w-full" : "w-3/4"}
+                justify-center sm:justify-start sm:items-stretch text-xl font-bold mt-2 lg:m-0 sm:mt-0`}>
                   <p className={`truncate w-full text-center lg:text-start ${titleback ? "hover:text-blue-700 hover:cursor-pointer" : ""}  z-40 `}
-                   onClick={titleback ? onClickTitle : null}>{pileId}โครงการ Aspire Sukhumvit - Rama 4</p>
+                   onClick={titleback ? onClickTitle : null}>โครงการ Aspire Sukhumvit - Rama 4</p>
                   <p className='truncate w-full text-center lg:hidden'>{pileId} </p>
                 </div>
 
@@ -38,23 +39,25 @@ const Subnavbar = (props) => {
                    sm:ml-6 sm:pr-0 lg:mb-2 mb-0"
               >
                   <>
-                <div className=' w-screen pt-5 absolute'>
-                  <div className="dropdown dropdown-bottom ">
-                    <label tabIndex={1} className="hover:cursor-pointer focus:border rounded-full">
-                      <Bars3Icon className=" h-10 w-10 text-blue-600 z-40"/></label>
-                    <ul tabIndex={0} className="absolute dropdown-content menu divider-y
-                        p-2 bg-blue-100 w-auto border border-gray-600">
-                        { projectX.map((project) => (
-                          <Link to={`/project?projectid=${project.projectId}`} 
-                          className='p-1 border-b border-gray-700 truncate text-sm'>
-                            {project.name}
-                          </Link>
-                        ))}
-                      {/* <li className='border-b border-gray-700'><a>Item 1</a></li>
-                      <li><a>Item 2</a></li> */}
-                    </ul>
-                  </div>
-                </div>
+                  { isProjectPage ? null : 
+                    <div className=' w-screen pt-3 absolute'>
+                      <div className="dropdown dropdown-bottom ">
+                        <label tabIndex={1} className="hover:cursor-pointer focus:border rounded-full">
+                          <Bars3Icon className=" h-10 w-10 text-blue-600 z-40"/></label>
+                        <ul tabIndex={0} className="absolute dropdown-content menu divider-y
+                            p-2 bg-blue-100 w-auto border border-gray-600">
+                            { projectX.map((project) => (
+                              <Link to={`/project?projectid=${project.projectId}`} 
+                              className='p-1 border-b border-gray-700 truncate text-sm'>
+                                {project.name}
+                              </Link>
+                            ))}
+                          {/* <li className='border-b border-gray-700'><a>Item 1</a></li>
+                          <li><a>Item 2</a></li> */}
+                        </ul>
+                      </div>
+                    </div>
+                  }
                   </>
               </div> 
               <div className="absolute inset-y-0 right-0 items-center pr-2 

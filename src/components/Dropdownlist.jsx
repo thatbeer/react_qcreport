@@ -8,7 +8,7 @@ function classNames(...classes) {
 }
 
 export default function Dropdownlist(props) {
-  const { zone } =props
+  const { zone,projectid } =props
   return (
     <Menu as="div" className="relative md:flex flex-inline ">
       <div>
@@ -38,6 +38,7 @@ export default function Dropdownlist(props) {
                 <Menu.Item>
                   {({ active }) => (
                     <Link
+                      to={`/project?projectid=${projectid}&zone=${zname.zname}`}
                       className={classNames(
                         active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                         'block px-4 py-2 text-sm'

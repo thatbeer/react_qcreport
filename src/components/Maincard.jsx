@@ -3,17 +3,40 @@ import Dropdownlist from "./Dropdownlist";
 import Progressbar from "./progressbar";
 import Statcard from "./Statcard";
 import { FingerPrintIcon } from "@heroicons/react/24/outline";
-
+import { useState } from "react";
 //demo with using plain tailwindcss
 function MyComponent(props) {
+    const [ valueI , setValueI] = useState("");
+
     return (
       <select className="form-select">
         <option value="">Select an option</option>
-        <option value="option1">Option 1</option>
+        <option value="option1"><Link to={`/project}`}> 1</Link></option>
         <option value="option2">Option 2</option>
         <option value="option3">Option 3</option>
       </select>
     );
+}
+
+function MyRatio(props) {
+    return (
+      <button className="relative inline-flex w-4 h-4 rounded-full">
+        <span className="sr-only">Filter</span>
+        <span className="relative block w-full h-full rounded-full bg-gray-300"></span>
+        <span className="relative block w-full h-full rounded-full bg-gray-300"></span>
+      </button>
+    );
+}
+
+function ButtonGroup(props) {
+    return (
+        <div className="btn-group">
+            <input type="radio" name="options" data-title="1" className="btn" />
+            <input type="radio" name="options" data-title="2" className="btn" checked />
+            <input type="radio" name="options" data-title="3" className="btn" />
+            <input type="radio" name="options" data-title="4" className="btn" />
+        </div>
+    )
 }
 
 
@@ -29,8 +52,6 @@ const Maincard = (props) => {
                         {projName}
                     </h5>
                 </Link>
-                
-                
                 <div className="flex flex-inline items-center justify-between lg:my-2 my-2  mx-auto">
                     <div className="flex flex-row-2 gap-6 mr-auto items-center">
                         <p className='flex flex-inline mx-2 '>
@@ -52,7 +73,7 @@ const Maincard = (props) => {
                             </pre>
                         </p>
                     </div>
-                    { zone ? <Dropdownlist zone={zone}  className="bg-gray-100 " /> : null}
+                    { zone ? <Dropdownlist zone={zone} projectid={projectid} className="bg-gray-100 " /> : null}
                 </div>
                 <hr style={{ color: 'red' }}/>
                 <div className=" bg-gray-600 h-6 rounded-2xl my-2 flex border-t outline-offset-4	
