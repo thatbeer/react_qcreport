@@ -94,8 +94,8 @@ const GlobalHeader = () =>  {
                     >
                     <span className="sr-only">View notifications</span>
                     <div className='flex flex-row'>
-                        <CurrencyDollarIcon className="h-6 w-6 text-yellow-400 " aria-hidden="true" /> 1000
-
+                        <CurrencyDollarIcon className="h-6 w-6 text-yellow-400 " aria-hidden="true" />
+                        999999999
                     </div>
                     </button>
 
