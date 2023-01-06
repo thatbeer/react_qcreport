@@ -176,7 +176,7 @@ function ProjectPage() {
 
             
             <div className='flex flex-1 mx-auto mt-10 lg:mt-4 pt-[60px]'>
-                <main role="main" className="flex flex-col w-screen h-full  px-2  pt-[40px] mb-4">
+                <main role="main" className="flex flex-col w-screen h-full  px-2 pt-[50px] lg:pt-[40px] mb-4">
 
 
                     {/* StatsBar container */}
