@@ -20,11 +20,12 @@ function App() {
     if (!token) {
       navigate('/auth')
     } 
-  })
+  },[token])
 
   // if (!token) {
   //   return <LoginPage />
   // }
+  
 
 
   return (
