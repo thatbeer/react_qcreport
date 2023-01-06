@@ -24,13 +24,14 @@ function SidePage() {
   return (
     <>
         <div className='container mx-auto my-4 pt-[60px]'>
-            <div className='flex flex-col mx-4 w-4/5 justify-center'>
+            <div className='flex flex-col mx-4 w-full justify-center'>
                 <div className='flex flex-row my-2  mx-2 justify-center'>
                     <input 
                         className='w-5/6 px-4 mx-auto border-2 rounded border-gray-900'
                         placeholder="find your desire"
                     />
-                    <button className='btn border-2 btn-primary'>enter</button>
+                    <button className='btn border-2 btn-primary mx-2'>enter</button>
+                    <button className='btn border-2 btn-primary mx-2'>ทั้งหมด</button>
                 </div>
                 <div className="bg-white flex flex-row mx-2">
                     <div className="flex flex-col lg:flex-row my-2  mx-2 justify-end w-screen">
@@ -42,9 +43,11 @@ function SidePage() {
                             <p1 className="px-4 py-2 mx-2 lg:w-[300px] w-[180px] h-[50px]">วันที่เสร็จ</p1>
                             <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} className="mx-2 w-auto"/>
                         </div>
-                    
+                        {/* <div className="">
+                            <button className='btn border-2 btn-primary'>ทั้งหมด</button>
 
-                   <button className='btn border-2 btn-primary'>ทั้งหมด</button>
+                        </div> */}
+
                     </div>
 
 
