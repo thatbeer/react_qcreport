@@ -61,15 +61,15 @@ const Subnavbar = (props) => {
                   </>
               </div> 
               <div className="absolute inset-y-0 right-0 items-center pr-2 
-                  sm:static sm:inset-auto sm:ml-6 sm:pr-0 hidden lg:flex"
+                  sm:static sm:inset-auto sm:ml-6 sm:pr-0 hidden lg:flex z-30" 
               >
                 { pileId ? (
                 <div className='flex flex-1 items-center'>
+                  <h2 className='font-bold'>
+                    {pileId}
+                  </h2>
                   <div>
-                    Pile:{pileId}
-                  </div>
-                  <div>
-                  <FolderArrowDownIcon className='flex z-40 lg:flex h-10 w-10 mx-2 pr-2 text-red-500 
+                  <FolderArrowDownIcon className='flex z-30 lg:flex h-10 w-10 mx-2 pr-2 text-red-500 
                   hover:cursor-pointer ' />
 
                   </div>
