@@ -21,7 +21,7 @@ const Subnavbar = (props) => {
  
 
   const onClickTitle = () => {navigate(-1)};
-  const {titleback , pileId ,isProjectPage } = props
+  const {titleback , pileId ,isProjectPage ,PName } = props
 
   return (
     <>
@@ -30,7 +30,7 @@ const Subnavbar = (props) => {
                 <div className={`flex flex-col mx-auto items-center ${ isProjectPage ? "w-full" : "w-3/4"}
                 justify-center sm:justify-start sm:items-stretch text-xl font-bold mt-2 lg:m-0 sm:mt-0`}>
                   <p className={`truncate w-full text-center lg:text-start ${titleback ? "hover:text-blue-700 hover:cursor-pointer" : ""}  z-40 `}
-                   onClick={titleback ? onClickTitle : null}>โครงการ Aspire Sukhumvit - Rama 4</p>
+                   onClick={titleback ? onClickTitle : null}>{PName}</p>
                   <p className='truncate w-full text-center lg:hidden'>{pileId} </p>
                 </div>
 

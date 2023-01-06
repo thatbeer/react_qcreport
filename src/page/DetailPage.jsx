@@ -21,7 +21,8 @@ import Statcard from '../components/Statcard';
 
 const DetailPage = (props) => {
     // const { search } = useLocation();
-    const location = useLocation()
+    const location  = useLocation()
+    console.log("state=>",location.state)
     // const hash = location.hash.substring(1);
     // console.log(hash)
     const query = useQuery();
@@ -95,7 +96,7 @@ const DetailPage = (props) => {
     <>
         <div className='fixed w-screen z-30 transition-all duration-200'>
             <div className='relative lg:top-14 top-12'>
-                <Subnavbar titleback={true} pileId={pileId}/>
+                <Subnavbar titleback={true} pileId={pileId} PName={location.state?.projName} />
                 <div className="overflow-x-auto fixed min-h-6  left-0 px-1 py-1 bg-blue-100 border-b border-blue-300 w-screen z-20 ">
                     <ul className='flex px-1 flex-row mx-auto items-center justify-center '>
                         <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center' onClick={handleClick2Ref1}><a className='text-blue-800'>1</a></li>

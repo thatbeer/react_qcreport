@@ -149,17 +149,17 @@ const GlobalHeader = () =>  {
                                 to="/side"
                                 className={classNames(active ? 'bg-blue-100 shadow-md' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
-                                คู่มือการใช้งาน
+                                Administrator
                             </Link>
                             )}
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
                             <Link
-                                to="/side"
+                                to="/guide"
                                 className={classNames(active ? 'bg-blue-100 shadow-md' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
-                                Administrator
+                                คู่มือการใช้งาน
                             </Link>
                             )}
                         </Menu.Item>

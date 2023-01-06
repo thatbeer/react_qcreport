@@ -60,10 +60,16 @@ const projectListX = [
 
 
 function ProjectPage() {
+    
+
+
+
+
     const navigate = useNavigate();
     
     let query = useQuery();
     const {state } = useLocation(); 
+    console.log("pass props",state)
     const id = query.get("projectid")
     console.log("project id =>",query.get("projectid"))
     const filterbyQuery = query.get("type")
@@ -96,7 +102,7 @@ function ProjectPage() {
     <>
         <div className="w-full flex flex-col flex-grow h-screen relative lg:top-14 top-16">
             <div className='fixed top-[52px] w-full items-center mx-auto bg-blue-100 h-[50px] z-30 py-1  '>
-                <Subnavbar titleback={false} isProjectPage={true}/>
+                <Subnavbar titleback={false} isProjectPage={true} PName={state?.projName}/>
                 <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-blue-100'>
                     {/* filter bar for pc */}
                     <div className=' w-1/3 justify-center hidden xl:flex mx-auto '>
@@ -116,7 +122,7 @@ function ProjectPage() {
                             className={`btn btn-primary mx-10 focus:bg-red-200
                             ${  filter === "รอส่งerp" ? "bg-red-300" : "bg-white"  } 
                             border border-gray-400 py-4 px-6 rounded-lg`}>
-                               <svg class={` rotate-45  -mt-1 w-4 h-4 text-red-500  duration-300`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg> 
+                               <svg className={` rotate-45  -mt-1 w-4 h-4 text-red-500  duration-300`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg> 
                                รอส่งerp
                         </button>
                         <button onClick={() => {setFilter("เขียวแดง")}}                value={"เขียวแดง"}
@@ -213,73 +219,86 @@ function ProjectPage() {
                                 { projectListX ? projectListX.map((list) => (
                                     <tr key={list.pileno}  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
                                         <td className='p-3 mx-auto my-1 text-sm  border-x border-gray-700  '>
-                                            <Link to={`/project/report?pileid=${list.pileno}`} title={`pileId${list.pileno}`} className='hover:text-blue-400 hover:underline'>
+                                            <Link to={`/project/report?pileid=${list.pileno}`} title={`pileId${list.pileno}`} 
+                                                 state={{...state}}
+                                                className='hover:text-blue-400 hover:underline'>
                                                 {list.pileno}
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center border-t border-gray-700'>
                                             <Link tag={1} to={`/project/report?pileid=${list.pileno}`} title={`step1`}
-                                            className='hover:text-blue-400 hover:underline'>
+                                                state={{...state}}
+                                                className='hover:text-blue-400 hover:underline'>
                                                 <StageStep1 status={list.step1} alt={"step1"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step2`} title={`step2`}
-                                            className='hover:text-blue-400 hover:underline'>
+                                                state={{...state}}
+                                                className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step2} alt={"step2"} />
                                                 </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step3`} title={`step3`}
-                                            className='hover:text-blue-400 hover:underline'>
+                                                state={{...state}}
+                                                className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step3} alt={"step3"} />
                                                 </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step4`} title={`step4`}
-                                            className='hover:text-blue-400 hover:underline'>
+                                                state={{...state}}
+                                                className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step4} alt={"step4"} />
                                                 </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step5`} title={`step5`}
-                                            className='hover:text-blue-400 hover:underline'>
+                                                state={{...state}}
+                                                className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step5} alt={"step5"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step6`} title={`step6`}
-                                            className='hover:text-blue-400 hover:underline'>
+                                                state={{...state}}
+                                                className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step6} alt={"step6"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step7`} title={`step7`}
-                                            className='hover:text-blue-400 hover:underline'>
+                                                state={{...state}}
+                                                className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step7} alt={"step7"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step8`} title={`step8`}
-                                            className='hover:text-blue-400 hover:underline'>
+                                                state={{...state}}
+                                                className='hover:text-blue-400 hover:underline'>
                                                <StageOnRail status={list.step8} alt={"step8"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step9`} title={`step9`}
-                                            className='hover:text-blue-400 hover:underline'>
+                                                state={{...state}}
+                                                className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step9} alt={"step9"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center border-t border-gray-700  '>
-                                            <Link to={`/project/report?pileid=${list.pileno}#step19`} title={`step10`}
-                                            className='hover:text-blue-400 hover:underline'>
+                                            <Link to={`/project/report?pileid=${list.pileno}#step10`} title={`step10`}
+                                                state={{...state}}
+                                                className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step10} alt={"step10"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center border-t border-gray-700  '>
                                             <Link to={`/project/report?pileid=${list.pileno}#step11`} title={`step11`}
-                                            className='hover:text-blue-400 hover:underline'>
+                                                state={{...state}}
+                                                className='hover:text-blue-400 hover:underline'>
                                                 <StageStep11 status={list.step11} alt={"step11"} />
                                             </Link>
                                         </td>

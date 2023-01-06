@@ -38,14 +38,7 @@ function SidePage() {
                         <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} className="mx-2 w-auto"/>
                         <p1 className="px-6 py-1 mx-2 -2 w-[300px] h-[50px]">วันที่เสร็จ</p1>
                         <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />
-                        {/* <Datepicker
-                            primaryColor="blue"
-                            placeholder={"StartDate - EndDate"} 
-
-                            value={value}
-                            onChange={handleValueChange}
-                            className="bg-white text-white"
-                        /> */}
+                    
 
                     </div>
 
