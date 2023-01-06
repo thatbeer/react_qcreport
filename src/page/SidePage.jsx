@@ -33,16 +33,20 @@ function SidePage() {
                     <button className='btn border-2 btn-primary'>enter</button>
                 </div>
                 <div className="bg-white flex flex-row mx-2">
-                    <div className="flex flex-row my-2  mx-2 justify-end w-5/6">
-                        <p1 className="px-6 py-1 mx-2 -2 w-[300px] h-[50px]">วันที่เริ่ม</p1>
-                        <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} className="mx-2 w-auto"/>
-                        <p1 className="px-6 py-1 mx-2 -2 w-[300px] h-[50px]">วันที่เสร็จ</p1>
-                        <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />
+                    <div className="flex flex-col lg:flex-row my-2  mx-2 justify-end w-screen">
+                        <div className="flex flex-row">
+                            <p1 className="px-4 py-2 mx-2 lg:w-[300px] w-[180px] h-[50px]"><p1>วันที่เริ่ม</p1></p1>
+                            <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} className="mx-2 w-auto"/>
+                        </div>
+                        <div className="flex flex-row">
+                            <p1 className="px-4 py-2 mx-2 lg:w-[300px] w-[180px] h-[50px]">วันที่เสร็จ</p1>
+                            <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} className="mx-2 w-auto"/>
+                        </div>
                     
 
+                   <button className='btn border-2 btn-primary'>ทั้งหมด</button>
                     </div>
 
-                   <button className='btn border-2 btn-primary'>ทั้งหมด</button>
 
                 </div>
             </div>  
