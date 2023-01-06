@@ -1,19 +1,13 @@
-import React , {useMemo } from 'react'
+import React , {useMemo , useEffect , useState } from 'react'
 import { useLocation , Link , useNavigate } from 'react-router-dom';
 import { MagnifyingGlassCircleIcon , CheckIcon } from '@heroicons/react/24/outline'
-import TableContent from '../components/tablecotent';
-import Progressbar from '../components/progressbar';
-import { StepBarUse } from '../components/StepBar';
+// import TableContent from '../components/tablecotent';
+// import Progressbar from '../components/progressbar';
 import Subnavbar from '../components/Subnavbar';
-import WaitingStage from '../img/S020A.png';
-import WaitingStep1 from '../img/S010A.png';
-import WaitingStep11 from '../img/S110A.png';
-import DoneStep1 from '../img/S012A.png'
-import DoneStepp11 from '../img/S112A.png'
-import DoneStep from '../img/S022A.png'
+
 // stage icons
 import { StageStep1 , StageStep11 ,StageOnRail } from '../components/StageIcon';
-import { RadioGroup } from '@headlessui/react';
+
 
 
 
@@ -23,6 +17,30 @@ function useQuery() {
     
     return React.useMemo(() => new URLSearchParams(search), [search]);
 }
+
+
+const ButtonTypes = [
+    {
+        name: "เสร็จแล้ว",
+        status:'1',
+        color:"green"
+    },
+    {
+        name: "ทำค้าง",
+        status:'2',
+        color:'blue'
+    },
+    {
+        name: "เขียวแดง",
+        status:'3',
+        color:"yellow"
+    },
+    {
+        name: "รอส่งERP",
+        status:'4',
+        color:"red"
+    }
+]
 
 
 const projectListX = [
@@ -39,37 +57,41 @@ const projectListX = [
 ]
 
 
-// const images = [
-//     {id : "1" , alt:"step1" , status:"0",src:"../img/S010A.png"},
-// ]
-
-
-// const findIconId = (id) => {
-//     return images.find(image => image?.id === id )
-// }
-
-// const Icons = ({id}) => {
-//     const image = images.find(image => image?.id === id )
-//     return (
-//         <img src={image.src} alt={image.alt} className='w-12 h-10'/>
-//     )
-// }
 
 function ProjectPage() {
     const navigate = useNavigate();
-
+    
     let query = useQuery();
 
     const id = query.get("projectid")
     console.log(query.get("projectid"))
-  
-
-    
+    const filterbyQuery = query.get("type")
+    console.log(query.get("type"))
     const handleClickOnStep = ({id,step}) => {
         // navigate(`/project/report?pileid${id}#scroll-target${step}`)
         navigate(`/project/report?pileid1#step8`)
     }
+  
+    const [ filter , setFilter] = useState(null);
     
+    
+    
+
+
+    
+    useEffect(() => {
+        if (filterbyQuery !== null) {
+            setFilter(filterbyQuery)
+            console.log()
+        }
+        setFilter(null)
+        console.log("filterquery =>",filter)
+        
+    }, [query]);
+
+    useEffect(() => {
+        console.log(filter)
+    },[filter])
 
 
 
@@ -81,13 +103,33 @@ function ProjectPage() {
                 <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-blue-100'>
                     {/* filter bar for pc */}
                     <div className=' w-1/3 justify-center hidden xl:flex mx-auto '>
-                        <button className='btn btn-primary mx-10 bg-white border border-gray-400 py-4 px-6 rounded-lg'>ทำค้าง</button>
-                        <button className='btn btn-primary mx-10 bg-white border border-gray-400 py-4 px-6 rounded-lg'>รอส่งERP</button>
-                        <button className='btn btn-primary mx-10 bg-white border border-gray-400 py-4 px-6 rounded-lg'>เสร็จแล้ว</button>
-                        <button className='btn btn-primary mx-10 bg-white border border-gray-400 py-4 px-6 rounded-lg'>เขียว-แดง</button>
+                        <button onClick={() => {setFilter("ทำค้าง")}}                value={"ทำค้าง"}
+                            className={`btn btn-primary mx-10 focus:bg-green-200
+                            ${  filter === "ทำค้าง" ? "bg-blue-300" : "bg-white"  } 
+                            border border-gray-400 py-4 px-6 rounded-lg`}>
+                                ทำค้าง
+                        </button>
+                        <button onClick={() => {setFilter("เสร็จแล้้ว")}}                value={"เสร็จแล้ว"} 
+                            className={`btn btn-primary mx-10 focus:bg-green-200
+                            ${  filter === "เสร็จแล้้ว" ? "bg-green-300" : "bg-white"  } 
+                            border border-gray-400 py-4 px-6 rounded-lg`}>
+                                เสร็จแล้ว
+                        </button>
+                        <button onClick={() => {setFilter("รอส่งerp")}}                value={"รอส่งerp"}
+                            className={`btn btn-primary mx-10 focus:bg-red-200
+                            ${  filter === "รอส่งerp" ? "bg-red-300" : "bg-white"  } 
+                            border border-gray-400 py-4 px-6 rounded-lg`}>
+                                รอส่งerp
+                        </button>
+                        <button onClick={() => {setFilter("เขียวแดง")}}                value={"เขียวแดง"}
+                            className={`btn btn-primary mx-10 focus:bg-yellow-200
+                            ${  filter === "เขียวแดง" ? "bg-yellow-300" : "bg-white"  }
+                             border border-gray-400 py-4 px-6 rounded-lg`}>
+                            เขียว-แดง
+                        </button>
                     </div>
                     {/* search bar section */}
-                    <div className='relative xl:absolute xl:right-[7.5rem] flex  text-gray-700 mx-auto lg:mx-2'>
+                    <div className='relative  xl:absolute xl:right-[7.5rem] flex  text-gray-700 mx-auto xl:mx-2'>
                         <input type={'search'} name="search" placeholder='search'
                             className='border-2 lg:w-full  border-gray-300 bg-white h-8  px-1 rounded-lg text-sm focus:outline-none'/>
                         <button type='submit' className='relative '>
@@ -96,11 +138,34 @@ function ProjectPage() {
                     </div>
 
                     {/* filter bar for mobile */}
-                    <div className=' justify-between flex xl:hidden mx-auto my-1 '>
-                        <button className='btn btn-primary mx-1 bg-white-200 border border-gray-400 py-2 px-4 rounded-lg'>ทำค้าง</button>
-                        <button className='btn btn-primary mx-1 bg-white border border-gray-400 py-2 px-4 rounded-lg'>รอส่งERP</button>
-                        <button className='btn btn-primary mx-1 bg-white border border-gray-400 py-2 px-4 rounded-lg'>เสร็จแล้ว</button>
-                        <button className='btn btn-primary mx-1 bg-white border border-gray-400 py-2 px-4 rounded-lg'>เขียว-แดง</button>
+                    <div className=' justify-between flex xl:hidden mx-auto my-1 z-50'>
+                        
+                        <button onClick={() => {setFilter("ทำค้าง")}}                value={"ทำค้าง"}
+                            className={`btn btn-primary mx-1 focus:bg-blue-200
+                            ${  filter === "ทำค้าง" ? "bg-blue-300" : "bg-white"  } 
+                            border border-gray-400 py-2 px-4 rounded-lg`}>
+                                ทำค้าง
+                        </button>
+                        <button onClick={() => {setFilter("เสร็จแล้้ว")}}                value={"เสร็จแล้ว"} 
+                            className={`btn btn-primary mx-1 focus:bg-green-200
+                            ${  filter === "เสร็จแล้้ว" ? "bg-green-300" : "bg-white"  } 
+                            border border-gray-400 py-2 px-4 rounded-lg`}>
+                                เสร็จแล้ว
+                        </button>
+                        <button onClick={() => {setFilter("รอส่งerp")}}                value={"รอส่งerp"}
+                            className={`btn btn-primary mx-1 focus:bg-red-200
+                            ${  filter === "รอส่งerp" ? "bg-red-300" : "bg-white"  } 
+                            border border-gray-400 py-2 px-4 rounded-lg`}>
+                                รอส่งerp
+                        </button>
+                        <button onClick={() => {setFilter("เขียวแดง")}}                value={"เขียวแดง"}
+                            className={`btn btn-primary mx-1 focus:bg-yellow-200
+                            ${  filter === "เขียวแดง" ? "bg-yellow-300" : "bg-white"  }
+                             border border-gray-400 py-2 px-4 rounded-lg`}>
+                            เขียว-แดง
+                        </button>
+                        
+                        
                     </div>
                 </div>
             </div>

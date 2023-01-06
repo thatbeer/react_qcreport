@@ -36,10 +36,15 @@ const DetailPage = (props) => {
             if (element) {
                 element.scrollIntoView({block:'center'})
             }
+        } else {
+            window.scrollTo({ top: 0 });
+            // scroll to the top of the browser window when changing route
+        // the window object is a normal DOM object and is safe to use in React.
         }
 
 
-    },[])
+    },[location])
+
     
     
     // useEffect(() => {
@@ -131,9 +136,10 @@ const DetailPage = (props) => {
         ref11.current?.scrollIntoView({behavior: 'smooth' , block: 'center'});
     };
    
+   
   return (
     <>
-        <div className='fixed w-screen z-30 '>
+        <div className='fixed w-screen z-30 transition-all duration-200'>
             <div className='relative lg:top-14 top-12'>
                 <Subnavbar titleback={true} pileId={pileId}/>
                 <div className="overflow-x-auto fixed min-h-6  left-0 px-1 py-1 bg-blue-100 border-b border-blue-300 w-screen z-20 ">
