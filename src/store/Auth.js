@@ -22,5 +22,5 @@ export const AuthProvider = ({children}) => {
 };
 
 export const useAuth = () => {
-    return useContext.Provider
+    return useContext(AuthContext)
 }

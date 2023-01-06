@@ -63,32 +63,28 @@ function ProjectPage() {
     const navigate = useNavigate();
     
     let query = useQuery();
-
+    const {state } = useLocation(); 
     const id = query.get("projectid")
-    console.log(query.get("projectid"))
+    console.log("project id =>",query.get("projectid"))
     const filterbyQuery = query.get("type")
-    console.log(query.get("type"))
-    const handleClickOnStep = ({id,step}) => {
-        // navigate(`/project/report?pileid${id}#scroll-target${step}`)
-        navigate(`/project/report?pileid1#step8`)
-    }
+    // console.log(query.get("type"))
   
-    const [ filter , setFilter] = useState(null);
+    const [ filter , setFilter] = useState(filterbyQuery);
     
     
     
 
 
     
-    useEffect(() => {
-        if (filterbyQuery !== null) {
-            setFilter(filterbyQuery)
-            console.log()
-        }
-        setFilter(null)
-        console.log("filterquery =>",filter)
+    // useEffect(() => {
+    //     if (filterbyQuery !== null) {
+    //         setFilter(filterbyQuery)
+    //         console.log("filter state =>" , filter)
+    //     }
+    //     setFilter(null)
+    //     console.log("filter state =>",filter)
         
-    }, [query]);
+    // }, [query]);
 
     useEffect(() => {
         console.log(filter)
@@ -149,7 +145,7 @@ function ProjectPage() {
                             border border-gray-400 py-2 px-2 rounded-lg`}>
                                 <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' /> ทำค้าง
                         </button>
-                        <button onClick={() => {setFilter("เสร็จแล้้ว")}}                value={"เสร็จแล้ว"} 
+                        <button onClick={() => {setFilter("เสร็จแล้ว")}}                value={"เสร็จแล้ว"} 
                             className={`btn btn-primary mx-1 focus:bg-green-200
                             ${  filter === "เสร็จแล้้ว" ? "bg-green-300" : "bg-white"  } 
                             border border-gray-400 py-2 px-2 rounded-lg`}>

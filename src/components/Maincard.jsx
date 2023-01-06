@@ -57,7 +57,7 @@ const Maincard = (props) => {
                         <p className='flex flex-inline mx-2 '>
                             <svg class={`${ erp > 0 ? "animate-wiggle" : "rotate-45 " } -mt-1 w-6 h-6 text-red-500 mx-2 duration-300`} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path></svg>
                             <pre>
-                                <Link to={`/project?projectid=${projectid}&type=w4erp`}
+                                <Link to={`/project?projectid=${projectid}&type=รอส่งerp`}
                                     className="text-gray-800 dark:text-whte hover:underline hover:text-blue-600">
                                     {erp} ต้น
                                 </Link>
@@ -66,7 +66,7 @@ const Maincard = (props) => {
                         <p className=' flex flex-inline mx-2'>
                             <svg className={`${ coin > 0 ? "animate-bounce" : "" }  w-6 h-6 text-amber-500 mx-2 `} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             <pre>
-                                <Link to={`/project?projectid=${projectid}&type=coin`}
+                                <Link to={`/project?projectid=${projectid}&type=เขียวแดง`}
                                  className="text-gray-800 dark:text-whte hover:underline hover:text-blue-600">
                                     {coin} ต้น
                                  </Link>
