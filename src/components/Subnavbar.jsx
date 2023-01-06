@@ -31,7 +31,14 @@ const Subnavbar = (props) => {
                 justify-center sm:justify-start sm:items-stretch text-xl font-bold mt-2 lg:m-0 sm:mt-0`}>
                   <p className={`truncate w-full text-center lg:text-start ${titleback ? "hover:text-blue-700 hover:cursor-pointer" : ""}  z-40 `}
                    onClick={titleback ? onClickTitle : null}>{PName}</p>
-                  <p className='truncate w-full text-center lg:hidden'>{pileId} </p>
+                  <p className='truncate w-full text-center lg:hidden'>
+                    <div className='flex items-center justify-center' >
+                    {pileId}
+                    <FolderArrowDownIcon className=' z-30 lg:relative h-8 w-8  text-red-500 
+                  hover:cursor-pointer ' />
+                      
+                    </div>
+                  </p>
                 </div>
 
 
@@ -69,7 +76,7 @@ const Subnavbar = (props) => {
                     {pileId}
                   </h2>
                   <div>
-                  <FolderArrowDownIcon className='flex z-30 lg:flex h-10 w-10 mx-2 pr-2 text-red-500 
+                  <FolderArrowDownIcon className='flex z-30 lg:relative h-12 w-12 mx-2 pr-2 text-red-500 
                   hover:cursor-pointer ' />
 
                   </div>
