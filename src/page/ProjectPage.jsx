@@ -13,6 +13,7 @@ import DoneStepp11 from '../img/S112A.png'
 import DoneStep from '../img/S022A.png'
 // stage icons
 import { StageStep1 , StageStep11 ,StageOnRail } from '../components/StageIcon';
+import { RadioGroup } from '@headlessui/react';
 
 
 
@@ -79,14 +80,14 @@ function ProjectPage() {
                 <Subnavbar titleback={false} isProjectPage={true}/>
                 <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-blue-100'>
                     {/* filter bar for pc */}
-                    <div className=' w-1/3 justify-center hidden lg:flex mx-auto '>
-                        <button className='btn btn-primary mx-10 bg-gray-200 border border-gray-400 py-4 px-6 rounded-lg'>filter1</button>
-                        <button className='btn btn-primary mx-10 bg-gray-200 border border-gray-400 py-4 px-6 rounded-lg'>filter2</button>
-                        <button className='btn btn-primary mx-10 bg-gray-200 border border-gray-400 py-4 px-6 rounded-lg'>filter3</button>
-                        <button className='btn btn-primary mx-10 bg-gray-200 border border-gray-400 py-4 px-6 rounded-lg'>filter4</button>
+                    <div className=' w-1/3 justify-center hidden xl:flex mx-auto '>
+                        <button className='btn btn-primary mx-10 bg-white border border-gray-400 py-4 px-6 rounded-lg'>ทำค้าง</button>
+                        <button className='btn btn-primary mx-10 bg-white border border-gray-400 py-4 px-6 rounded-lg'>รอส่งERP</button>
+                        <button className='btn btn-primary mx-10 bg-white border border-gray-400 py-4 px-6 rounded-lg'>เสร็จแล้ว</button>
+                        <button className='btn btn-primary mx-10 bg-white border border-gray-400 py-4 px-6 rounded-lg'>เขียว-แดง</button>
                     </div>
                     {/* search bar section */}
-                    <div className='relative lg:absolute lg:right-[7.5rem] flex  text-gray-700 mx-auto lg:mx-2'>
+                    <div className='relative xl:absolute xl:right-[7.5rem] flex  text-gray-700 mx-auto lg:mx-2'>
                         <input type={'search'} name="search" placeholder='search'
                             className='border-2 lg:w-full  border-gray-300 bg-white h-8  px-1 rounded-lg text-sm focus:outline-none'/>
                         <button type='submit' className='relative '>
@@ -95,34 +96,40 @@ function ProjectPage() {
                     </div>
 
                     {/* filter bar for mobile */}
-                    <div className=' justify-between flex lg:hidden mx-auto my-1 '>
-                        <button className='btn btn-primary mx-1 bg-gray-200 border border-gray-400 py-2 px-4 rounded-lg'>filter1</button>
-                        <button className='btn btn-primary mx-1 bg-gray-200 border border-gray-400 py-2 px-4 rounded-lg'>filter2</button>
-                        <button className='btn btn-primary mx-1 bg-gray-200 border border-gray-400 py-2 px-4 rounded-lg'>filter3</button>
-                        <button className='btn btn-primary mx-1 bg-gray-200 border border-gray-400 py-2 px-4 rounded-lg'>filter4</button>
+                    <div className=' justify-between flex xl:hidden mx-auto my-1 '>
+                        <button className='btn btn-primary mx-1 bg-white-200 border border-gray-400 py-2 px-4 rounded-lg'>ทำค้าง</button>
+                        <button className='btn btn-primary mx-1 bg-white border border-gray-400 py-2 px-4 rounded-lg'>รอส่งERP</button>
+                        <button className='btn btn-primary mx-1 bg-white border border-gray-400 py-2 px-4 rounded-lg'>เสร็จแล้ว</button>
+                        <button className='btn btn-primary mx-1 bg-white border border-gray-400 py-2 px-4 rounded-lg'>เขียว-แดง</button>
                     </div>
                 </div>
             </div>
-            <div className='flex flex-1 mx-auto mt-10 lg:mt-4 pt-[64px]'>
-                <main role="main" className="flex flex-col w-screen h-full  px-2  pt-[64px] mb-4">
-                    <div className='w-full lg:w-2/3  mx-auto'> 
-                        {/* <TableContent id={id}/> */}
-                        {/* <Progressbar id={id}/> */}
-                            {/* {projectListX.map((list) => (
-                                <div>
-                                    <li>{list.pileno}</li>
-                                    <li>{list.step1 ? <p>dsadad</p> : <p>False</p>}</li>
-                                </div>
-                            ))} */}
-                    </div>
+
+
+         
+            {/* Body Container */}
+
+            
+            <div className='flex flex-1 mx-auto mt-10 lg:mt-4 pt-[60px]'>
+                <main role="main" className="flex flex-col w-screen h-full  px-2  pt-[40px] mb-4">
+
+
+                    {/* StatsBar container */}
+
+
+                    {/* <div className='w-full lg:w-2/3  mx-auto'> 
+                        <TableContent id={id}/>
+                        <Progressbar id={id}/>
+                    </div> */}
              
+
+                    {/* Table container */}
                     
                     <div className='overflow-x-auto mx-0 lg:mx-auto '>  
                         <table className=" w-full overflow-x-auto">
-                            <thead className='bg-blue-200 rounded'>
+                            <thead className='bg-blue-200'>
                                 <tr>
-                                    <th className='p-3 text-sm  text-center border border-gray-700 '>PileNo.</th>
-                                    {/* <th colSpan={11} className='p-5 text-sm  text-center border border-gray-700 '>Step</th> */}
+                                    <th className='p-3 text-sm  text-center border border-gray-700 '>เลขที่เข็ม</th>
                                     <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step1</th>
                                     <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step2</th>
                                     <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step3</th>
@@ -134,52 +141,10 @@ function ProjectPage() {
                                     <th className='px-1 text-sm  text-center border-t border-gray-700  '>Step9</th>
                                     <th className=' text-sm  text-center border-t border-gray-700  '>Step10</th>
                                     <th className=' text-sm  text-center border-t border-gray-700  '>Step11</th>
-                                    <th className='p-3 text-sm  text-center border border-gray-700 '>Updated</th>
+                                    <th className='p-3 text-sm  text-center border border-gray-700 '>วันที่ (ประวัติล่าสุด)</th>
                                 </tr>
                             </thead>
-                            <tbody className=' '>
-                                {/* Row */}
-                                {/* <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
-                                    <td className='p-5 mx-auto my-1 text-sm  border-x border-gray-700  '>
-                                        <Link to="/project/report?pileid=26" className='hover:text-blue-400 hover:underline'>
-                                            PB-26
-                                        </Link>
-                                    </td>
-                                    <td className=' text-sm  text-center border-t border-gray-700'>
-                                        <Link tag={1} to={`/project/report?pileid=1`} className='hover:text-blue-400 hover:underline'><img src={WaitingStep1} alt="step1"/></Link>
-                                    </td>
-                                    <td className=' text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step2" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step2"/></Link>
-                                    </td>
-                                    <td className=' text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step3" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step3"></img></Link>
-                                    </td>
-                                    <td className=' text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step4" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step4"/></Link>
-                                    </td>
-                                    <td className=' text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step5" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step5"/></Link>
-                                    </td>
-                                    <td className=' text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=1#step6" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step6"/></Link>
-                                    </td>
-                                    <td className=' text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step7" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step7"/></Link>
-                                    </td>
-                                    <td className=' text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step8" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step8"/></Link>
-                                    </td>
-                                    <td className=' text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step9" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step9"/></Link>
-                                    </td>
-                                    <td className=' text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step19" className='hover:text-blue-400 hover:underline'><img src={WaitingStage} alt="step10"/></Link>
-                                    </td>
-                                    <td className=' text-sm  text-center border-t border-gray-700  '>
-                                        <Link to="/project/report?pileid=26#step11" className='hover:text-blue-400 hover:underline'><img src={WaitingStep11} alt="step11"/></Link>
-                                    </td>
-                                    <td className=' mx-auto my-1 text-sm  border-x border-gray-700  '>12/12/22 09:11:11</td>
-                                </tr> */}
+                            <tbody>
                                 {/* Real table */}
                                 { projectListX ? projectListX.map((list) => (
                                     <tr key={list.pileno}  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">

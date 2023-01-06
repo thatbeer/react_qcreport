@@ -1,8 +1,10 @@
 
+import { RadioGroup } from "@headlessui/react";
 import React , { useState } from "react";
 // import Datepicker from "react-tailwindcss-datepicker"; not working
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import MyRadioGroup from "../components/RadioGroup";
 
 function SidePage() {
     const [value , setValue ] = useState({
@@ -51,6 +53,9 @@ function SidePage() {
                 </div>
             </div>  
                     <hr/>
+
+
+                   <MyRadioGroup />
         </div>
     </>
   )

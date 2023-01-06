@@ -139,7 +139,7 @@ const GlobalHeader = () =>  {
                                 to="/side"
                                 className={classNames(active ? 'bg-blue-200 shadow-md' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
-                                Your Profile
+                                รายงานการเก็บเหรียญ
                             </Link>
                             )}
                         </Menu.Item>
@@ -149,18 +149,28 @@ const GlobalHeader = () =>  {
                                 to="/side"
                                 className={classNames(active ? 'bg-blue-100 shadow-md' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
-                                Settings
+                                คู่มือการใช้งาน
                             </Link>
                             )}
                         </Menu.Item>
                         <Menu.Item>
                             {({ active }) => (
-                            <button
+                            <Link
+                                to="/side"
+                                className={classNames(active ? 'bg-blue-100 shadow-md' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                            >
+                                Administrator
+                            </Link>
+                            )}
+                        </Menu.Item>
+                        <Menu.Item>
+                            {({ active }) => (
+                            <Link
                                 onClick={LogoutHandler}
                                 className={classNames(active ? 'bg-blue-100 shadow-md' : '', 'block px-4 py-2 text-sm text-gray-700')}
                             >
-                                Logout
-                            </button>
+                                ออกจากระบบ
+                            </Link>
                             )}
                         </Menu.Item>
                         </Menu.Items>

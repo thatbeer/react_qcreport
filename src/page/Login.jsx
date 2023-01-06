@@ -81,7 +81,7 @@ const LoginPage = () => {
     return (
         <>
             <div className="flex min-h-full items-start justify-center 
-            py-20 px-4 sm:px-6 lg:px-8 mx-auto my-auto">
+            py-10 px-4 sm:px-6 lg:px-8 mx-auto my-auto">
                 <div className="w-full max-w-md space-y-4">
                 <div className='relative'>
                     <img
@@ -89,19 +89,16 @@ const LoginPage = () => {
                     src="https://www.efinancethai.com/news/picture/2021/6/15/T/5864835.jpg"
                     alt="Logo"
                     />
-                    <>
-                        <h2 className="abosolute -top-6 -mt-8 text-center text-3xl 
-                            font-bold tracking-tight text-gray-700 ">
-                        Sign in to your account
-                        </h2>
-                        <p className="mt-2 text-center text-sm text-zinc-600">
-                        Or{' '}
-                        <a href="https://www.pylon.co.th/en/contact-us" className="font-medium text-sky-600 hover:text-sky-400">
+                    <h2 className="abosolute -top-6 -mt-8 text-center text-3xl 
+                        font-bold tracking-tight text-gray-700 ">
+                    Sign in to your account
+                    </h2>
+                    <p className="mt-2 text-center text-sm text-zinc-600">
+                    Or{' '}
+                        <a href="https://www.pylon.co.th/en/contact-us" target="_blank"  className="font-medium text-sky-600 hover:text-sky-400">
                             contact our support
                         </a>
-                        </p>
-
-                    </>
+                    </p>
                 </div>
 
 
@@ -205,11 +202,11 @@ const LoginPage = () => {
                             enterFrom="opacity-0" enterTo="opacity-100"
                             leave='ease-in-duration-200' leaveFrom='opacity-100 scale-100' leaveTo='opacity-0 scale-95'
                         >
-                            <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl 
+                            <Dialog.Panel className="w-full min-w-[320px] max-w-xl transform overflow-hidden rounded-2xl 
                                 bg-white p-6 text-left align-middle shadow-xl transition-all">
                                     <Dialog.Title as='h3' className='text-lg font-medium leading-6 text-gray-900'>
                                         <div className='flex flex-between justify-between items-center'>    
-                                            Popup title
+                                            ลืมพาสเวิร์ดเหรอ?
                                             {/* <div className="mx-auto h-10 flex flex-end w-auto">
                                                 <XMarkIcon />
                                             </div> */}
@@ -217,7 +214,7 @@ const LoginPage = () => {
                                     </Dialog.Title>
                                     <div className='my-6 p-4'>
                                         <p className='text-sm text-gray-500'>
-                                            Your payment has been successfully submitted. We'sdsada
+                                            ติดต่อใครดีอะ
                                         </p>
                                     </div>
                                     <div className='mt-4'>
