@@ -1,13 +1,17 @@
 import React from 'react'
 import CheckTab from '../checktab'
 import { CheckIcon } from '@heroicons/react/24/outline'
+import working from '../../img/workingtime.png'
+import calendar from '../../img/calendartime.png'
+
+
 
 
 const Step11 = () => {
     const isBoredPile = true;
   return (
     <>
-        <div className='flex flex-col'>
+        <div className='flex flex-col mb-6'>
             <div className='mx-auto w-full relative my-2'>
                 <div className=' block '>
                     <div className='py-1 border border-gray-600 rounded-t  flex items-center
@@ -76,13 +80,161 @@ const Step11 = () => {
 
             <h1>Graph</h1>
 
-            <div className='mx-auto border border-gray-700 w-full h-screen relative my-2 justify-center'>
+            <div className='mx-auto border border-gray-700 w-full h-auto relative my-2 justify-center'>
                 <div className='mx-auto bg-blue-200 h-10 border-b border-gray-700'>
                     <h1 className='mx-2 py-1 text-bold'>กราฟเปรียบเทียบเวลาการทำงาน และ ความลึก</h1>
                 </div>
                 <div className='flex flex-col items-center justify-center my-2'>
-                    <h2>sdad</h2>
-                    <h2>sdaasd</h2>
+                    <div className='flex flex-col items-center justify-center my-2 w-2/3'>
+                        <img src={working}  alt="working time" />
+                        <img src={calendar}  alt="calendar time" />
+                    </div>
+                    <div className='w-2/5'>
+                        <table className='text-sm'>
+                            <thead>
+                                <tr>
+                                    <th className='px-3 py-2 bg-white border border-white' colSpan={3}></th>
+                                    <th className='px-3 py-2 bg-green-200 border-2 border-white'>Start Date <br/> - <br/>End Date</th>
+                                    <th className='px-3 py-2 bg-green-200 border-2 border-white'>Start Time <br/> - <br/>End Time</th>
+                                    <th className='px-3 py-2 bg-green-200 border-2 border-white'>Total Time <br/>(min.)<br/></th>
+                                    <th className='px-3 py-2 bg-green-200 border-2 border-white'>Depth<br/>(m.)<br/></th>
+                                </tr>
+                            </thead>
+                            <tbody className="">
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white bg-green-200'>1</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200 '></td>
+                                    <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>เตรียมโครงเหล็ก</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>   
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white bg-green-200 px-2 py-2 '>2</td>
+                                    <td className='p-2 border-2 border-white bg-yellow-100  '></td>
+                                    <td className='p-2 border-2 border-white text-sm bg-green-200 w-auto'>ปักเคสซิ่ง</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>20/08/65</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>13:13<br/>-<br/>13:19</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>6</td>   
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>0.00</td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white bg-green-200'>3</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200 '></td>
+                                    <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>วัดตำแหน่งก่อนเจาะ</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>   
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white bg-green-200'>4</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200 '></td>
+                                    <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>ทดสอบของเหลว</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>   
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white bg-green-200'>5</td>
+                                    <td className='p-2 border-2 border-white bg-red-600 '></td>
+                                    <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>เจาะเสาเข็ม - Auger</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>23/08/65</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>11:00<br/>-<br/>11:22</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>22</td>   
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>15.00</td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white bg-green-200'>5</td>
+                                    <td className='p-2 border-2 border-white bg-red-600 '></td>
+                                    <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>เจาะเสาเข็ม - Bucket</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>23/08/65</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>12:06<br/>-<br/>14:00</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>114</td>   
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>49.00</td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white bg-green-200'>6</td>
+                                    <td className='p-2 border-2 border-white bg-red-200 '></td>
+                                    <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>รอเก็บตะกอน และ เก็บตะกอน</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>23/08/65</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>14:00<br/>-<br/>14:50</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>50</td>   
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>49.20</td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white bg-green-200'>7</td>
+                                    <td className='p-2 border-2 border-white bg-purple-500 '></td>
+                                    <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>ลงโครงเหล็ก</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>23/08/65</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>15:00<br/>-<br/>15:17</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>17</td>   
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>49.20</td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white bg-green-200'>8</td>
+                                    <td className='p-2 border-2 border-white bg-brown-500 '></td>
+                                    <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>ลงท่อเทรมี่</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>23/08/65</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>15:20<br/>-<br/>15:38</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>18</td>   
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>49.20</td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white bg-green-200'>9</td>
+                                    <td className='p-2 border-2 border-white bg-amber-200 '></td>
+                                    <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>ทดสอบคอนกรีต</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>   
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white bg-green-200'>10</td>
+                                    <td className='p-2 border-2 border-white bg-green-500 '></td>
+                                    <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>เทคอนกรีต</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>23/08/65</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>15:49<br/>-<br/>16:30</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>41</td>   
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>49.20</td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white bg-green-200'>11</td>
+                                    <td className='p-2 border-2 border-white bg-yellow-800 '></td>
+                                    <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>เทคอนกรีต</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>23/08/65</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>16:35<br/>-<br/>16:40</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>5</td>   
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>0.00</td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white bg-green-200'></td>
+                                    <td className='p-2 border-2 border-white bg-amber-200 '></td>
+                                    <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>Waiting Time</td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>   
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
+                                </tr>
+                                <tr className=''>
+                                    <td className='p-2 border-2 border-white '></td>
+                                    <td className='p-2 border-2 border-white  '></td>
+                                    <td className='p-2 border-2 border-white '></td>
+                                    <td className='p-2 border-2 border-white '></td>
+                                    <td className='p-2 border-2 border-white '></td>
+                                    <td className='p-2 border-2 border-white bg-gray-200  text-center'>273</td>   
+                                    <td className='p-2 border-2 border-white '></td>
+                                </tr>
+                                
+                              
+                                
+                            </tbody>
+                        </table>
+
+                    </div>
+                    
                 </div>
 
             </div>
