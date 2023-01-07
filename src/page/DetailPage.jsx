@@ -1,9 +1,9 @@
-import React , { useEffect , useRef } from 'react'
+import React , { useEffect , useRef , lazy , Suspense } from 'react'
 import { useLocation  } from 'react-router-dom'
 import useQuery from '../utils/use-query'
 
 
-import Step1 from '../components/details/step1'
+// import Step1 from '../components/details/step1'
 import Step2 from '../components/details/step2'
 import Step3 from '../components/details/step3'
 import Step4 from '../components/details/step4'
@@ -13,10 +13,15 @@ import Step7 from '../components/details/step7'
 import Step8 from '../components/details/step8'
 import Step9 from '../components/details/step9'
 import Step10 from '../components/details/step10'
-import Step11 from '../components/details/step11'
+// import Step11 from '../components/details/step11'
 
 import Subnavbar from '../components/Subnavbar';
 import Statcard from '../components/Statcard';
+
+
+const Step1 = lazy(() => import('../components/details/step1'))
+const Step11 = lazy(() => import('../components/details/step11'))
+
 
 
 const DetailPage = (props) => {
@@ -122,10 +127,12 @@ const DetailPage = (props) => {
                     <div className='pt-[30px] lg:pt-[10px]'>
                         <Statcard className=""/>
                         <h1 ref={ref1} id="step1" className='text-3xl font-bold'>1. เตรียมโครงเหล็ก</h1>
-                        <Step1    />
+                        <Suspense>
+                            <Step1    />
+                        </Suspense>
                         <hr className='my-2 '/>
-                        <h1 ref={ref2} id="step2" className='text-3xl font-bold'>2. ปักเคสซิ่ง</h1>
                         <Step2 />
+                        <h1 ref={ref2} id="step2" className='text-3xl font-bold'>2. ปักเคสซิ่ง</h1>
                         <hr className='my-2 '/>
                         <h1 ref={ref3} id="step3" className='text-3xl font-bold'>3. วัดตำแหน่งก่อนเจาะ</h1>
                         <Step3 />
@@ -152,7 +159,9 @@ const DetailPage = (props) => {
                         <Step10 />
                         <hr className='my-2 '/>
                         <h1  ref={ref11} id="step11" className='text-3xl font-bold'>11. ถอนเคสซิ่ง</h1>
-                        <Step11    /> 
+                        <Suspense fallback={<div>Loading...</div>} >
+                            <Step11    /> 
+                        </Suspense>
                     </div>
                 </div >
             </div>

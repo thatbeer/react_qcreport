@@ -175,7 +175,7 @@ const Step10 = () => {
                     <div className='flex flex-col'>
                         <div className='font-bold'>Concrete Volume (m<sup>3</sup>).</div>
                         <article>
-                            <img src={Gimage} alt="step11-graph" className='block items-center'/>
+                            <img src={Gimage} alt="step11-graph" loading="lazy" className='block items-center'/>
                         </article>
 
                     </div>
