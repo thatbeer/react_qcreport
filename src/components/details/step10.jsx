@@ -1,5 +1,5 @@
 import CheckTab from '../checktab';
-
+import Gimage from '../../img/step10_plot01.png'
 
 const itemsX = [
     { id: { first: "1", second: '741'}, cfconcrete: '6.0' , depthconFromtop: "-" , diameter:"-",tremyLength : "4.91" , Ncut:'0', cut:'4.91',left:'62',sinkAfterCut:'5',time: {start:'4 ม.ค. 2566 (15:48)',end:'4 ม.ค. 2566 (15:48)'},last: true },
@@ -159,7 +159,30 @@ const Step10 = () => {
                 </div>
             </div>
 
-            <h1>Graph</h1>
+
+
+            {/* ----------------------------------------------Graph section---------------------------------------------- */}
+            <div className='flex justify-center mx-auto text-center items-center'>
+               
+                
+                        <div className='font-bold rotate-[270deg] text-sm w-auto h-full text-center justify-center items-center'>
+                       
+                             Depth from T.C.L.(m.)
+                            
+
+                        </div>
+                   
+                    <div className='flex flex-col'>
+                        <div className='font-bold'>Concrete Volume (m<sup>3</sup>).</div>
+                        <article>
+                            <img src={Gimage} alt="step11-graph" className='block items-center'/>
+                        </article>
+
+                    </div>
+                
+
+
+            </div>
 
 
             {/* ps tab */}

@@ -78,19 +78,19 @@ const Step11 = () => {
                 </div>
             </div>
 
-            <h1>Graph</h1>
+            {/* Graph container */}
 
-            <div className='mx-auto border border-gray-700 w-full h-auto relative my-2 justify-center'>
+            <div className='mx-auto border border-gray-700 w-auto min-w-full h-auto relative my-2 justify-center'>
                 <div className='mx-auto bg-blue-200 h-10 border-b border-gray-700'>
                     <h1 className='mx-2 py-1 text-bold'>กราฟเปรียบเทียบเวลาการทำงาน และ ความลึก</h1>
                 </div>
-                <div className='flex flex-col items-center justify-center my-2'>
-                    <div className='flex flex-col items-center justify-center my-2 w-2/3'>
-                        <img src={working}  alt="working time" />
+                <div className='flex lg:flex-row flex-col items-center justify-center my-2  '>
+                    <div className='flex flex-col items-start justify-center my-2 w-full lg:w-4/6'>
+                        <img src={working}  alt="working time"  />
                         <img src={calendar}  alt="calendar time" />
                     </div>
-                    <div className='w-2/5'>
-                        <table className='text-sm'>
+                    <div className='relative lg:w-1/2 px-2'>
+                        <table className='text-xs'>
                             <thead>
                                 <tr>
                                     <th className='px-3 py-2 bg-white border border-white' colSpan={3}></th>
@@ -101,7 +101,7 @@ const Step11 = () => {
                                 </tr>
                             </thead>
                             <tbody className="">
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white bg-green-200'>1</td>
                                     <td className='p-2 border-2 border-white bg-gray-200 '></td>
                                     <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>เตรียมโครงเหล็ก</td>
@@ -110,7 +110,7 @@ const Step11 = () => {
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>   
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
                                 </tr>
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white bg-green-200 px-2 py-2 '>2</td>
                                     <td className='p-2 border-2 border-white bg-yellow-100  '></td>
                                     <td className='p-2 border-2 border-white text-sm bg-green-200 w-auto'>ปักเคสซิ่ง</td>
@@ -119,7 +119,7 @@ const Step11 = () => {
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>6</td>   
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>0.00</td>
                                 </tr>
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white bg-green-200'>3</td>
                                     <td className='p-2 border-2 border-white bg-gray-200 '></td>
                                     <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>วัดตำแหน่งก่อนเจาะ</td>
@@ -128,7 +128,7 @@ const Step11 = () => {
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>   
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
                                 </tr>
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white bg-green-200'>4</td>
                                     <td className='p-2 border-2 border-white bg-gray-200 '></td>
                                     <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>ทดสอบของเหลว</td>
@@ -137,7 +137,7 @@ const Step11 = () => {
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>   
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
                                 </tr>
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white bg-green-200'>5</td>
                                     <td className='p-2 border-2 border-white bg-red-600 '></td>
                                     <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>เจาะเสาเข็ม - Auger</td>
@@ -146,7 +146,7 @@ const Step11 = () => {
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>22</td>   
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>15.00</td>
                                 </tr>
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white bg-green-200'>5</td>
                                     <td className='p-2 border-2 border-white bg-red-600 '></td>
                                     <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>เจาะเสาเข็ม - Bucket</td>
@@ -155,7 +155,7 @@ const Step11 = () => {
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>114</td>   
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>49.00</td>
                                 </tr>
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white bg-green-200'>6</td>
                                     <td className='p-2 border-2 border-white bg-red-200 '></td>
                                     <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>รอเก็บตะกอน และ เก็บตะกอน</td>
@@ -164,7 +164,7 @@ const Step11 = () => {
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>50</td>   
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>49.20</td>
                                 </tr>
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white bg-green-200'>7</td>
                                     <td className='p-2 border-2 border-white bg-purple-500 '></td>
                                     <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>ลงโครงเหล็ก</td>
@@ -173,7 +173,7 @@ const Step11 = () => {
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>17</td>   
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>49.20</td>
                                 </tr>
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white bg-green-200'>8</td>
                                     <td className='p-2 border-2 border-white bg-brown-500 '></td>
                                     <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>ลงท่อเทรมี่</td>
@@ -182,7 +182,7 @@ const Step11 = () => {
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>18</td>   
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>49.20</td>
                                 </tr>
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white bg-green-200'>9</td>
                                     <td className='p-2 border-2 border-white bg-amber-200 '></td>
                                     <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>ทดสอบคอนกรีต</td>
@@ -191,7 +191,7 @@ const Step11 = () => {
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>   
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
                                 </tr>
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white bg-green-200'>10</td>
                                     <td className='p-2 border-2 border-white bg-green-500 '></td>
                                     <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>เทคอนกรีต</td>
@@ -200,7 +200,7 @@ const Step11 = () => {
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>41</td>   
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>49.20</td>
                                 </tr>
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white bg-green-200'>11</td>
                                     <td className='p-2 border-2 border-white bg-yellow-800 '></td>
                                     <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>เทคอนกรีต</td>
@@ -209,7 +209,7 @@ const Step11 = () => {
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>5</td>   
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'>0.00</td>
                                 </tr>
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white bg-green-200'></td>
                                     <td className='p-2 border-2 border-white bg-amber-200 '></td>
                                     <td className='p-2 border-2 border-white text-sm bg-green-200  w-auto'>Waiting Time</td>
@@ -218,7 +218,7 @@ const Step11 = () => {
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>   
                                     <td className='p-2 border-2 border-white bg-gray-200  text-center'></td>
                                 </tr>
-                                <tr className=''>
+                                <tr>
                                     <td className='p-2 border-2 border-white '></td>
                                     <td className='p-2 border-2 border-white  '></td>
                                     <td className='p-2 border-2 border-white '></td>
