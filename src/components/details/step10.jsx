@@ -165,7 +165,7 @@ const Step10 = () => {
             <div className='flex justify-center mx-auto text-center items-center'>
                
                 
-                        <div className='font-bold rotate-[270deg] text-sm w-auto h-full text-center justify-center items-center'>
+                        <div className='font-bold rotate-[270deg] text-sm w-1/4 lg:w-auto lg:h-full whitespace-nowrap'>
                        
                              Depth from T.C.L.(m.)
                             
