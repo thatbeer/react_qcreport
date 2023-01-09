@@ -45,9 +45,9 @@ const Maincard = (props) => {
     const {projectid , projName , erp , coin , zone} = props
     return (
         <>
-            <div className="relative px-2 py-1  w-screen lg:w-[800px] h-auto 
-                            shadow-none hover:shadow-lg rounded-lg hover:bg-blue-200 transition-all duration-300">
-                <div className="w-full bg-white-100 py-2 px-2 rounded-lg border border-gray-700 hover:bg-blue-100 ">
+            <div className="relative px-2 py-1  w-screen lg:w-[800px] h-auto
+                            shadow-none hover:shadow-lg rounded-lg hover:bg-red-100 transition-all duration-300">
+                <div className="w-full bg-white-100 py-2 px-2 rounded-lg border border-gray-700 hover:bg-orange-100 bg-orange-200">
 
                     <Link to={`/project?projectid=${projectid}`} state={{...props}} >
                         <h5 className="mb-2  px-1 text font-bold  text-gray-800 dark:text-whte hover:underline hover:text-blue-600 truncate ">
