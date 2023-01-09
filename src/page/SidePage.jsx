@@ -23,9 +23,9 @@ function SidePage() {
 
   return (
     <>
-        <div className='container mx-auto my-4 pt-[60px]'>
-            <div className='flex flex-col mx-4 w-full justify-center'>
-                <div className='flex flex-row my-2  mx-2 justify-center'>
+        <div className='my-4 pt-[60px] mx-auto'>
+            <div className='flex flex-col w-full justify-center'>
+                <div className='flex flex-row my-2'>
                     <input 
                         className='w-5/6 px-4 mx-auto border-2 rounded border-gray-900'
                         placeholder="find your desire"
@@ -33,7 +33,7 @@ function SidePage() {
                     <button className='btn border-2 btn-primary mx-2'>enter</button>
                     <button className='btn border-2 btn-primary mx-2'>ทั้งหมด</button>
                 </div>
-                <div className="bg-white flex flex-row mx-2">
+                <div className="bg-white flex flex-row">
                     <div className="flex flex-col lg:flex-row my-2  mx-2 justify-end w-screen">
                         <div className="flex flex-row">
                             <p1 className="px-4 py-2 mx-2 lg:w-[300px] w-[180px] h-[50px]"><p1>วันที่เริ่ม</p1></p1>
