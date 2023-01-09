@@ -36,7 +36,7 @@ const Subnavbar = (props) => {
                     <div className='flex items-center justify-center' >
                       {pileId}
                       <FolderArrowDownIcon className='md:hidden z-30 lg:relative h-8 w-8  text-red-500 
-                    hover:cursor-pointer ' />
+                    hover:cursor-pointer ' onClick={() => {alert('download!')}} />
                       <div>
                     </div>
                     </div>) : null
@@ -80,7 +80,7 @@ const Subnavbar = (props) => {
                   </h2>
                   <div>
                   <FolderArrowDownIcon className='flex z-30 lg:relative h-12 w-12 mx-2 pr-2 text-red-500 
-                  hover:cursor-pointer ' />
+                  hover:cursor-pointer '  onClick={() => {alert('download!')}} />
 
                   </div>
                 </div>
