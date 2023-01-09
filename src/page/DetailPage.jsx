@@ -1,7 +1,9 @@
-import React , { useEffect , useRef } from 'react'
+import React , { useState ,useEffect , useRef , Fragment } from 'react'
 import { useLocation  } from 'react-router-dom'
 import useQuery from '../utils/use-query'
-
+import { useDetectScroll} from '@smakss/react-scroll-direction'
+import { ArrowUpCircleIcon } from '@heroicons/react/24/outline'
+import { Transition,Dialog } from '@headlessui/react'
 
 import Step1 from '../components/details/step1'
 import Step2 from '../components/details/step2'
@@ -29,6 +31,92 @@ const DetailPage = (props) => {
    
     const pileId = query.get("pileid")
     console.log(pileId)
+    
+    // const startTime = useRef(0);
+    // const endTime = useRef(0);
+
+    // useEffect(() => {
+    //    function handleScroll() {asdsadsad
+    //     if (!startTime) 
+    //    }
+    //     window.addEventListener('scroll',() => {
+    //          startTime.current = Date.now()
+    //         console.log(`start listening to scroll: ${startTime.current}`)
+    //     },{passive:true});
+ 
+    //     return () => {
+    //         window.removeEventListener('scroll',() => {
+    //             endTime.current = Date.now()
+    //             console.log('stop listening to scroll') 
+    //         })
+    //     }
+    // }, [])
+
+    // useEffect(()=> {
+    //     const interval = endTime - startTime
+    //     console.log(interval)
+    //     console.log("endtime",endTime.current)
+    // },[])
+
+
+    const [scrollDir] = useDetectScroll({});
+    const [duration , setDuration ] = useState(0);
+    const [ startTime , setStartTime] = useState(null)
+
+    const [isOpenModal , setIsOpenModal] = useState(false)
+
+    const closeModal = () => {
+        setIsOpenModal(false)
+    }
+    const openModal = () => {
+        setIsOpenModal(true)
+    }
+    
+    useEffect(() => {
+        function handleScroll() {
+            if (scrollDir === "down") {
+                setDuration(duration + 1);
+                setStartTime(0)
+            }
+        }
+        window.addEventListener('scroll',handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll',handleScroll)
+        }
+    },[duration,scrollDir])
+
+
+
+    // const [scrollTime, setScrollTime] = useState(0);
+    // const [scrollStart, setScrollStart] = useState(0);
+    // const [isScrolling, setIsScrolling] = useState(false);
+    // const coin = useRef(null)
+
+    // useEffect(() => {
+    //     async function handleScroll() {
+    //       await setScrollTime(Date.now());
+    //       if (!isScrolling) {
+    //        await setScrollStart(Date.now() + 30000);
+    //         setIsScrolling(true);
+    //       }
+    //     }
+
+    //     window.addEventListener('scroll',handleScroll)
+    //     return () => {
+    //         window.removeEventListener('scroll',handleScroll);
+    //     };
+    // },[isScrolling]);
+
+    // useEffect(() => {
+    //     if (scrollTime - scrollStart > 20000) {
+    //         setIsScrolling(false);
+    //         setTimeout(() => {coin.current = true},10000)
+    //     }
+    
+    // },[scrollStart,scrollTime,isScrolling])
+    
+
     useEffect(() => {
         const tagname = location.hash.substring(1);
 
@@ -42,10 +130,14 @@ const DetailPage = (props) => {
             // scroll to the top of the browser window when changing route
         // the window object is a normal DOM object and is safe to use in React.
         }
-
-
     },[location])
 
+   
+
+   
+
+
+    //---------------------------- handifull navigator to each steps ----------------------------//
     const ref1 = useRef(null)
     const ref2 = useRef(null)
     const ref3 = useRef(null)   
@@ -90,7 +182,7 @@ const DetailPage = (props) => {
     const handleClick2Ref11 = () => {
         ref11.current?.scrollIntoView({behavior: 'smooth' , block: 'center'});
     };
-   
+   //----------------------------------------------------------------------------------------------------------------//
    
   return (
     <>
@@ -114,6 +206,87 @@ const DetailPage = (props) => {
                 </div>
             </div>
         </div>
+        {/* check scrolling and time */}
+        {/* {
+            true ? 
+        <div className='mx-auto border bg-slate-500 fixed  top-0 right-0  z-50  p-4'    >
+            <p>Elapsed time: {duration} seconds , ScrollStart: {startTime} ,Delta: {duration-startTime} ,Direction:{scrollDir}</p>
+        </div> 
+        : null
+
+        } */}
+        {
+            duration - startTime > 100 ? 
+            <>
+                <div className='fixed bottom-0 flex w-full justify-center z-50 bg-red-500 text-white py-1'    >
+                    <div className='flex flex-1 justify-center items-center mx-auto ease-in transition duration-1000 hover:ease-out'>
+                    <p>You can take coin now! </p>
+                    <ArrowUpCircleIcon className='w-8 h-8 text-white hover:cursor-pointer' onClick={openModal}/>
+                    </div>
+                </div>
+                 <Transition appear show={isOpenModal} as={Fragment}>
+                    <Dialog as="div" className="relative z-10" onClose={closeModal}>
+                    <Transition.Child
+                        as={Fragment}
+                        enter="ease-out duration-300"
+                        enterFrom="opacity-0"
+                        enterTo="opacity-100"
+                        leave="ease-in duration-200"
+                        leaveFrom="opacity-100"
+                        leaveTo="opacity-0"
+                    >
+                        <div className="fixed inset-0 bg-black bg-opacity-25" />
+                    </Transition.Child>
+
+                    <div className="fixed inset-0 overflow-auto">
+                        <div className="flex min-h-full items-center justify-center p-4 text-center">
+                        <Transition.Child
+                            as={Fragment}
+                            enter="ease-out duration-300"
+                            enterFrom="opacity-0 scale-95"
+                            enterTo="opacity-100 scale-100"
+                            leave="ease-in duration-200"
+                            leaveFrom="opacity-100 scale-100"
+                            leaveTo="opacity-0 scale-95"
+                        >
+                            <Dialog.Panel className="w-full max-w-md transform  rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                            <Dialog.Title
+                                as="h3"
+                                className="text-lg font-medium leading-6 text-gray-900"
+                            >
+                                รับเหรียญโครงการ <br/>{location.state.projName}
+                            </Dialog.Title>
+                            <div className="mt-2 py-2">
+                                <p className="text-sm text-gray-500">
+                                โปรดยืนยันให้แน่ใจในการเก็ยเหรียญ
+                                หากมีปัญหาหรือสงสัยติดต่อ 101
+                                </p>
+                            </div>
+
+                            <div className="mt-4">
+                                <button
+                                type="button"
+                                className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                                onClick={closeModal}
+                                >
+                                ยืนยัน
+                                </button>
+                            </div>
+                            </Dialog.Panel>
+                        </Transition.Child>
+                        </div>
+                    </div>
+                    </Dialog>
+                </Transition>
+
+
+            </>
+            
+            : null
+        }
+        {/* {
+            duration - startTime > 100 && isOpenModal && <div className='fixed top-0 '></div>
+        } */}
         <div className='relative lg:top-16 top-14'>
             <div className='mx-auto px-2 lg:my-0 my-2 flex flex-col w-full md:w-2/3 '>
                 <div className='pt-[66px] lg:pt-[60px] '>

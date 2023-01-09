@@ -7,6 +7,7 @@
     "@heroicons/react": "^2.0.13",
     "@react-pdf-viewer/core": "^3.10.0",
     "@react-pdf-viewer/toolbar": "^3.10.0",
+    "@smakss/react-scroll-direction": "^1.0.4",
     "@tailwindcss/forms": "^0.5.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -24,7 +25,8 @@
     "swal": "^0.1.0",
     "sweetalert": "^2.1.2",
     "tailwindcss": "^3.2.4",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

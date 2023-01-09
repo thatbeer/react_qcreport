@@ -5,10 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-ReactDOM.render(
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
     <Router forceRefresh={true}>
         <App />
-    </Router>, document.getElementById('root'));
+    </Router>
+);
 
 
 
