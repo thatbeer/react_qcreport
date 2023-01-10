@@ -9,7 +9,7 @@ const Step8 = () => {
         <div className='flex flex-col'>
             <div className='mx-auto w-full relative my-2'>
                 <div className=' block '>
-                    <div className='py-1 border border-gray-600 rounded-t  flex items-center
+                    <div className='py-1 border border-gray-600   flex items-center
                     justify-start bg-blue-300'>
                         <h1 className="mx-2 font-bold">ข้อมูลการลงโครงเหล็ก</h1>
                     </div>
@@ -75,67 +75,67 @@ const Step8 = () => {
                         </tr>
                     </thead>
                     <tbody className=' '>
-                            <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-gray-700  '>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-400 text-white '>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700  '>2.20</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700 relative justify-center '><CheckIcon className='mx-auto w-5 h-5'/></td>
                             </tr>
-                            <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-gray-700  '>11</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-400 text-white '>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700  '>6.00</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700    '></td>
                             </tr>
-                            <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-gray-700  '>9</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-400 text-white '>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700  '>6.00</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700    '></td>
                             </tr>
-                            <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-gray-700  '>8</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-400 text-white '>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700  '>6.00</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700    '></td>
                             </tr>
-                            <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-gray-700  '>7</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-400 text-white '>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700  '>6.00</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700    '></td>
                             </tr>
-                            <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-gray-700  '>6</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-400 text-white '>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700  '>6.00</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700    '></td>
                             </tr>
-                            <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-gray-700  '>5</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-400 text-white '>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700  '>6.01</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700    '></td>
                             </tr>
-                            <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-gray-700  '>4</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-400 text-white '>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700  '>6.02</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700    '></td>
                             </tr>
-                            <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-gray-700  '>3</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-400 text-white '>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700  '>6.05</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700    '></td>
                             </tr>
-                            <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-gray-700  '>2</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-400 text-white '>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700  '>6.08</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700    '></td>
                             </tr>
-                            <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-gray-700  '>1</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-400 text-white '>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-gray-700  '>5.87</td>

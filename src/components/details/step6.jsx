@@ -11,7 +11,7 @@ const Step6 = () => {
         <div className='flex flex-col'>
             <div className='mx-auto w-full relative my-2'>
             <div className=' block '>
-            <div className='py-1 border border-gray-600 rounded-t  flex items-center
+            <div className='py-1 border border-gray-600   flex items-center
             justify-start  font-bold bg-blue-300'>
                 <h1 className='mx-2' >ข้อมูลการเก็บตะกอน</h1>
             </div>

@@ -12,7 +12,7 @@ const HeadlessTable = () => {
         
         <div className='mx-auto w-full relative my-2'>
           <div className=' block '>
-          <div className='py-1 border bg-blue-300  border-gray-600 rounded-t  flex items-center
+          <div className='py-1 border bg-blue-300  border-gray-600   flex items-center
            justify-start font-bold '>
             <h1 className='mx-2'>ข้อมูลการปักเคสซิ่ง</h1>
           </div>

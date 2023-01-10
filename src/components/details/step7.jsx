@@ -10,7 +10,7 @@ const Step7 = () => {
         <div className='flex flex-col'>
             <div className='mx-auto w-full relative my-2'>
             <div className=' block '>
-            <div className='py-2 border border-gray-600 rounded-t  flex items-center
+            <div className='py-2 border border-gray-600   flex items-center
             justify-start font-bold bg-blue-300'>
                 <h1 className='mx-2'>ข้อมูลการลงโครงเหล็ก</h1>
             </div>
@@ -66,7 +66,7 @@ const Step7 = () => {
 
             <div className='overflow-x-auto my-2 '>  
                 <table className=" w-full">
-                    <thead className='bg-blue-300 rounded'>
+                    <thead className='bg-blue-300 '>
                         <tr>
                             <th className='p-5 text-sm w-1/6 text-center border border-gray-700 '>โครง</th>
                             <th className='p-5 w-1/5 text-sm  text-center border border-gray-700 '>ลงโครงเหล็ก</th>
@@ -76,7 +76,7 @@ const Step7 = () => {
                         </tr>
                     </thead>
                     <tbody className='bg-gray-100 '>
-                    <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                    <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>6</td>
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
@@ -91,7 +91,7 @@ const Step7 = () => {
                                     ช่วงที่ 1 : RB9 SR24 x 6.450 m. @0.300
                             </td>
                         </tr>
-                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                        <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>5</td>
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
@@ -106,7 +106,7 @@ const Step7 = () => {
                                     ช่วงที่ 1 : RB9 SR24 x 8.800 m. @0.300
                             </td>
                         </tr>
-                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                        <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>4</td>
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
@@ -121,7 +121,7 @@ const Step7 = () => {
                                     ช่วงที่ 1 : RB9 SR24 x 8.200 m. @0.300
                             </td>
                         </tr>
-                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                        <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>3</td>
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
@@ -136,7 +136,7 @@ const Step7 = () => {
                                     ช่วงที่ 1 : RB9 SR24 x 10.200 m. @0.300
                             </td>
                         </tr>
-                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                        <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>2</td>
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
@@ -151,7 +151,7 @@ const Step7 = () => {
                                     ช่วงที่ 1 : RB9 SR24 x 10.200 m. @0.150
                             </td>
                         </tr>
-                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                        <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>1</td>
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg--300 text-'>
                                 <CheckIcon class="w-6 h-6 mx-auto"/>

@@ -11,7 +11,7 @@ const Step3 = () => {
                 <>
                     <div className='mx-auto w-full relative my-2'>
                     <div className='  bg-gray-100'>
-                    <div className='py-1 border border-gray-600 rounded-t  flex items-center
+                    <div className='py-1 border border-gray-600 -t  flex items-center
                     justify-start font-bold  bg-blue-300'>
                         <h1 className='mx-2'>ข้อมูลการวัดตำแหน่ง</h1>
                     </div>
@@ -66,7 +66,7 @@ const Step3 = () => {
                 <>
                     <div className='mx-auto w-full relative my-2'>
                     <div className='  bg-gray-100'>
-                    <div className='py-1 border border-gray-600 rounded-t  flex items-center
+                    <div className='py-1 border border-gray-600 -t  flex items-center
                     justify-start font-bold  bg-blue-300'>
                         <h1 className='mx-2'>ข้อมูลการวัดตำแหน่ง</h1>
                     </div>
@@ -136,10 +136,10 @@ const Step3 = () => {
                 <thead className='bg-blue-300 object-fill'>
                     <tr className=''>
                         
-                        <th className='p-5 text-sm w-1/4 text-center border rounded border-gray-700 '>ค่าพิกัดหมุด	</th>
+                        <th className='p-5 text-sm w-1/4 text-center border  border-gray-700 '>ค่าพิกัดหมุด	</th>
                         <th className='p-5 text-sm w-1/4 text-center border border-gray-700 '>ตามแบบ</th>
                         <th className='p-5 text-sm w-1/4 text-center border border-gray-700 '>ที่อ่านได้	</th>
-                        <th className='p-5 text-sm w-1/4 text-center border rounded-none border-gray-700 '>คลาดเคลื่อน</th>
+                        <th className='p-5 text-sm w-1/4 text-center border  border-gray-700 '>คลาดเคลื่อน</th>
                     </tr>
                 </thead>
                 <tbody className='bg-gray-100 '>
@@ -153,7 +153,7 @@ const Step3 = () => {
                             <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>Eastthing(ม.)</td>
                             <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>792.055</td>
                             <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>792.027</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r rounded-none border-gray-700 bg-green-300   '>-0.0280</td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r -none border-gray-700 bg-green-300   '>-0.0280</td>
                         </tr>
                 </tbody>
             </table>

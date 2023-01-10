@@ -17,7 +17,7 @@ const Step5 = () => {
                     {/* bored pile */}
                     <div className='mx-auto w-full relative my-2'>
                     <div className=' block bg-white'>
-                    <div className='py-1 border border-gray-600 rounded-t  flex items-center
+                    <div className='py-1 border border-gray-600   flex items-center
                     justify-start font-bold  bg-blue-300'>
                         <h1 className='mx-2'>ข้อมูลการเจาะ</h1>
                     </div>
@@ -99,7 +99,7 @@ const Step5 = () => {
                     {/* Dwall */}
                     <div className='mx-auto w-full relative my-2'>
                     <div className=' block bg-white'>
-                    <div className='py-1 border border-gray-600 rounded-t  flex items-center
+                    <div className='py-1 border border-gray-600   flex items-center
                     justify-start font-bold  bg-blue-300'>
                         <h1 className='mx-2'>ข้อมูลการเจาะ</h1>
                     </div>
@@ -223,7 +223,7 @@ const Step5 = () => {
                     </tr>
                 </thead>
                 <tbody className='bg-gray-1002.บัคเก็ต '>
-                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                        <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                             <td className='px-2 py-1 border-x border-gray-700 '>1.สว่าน</td>
                             <td className='px-2 py-1 border-r border-gray-700 '>14.000</td>
                             <td className='px-2 py-1 border-r border-gray-700 '>PR-25</td>
@@ -233,7 +233,7 @@ const Step5 = () => {
                             <td className='px-2 py-1 border-r border-gray-700 '></td>
                             <td className='px-2 py-1 border-r border-gray-700 '>-</td>
                         </tr>         
-                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                        <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                             <td className='px-2 py-1 border-x border-gray-700 '>2.บัคเก็ต</td>
                             <td className='px-2 py-1 border-r border-gray-700 '>30</td>
                             <td className='px-2 py-1 border-r border-gray-700 '>PR-25</td>
@@ -243,7 +243,7 @@ const Step5 = () => {
                             <td className='px-2 py-1 border-r border-gray-700 '></td>
                             <td className='px-2 py-1 border-r border-gray-700 '>-</td>
                         </tr>         
-                        <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                        <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                             <td className='px-2 py-1 border-x border-gray-700 '>3.บัคเก็ต</td>
                             <td className='px-2 py-1 border-r border-gray-700  bg-green-300'>68.600</td>
                             <td className='px-2 py-1 border-r border-gray-700 '>PR-25</td>

@@ -23,7 +23,7 @@ const Step10 = () => {
         <div className='flex flex-col' >
             <div className='mx-auto w-full relative my-2'>
                 <div className=' block '>
-                    <div className='py-1 border border-gray-600 rounded-t  flex items-center
+                    <div className='py-1 border border-gray-600   flex items-center
                     justify-start  bg-blue-300'>
                         <h1 className='mx-2 text-start font-bold'>ข้อมูลการเทตอนกรีต</h1>
                     </div>
@@ -51,7 +51,7 @@ const Step10 = () => {
 
             <div className='overflow-x-auto my-2 '>  
                 <table className=" w-full">
-                    <thead className='bg-blue-300 rounded'>
+                    <thead className='bg-blue-300 '>
                         <tr>
                             <th rowSpan={2} className=' px-4 py-2 text-xs tracking-wide text-center border border-gray-700 divide-y '><pre>คันที่</pre>เลขที่รถ</th>
                             <th rowSpan={2} className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '>คอนกรีตสะสม (ม3)</th>
@@ -74,7 +74,7 @@ const Step10 = () => {
                         </tr>
                     </thead>
                     <tbody className='bg-gray-100 '>   
-                            {/* <tr  className="text-start border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                            {/* <tr  className="text-start border-y border-gray-700   my-auto items-center justify-center">
                                 <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '><pre>1</pre>1425</th>
                                 <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '>6.00</th>
                                 <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '>-</th>
@@ -89,7 +89,7 @@ const Step10 = () => {
                             </tr> */}
                             
                             { itemsX.map((item,idx) => (
-                                <tr  className="text-start border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                                <tr  className="text-start border-y border-gray-700   my-auto items-center justify-center">
                                     <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '><pre>{item.id.first}</pre>{item.id.second}</th>
                                     <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '>{item.cfconcrete}</th>
                                     <th className='px-4 py-2 text-xs tracking-wide text-center border border-gray-700 '>{item.depthconFromtop}</th>
@@ -138,7 +138,7 @@ const Step10 = () => {
 
             <div className='mx-auto w-full relative my-2'>
                 <div className=' block '>
-                    <div className='py-1 border border-gray-600 rounded-t  flex items-center
+                    <div className='py-1 border border-gray-600   flex items-center
                     justify-start bg-blue-300'>
                         <h1 className='text-start mx-2 font-bold'>ข้อมูลคอนกรีตที่เหลือจากการเท</h1>
                     </div>

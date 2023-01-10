@@ -9,7 +9,7 @@ const Step9 = () => {
         <div className='flex-col'>
             <div className='mx-auto w-full relative my-2'>
                 <div className=' block '>
-                    <div className='py-1 border border-gray-600 rounded-t  items-center
+                    <div className='py-1 border border-gray-600   items-center
                     justify-start bg-blue-300'>
                         <h1 className='text-start mx-2 font-bold'>ข้อมูลทดสอบคอนกรีต</h1>
                     </div>
@@ -58,7 +58,7 @@ const Step9 = () => {
                       </tr>
                   </thead>
                   <tbody className='bg-gray-100 '>
-                          <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                          <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>
                                 <strong>1</strong>
                                 <pre>741</pre>
@@ -76,7 +76,7 @@ const Step9 = () => {
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '>-</td>
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '></td>
                           </tr>
-                          <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                          <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>
                               <strong>2</strong>
                                 <pre>949</pre>
@@ -94,7 +94,7 @@ const Step9 = () => {
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '>-</td>
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '></td>
                           </tr>
-                          <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                          <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>
                               <strong>4</strong>
                                 <pre>731</pre>
@@ -112,7 +112,7 @@ const Step9 = () => {
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '>-</td>
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '></td>
                           </tr>
-                          <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                          <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>
                               <strong>5</strong>
                                 <pre>741</pre>
@@ -130,7 +130,7 @@ const Step9 = () => {
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '>-</td>
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '></td>
                           </tr>
-                          <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                          <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>
                               <strong>6</strong>
                                 <pre>750</pre>
@@ -148,7 +148,7 @@ const Step9 = () => {
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '>-</td>
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '></td>
                           </tr>
-                          <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                          <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>
                               <strong>7</strong>
                                 <pre>949</pre>
@@ -166,7 +166,7 @@ const Step9 = () => {
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '>-</td>
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '></td>
                           </tr>
-                          <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                          <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>
                               <strong>8</strong>
                                 <pre>731</pre>
@@ -184,7 +184,7 @@ const Step9 = () => {
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '>-</td>
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '></td>
                           </tr>
-                          <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                          <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>
                               <strong>9</strong>
                                 <pre>741</pre>
@@ -202,7 +202,7 @@ const Step9 = () => {
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '>-</td>
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '></td>
                           </tr>
-                          <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                          <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>
                               <strong>10</strong>
                                 <pre>750</pre>
@@ -223,12 +223,12 @@ const Step9 = () => {
                        
                           
                           {/* summarize */}
-                          <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                          <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                               <td colSpan={2} className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>ปริมาณคอนกรีตสะสม</td>
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300   '>63.2500</td>
                               <td colSpan={4} className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700 bg-green-300  '>ไม่เกินโควต้า</td>
                           </tr>
-                          <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                          <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
                               <td colSpan={2} className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>New Quota (ม3) (B)</td>
                               <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '>64.4200</td>
                               <td colSpan={4} className='px-2 py-3 mx-auto my-1 text-sm  border-r border-gray-700  '>{'B >= A'}</td>
