@@ -218,7 +218,7 @@ const DetailPage = (props) => {
         {
             duration - startTime > 200 ? 
             <>
-                <div className='fixed bottom-0 flex w-full justify-center z-50 bg-rose-00 text-white py-1'    >
+                <div className='fixed bottom-0 flex w-full justify-center z-50 bg-rose-600 text-white py-1'    >
                     <div className='flex flex-1 justify-center items-center mx-auto ease-in transition duration-1000 hover:ease-out'>
                     <p>You can take coin now! </p>
                     <ArrowUpCircleIcon className='w-8 h-8 text-white hover:cursor-pointer' onClick={openModal}/>
