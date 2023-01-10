@@ -23,7 +23,7 @@ const HeadlessTable = () => {
                 <th>2</th>
               </tr>
             </thead> */}
-            <tbody className=' '>
+            <tbody className='bg-gray-100 '>
               <tr className='  border border-x border-gray-600  '>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 text-start border-r border-gray-600'>วันที่เริ่ม</th>
                 <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-white'>3 ม.ค. 2566 (09:00)</td>
