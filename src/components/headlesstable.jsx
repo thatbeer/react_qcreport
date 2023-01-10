@@ -12,7 +12,7 @@ const HeadlessTable = () => {
         
         <div className='mx-auto w-full relative my-2'>
           <div className=' block '>
-          <div className='py-1 border bg-blue-200  border-gray-600 rounded-t  flex items-center
+          <div className='py-1 border bg-blue-300  border-gray-600 rounded-t  flex items-center
            justify-start font-bold '>
             <h1 className='mx-2'>ข้อมูลการปักเคสซิ่ง</h1>
           </div>
@@ -55,7 +55,7 @@ const HeadlessTable = () => {
               <tr className=' border-b border-x border-gray-600   '>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 text-start border-r border-gray-600'>เช็คลูกดิ่ง</th>
                 {pass1 ? 
-                  <td className='px-2 py-1 text-sm  bg-green-400 h-auto  flex justify-center'><CheckIcon className='w-6 h-6 text-white' /></td>
+                  <td className='px-2 py-1 text-sm  bg-green-300 h-auto  flex justify-center'><CheckIcon className='w-6 h-6 text-white' /></td>
                 : 
                   <td className='px-2 py-1 text-sm   bg-red-400 h-auto flex  justify-center'><MinusIcon className='w-6 h-6 text-white'/></td>
                 }
@@ -63,7 +63,7 @@ const HeadlessTable = () => {
               <tr className=' border-b border-x border-gray-600    h-full'>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 border-r text-start border-gray-600 '>เช็คระดับน้ำ</th>
                 {pass2 ? 
-                  <td className='px-2 py-1 text-sm  bg-emerald-400 h-auto flex  justify-center'><CheckIcon className='w-6 h-6 text-white' /></td>
+                  <td className='px-2 py-1 text-sm  bg-green-300 h-auto flex  justify-center'><CheckIcon className='w-6 h-6 text-white' /></td>
                 : 
                   <td className=' px-2 py-1 text-sm    bg-red-400 h-auto flex  justify-center'><MinusIcon className='w-6 h-6 text-white'/></td>
                 }
