@@ -140,7 +140,7 @@ function ProjectPage() {
                         </button>
                     </div>
                     {/* search bar section */}
-                    <div className='relative p-2  xl:absolute xl:right-[3.5rem] flex  text-gray-700 mx-auto xl:mx-2'>
+                    <div className='relative px-1 py-2  xl:absolute xl:right-[3rem] flex  text-gray-700 mx-auto xl:mx-2'>
                         <input type={'search'} name="search" placeholder='search'
                             className='border-2 lg:w-full font-medium border-gray-300 bg-white h-8  px-2 rounded-lg focus:outline-none'/>
                         <button type='submit' className='relative '>
