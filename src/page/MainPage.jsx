@@ -23,7 +23,7 @@ function Mainpage() {
                 <div className="flex flex-col items-center justify-center mx-auto ">
                     {projectX.map((list,idx) => (
                         <ul key={idx} className="lg:mx-auto ">
-                            <li className=""><Maincard projectid={list.projectId} erp={list.erp} coin={list.coin} projName={list.name} zone={list.zone} /></li>
+                            <li><Maincard projectid={list.projectId} erp={list.erp} coin={list.coin} projName={list.name} zone={list.zone} /></li>
                         </ul>
                     ))}
                 </div>

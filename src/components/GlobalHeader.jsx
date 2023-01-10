@@ -3,6 +3,9 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, ArrowUpCircleIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
 import { Link, Outlet } from 'react-router-dom';
 import Logo from '../img/brand.png';
+import IconUser from '../img/ico-user.png'
+
+
 const navigation = [
     { name: 'Sub', to: '/project', current: false },
     { name: 'Detail', to: '/project/id', current: false },
@@ -25,11 +28,11 @@ const GlobalHeader = () =>  {
     return (
         <>
         <header className='fixed top-0 z-40 w-full '>
-        <Disclosure as="nav" className="bg-blue-600">
+        <Disclosure as="nav" className="bg-sky-600">
         {({ open }) => (
             <>
             <div className="mx-auto w-screen px-2 sm:px-6 lg:px-8">
-                <div className="relative flex h-14 items-center justify-between">
+                <div className="relative flex h-12 items-center justify-between">
                     {/* Mobile menu button*/}
                     {/* <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                         <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -53,7 +56,7 @@ const GlobalHeader = () =>  {
                     focus:ring-gray-800 focus:ring-offset-1 focus:ring-offset-white'>
                         <Link to="/">
                             <img
-                                className="h-6 w-45 "
+                                className="h-4 w-45 "
                                 src={Logo}
                                 alt=""
                             />
@@ -90,12 +93,12 @@ const GlobalHeader = () =>  {
                     {/* Notification button for later add ons */} 
                     <button
                     type="button"
-                    className="flex rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                    className="flex rounded-full bg-gray-800 px-2 py-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                     >
                     <span className="sr-only">View notifications</span>
-                    <div className='flex flex-row'>
-                        <CurrencyDollarIcon className="h-6 w-6 text-yellow-400 " aria-hidden="true" />
-                        999999999
+                    <div className='flex flex-row items-center'>
+                        <CurrencyDollarIcon className="h-5 w-5 text-sm text-yellow-400 " aria-hidden="true" />
+                        170000
                     </div>
                     </button>
 
@@ -106,8 +109,8 @@ const GlobalHeader = () =>  {
                         focus:ring-gray-800 focus:ring-offset-1 focus:ring-offset-white">
                         <span className="sr-only">Open user menu</span>
                         <img
-                            className="h-12 w-12 rounded-full"
-                            src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            className="h-8 w-8 rounded-full"
+                            src={IconUser}
                             alt=""
                         />
                         </Menu.Button>

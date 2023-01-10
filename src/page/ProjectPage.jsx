@@ -100,8 +100,8 @@ function ProjectPage() {
 
   return (
     <>
-        <div className="w-full flex flex-col flex-grow h-screen relative lg:top-14 top-16">
-            <div className='fixed top-[52px] w-full items-center mx-auto bg-blue-100 h-[50px] z-30 py-2  '>
+        <div className="w-full flex flex-col flex-grow h-screen relative lg:top-10 top-14">
+            <div className='fixed top-[48px] w-full items-center mx-auto bg-blue-100 h-[50px] z-30 py-2  '>
                 <Subnavbar titleback={false} isProjectPage={true} PName={state?.projName}/>
                 <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-blue-100'>
                     {/* filter bar for pc */}

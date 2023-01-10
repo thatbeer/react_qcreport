@@ -187,7 +187,7 @@ const DetailPage = (props) => {
   return (
     <>
         <div className='fixed w-screen z-30 transition-all duration-200'>
-            <div className='relative lg:top-14 top-12'>
+            <div className='relative lg:top-12 top-10'>
                 <Subnavbar titleback={true} pileId={pileId} PName={location.state?.projName} />
                 <div className="overflow-x-auto fixed min-h-6  left-0 px-1 py-1 bg-blue-100 border-b border-blue-300 w-screen z-20 ">
                     <ul className='flex px-1 flex-row mx-auto items-center justify-center '>
@@ -289,7 +289,7 @@ const DetailPage = (props) => {
         } */}
         <div className='relative lg:top-16 top-14'>
             <div className='mx-auto px-2 lg:my-0 my-2 flex flex-col w-full md:w-2/3 '>
-                <div className='pt-[66px] lg:pt-[60px] '>
+                <div className='pt-[56px] lg:pt-[60px] '>
                 {' '}
                 {/* Search Container as SIDE BAR */}
                     <div className='pt-[30px] lg:pt-[10px]'>
