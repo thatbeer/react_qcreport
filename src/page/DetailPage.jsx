@@ -191,17 +191,17 @@ const DetailPage = (props) => {
                 <Subnavbar titleback={true} pileId={pileId} PName={location.state?.projName} />
                 <div className="overflow-x-auto fixed min-h-6  left-0 px-1 py-1 bg-blue-200 border-b-2 border-blue-600 w-screen z-20 ">
                     <ul className='flex px-1 flex-row mx-auto items-center justify-center '>
-                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center' onClick={handleClick2Ref1}><a className='text-blue-800'>1</a></li>
-                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center' onClick={handleClick2Ref2}><a className='text-blue-800' >2</a></li>
-                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center' onClick={handleClick2Ref3}><a className='text-blue-800'>3</a></li>
-                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center' onClick={handleClick2Ref4}><a className='text-blue-800'>4</a></li>
-                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center' onClick={handleClick2Ref5}><a className='text-blue-800'>5</a></li>
-                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center' onClick={handleClick2Ref6}><a className='text-blue-800'>6</a></li>
-                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center' onClick={handleClick2Ref7}><a className='text-blue-800'>7</a></li>
-                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center' onClick={handleClick2Ref8}><a className='text-blue-800'>8</a></li>
-                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center' onClick={handleClick2Ref9}><a className='text-blue-800'>9</a></li>
-                        <li className='lg:px-0 px-1 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-start lg:text-center' onClick={handleClick2Ref10}><a className='text-blue-800'>10</a></li>
-                        <li className='lg:px-0 px-1 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-start lg:text-center' onClick={handleClick2Ref11}><a className='text-blue-800'>11</a></li>
+                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center bg-orange-200' onClick={handleClick2Ref1}><a className='text-blue-800'>1</a></li>
+                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center bg-orange-200' onClick={handleClick2Ref2}><a className='text-blue-800' >2</a></li>
+                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center bg-orange-200' onClick={handleClick2Ref3}><a className='text-blue-800'>3</a></li>
+                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center bg-orange-200' onClick={handleClick2Ref4}><a className='text-blue-800'>4</a></li>
+                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center bg-orange-200' onClick={handleClick2Ref5}><a className='text-blue-800'>5</a></li>
+                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center bg-orange-200' onClick={handleClick2Ref6}><a className='text-blue-800'>6</a></li>
+                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center bg-orange-200' onClick={handleClick2Ref7}><a className='text-blue-800'>7</a></li>
+                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center bg-orange-200' onClick={handleClick2Ref8}><a className='text-blue-800'>8</a></li>
+                        <li className='px-2 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-center bg-orange-200' onClick={handleClick2Ref9}><a className='text-blue-800'>9</a></li>
+                        <li className='lg:px-0 px-1 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-start lg:text-center bg-orange-200' onClick={handleClick2Ref10}><a className='text-blue-800'>10</a></li>
+                        <li className='lg:px-0 px-1 hover:cursor-pointer border border-blue-600 mx-1 w-6 z-30 text-start lg:text-center bg-orange-200' onClick={handleClick2Ref11}><a className='text-blue-800'>11</a></li>
                     </ul>
                 </div>
             </div>

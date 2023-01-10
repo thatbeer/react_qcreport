@@ -10,34 +10,34 @@ const Step8 = () => {
             <div className='mx-auto w-full relative my-2'>
                 <div className=' block '>
                     <div className='py-1 border border-gray-600 rounded-t  flex items-center
-                    justify-start bg-blue-200'>
+                    justify-start bg-blue-300'>
                         <h1 className="mx-2 font-bold">ข้อมูลการลงโครงเหล็ก</h1>
                     </div>
                     <table className='w-full'>
-                        <tbody className=' '>
+                        <tbody className='bg-gray-100 '>
                         <tr className='  border border-x border-gray-600 '>
-                            <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-green-200 border-gray-600'>วันที่เริ่ม</th>
+                            <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-orange-200 border-gray-600'>วันที่เริ่ม</th>
                             <td className='p-1 w-1/2 lg:w-2/3 text-start text-sm  '>4 ม.ค. 2566 (15:11)</td>
                         </tr>
                         <tr className='  border border-x border-gray-600 '>
-                            <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-green-200 border-gray-600'>วันที่เสร็จ	</th>
+                            <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-orange-200 border-gray-600'>วันที่เสร็จ	</th>
                             <td className='p-1 w-1/2 lg:w-2/3 text-start text-sm '>4 ม.ค. 2566 (15:46)</td>
                         </tr>
                         <tr className='  border border-x border-gray-600 '>
-                            <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-green-200 border-gray-600'>เครื่องจักร/เครน No.	</th>
+                            <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-orange-200 border-gray-600'>เครื่องจักร/เครน No.	</th>
                             <td className='p-1 w-1/2 lg:w-2/3 text-start text-sm  '>CR-31</td>
                         </tr>
                         <tr className='  border border-x border-gray-600 '>
-                            <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-green-200 border-gray-600'>ผู้ขับ</th>
+                            <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-orange-200 border-gray-600'>ผู้ขับ</th>
                             <td className='p-1 w-1/2 lg:w-2/3 text-start text-sm '>รั้ว พัดภู่</td>
                         </tr>
                         <tr className='  border border-x border-gray-600 '>
-                            <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-green-200 border-gray-600'>ใส่เม็ดโฟมแล้ว</th>
+                            <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-orange-200 border-gray-600'>ใส่เม็ดโฟมแล้ว</th>
                             <td className='p-1 w-1/2 lg:w-2/3 text-start text-sm '><CheckIcon className='w-5 h-5'/></td>
                         </tr>
                         <tr className='  border border-x border-gray-600 '>
-                            <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-green-200 border-gray-600'>ความยาวท่อเทรมีรวม (ม.)</th>
-                            <td className='p-1 w-1/2 lg:w-2/3 text-start text-sm bg-green-400 text-white'>68.23</td>
+                            <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-orange-200 border-gray-600'>ความยาวท่อเทรมีรวม (ม.)</th>
+                            <td className='p-1 w-1/2 lg:w-2/3 text-start text-sm bg-green-300 '>68.23</td>
                         </tr>
                         </tbody>
                     </table>
@@ -66,12 +66,12 @@ const Step8 = () => {
             <CheckTab />
             <div className='overflow-x-auto my-2 '>  
                 <table className=" w-full">
-                    <thead className='bg-blue-200 rounded'>
+                    <thead className='bg-blue-300 rounded'>
                         <tr className=''>
-                            <th className='px-3 pt-2 text-sm w-1/6 text-center border border-gray-700 '>ลำดับ</th>
-                            <th className='px-3 pt-2 text-sm w-1/4 text-center border border-gray-700 '>ขนาดท่อ(นิ้ว)</th>
-                            <th className='px-3 pt-2 text-sm w-1/4 text-center border border-gray-700 '>ความยาว(ม.)</th>
-                            <th className='px-3 pt-2 text-sm w-1/4 text-center border border-gray-700 '>ท่อสุดท้าย</th>
+                            <th className='px-3 py-2 text-sm w-1/6 text-center border border-gray-700 '>ลำดับ</th>
+                            <th className='px-3 py-2 text-sm w-1/4 text-center border border-gray-700 '>ขนาดท่อ(นิ้ว)</th>
+                            <th className='px-3 py-2 text-sm w-1/4 text-center border border-gray-700 '>ความยาว(ม.)</th>
+                            <th className='px-3 py-2 text-sm w-1/4 text-center border border-gray-700 '>ท่อสุดท้าย</th>
                         </tr>
                     </thead>
                     <tbody className=' '>
