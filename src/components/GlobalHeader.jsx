@@ -28,7 +28,7 @@ const GlobalHeader = () =>  {
     return (
         <>
         <header className='fixed top-0 z-40 w-full '>
-        <Disclosure as="nav" className="bg-sky-600">
+        <Disclosure as="nav" className="bg-blue-600">
         {({ open }) => (
             <>
             <div className="mx-auto w-screen px-2 sm:px-6 lg:px-8">

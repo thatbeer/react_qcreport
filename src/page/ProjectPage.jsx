@@ -101,7 +101,7 @@ function ProjectPage() {
   return (
     <>
         <div className="w-full flex flex-col flex-grow h-screen relative lg:top-10 top-14">
-            <div className='fixed top-[48px] w-full items-center mx-auto bg-sky-200 h-[50px] z-30 py-2  '>
+            <div className='fixed top-[48px] w-full items-center mx-auto bg-blue-200 h-[50px] z-30 py-2  '>
 
                 {/* -----------------------------------------------Sub Navigator----------------------------------------------- */}
                 <Subnavbar titleback={false} isProjectPage={true} PName={state?.projName}/>
@@ -109,11 +109,11 @@ function ProjectPage() {
 
 
                 {/* -----------------------------------------------Filter Container----------------------------------------------- */}
-                <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-sky-200 border-b-2 border-blue-600'>
+                <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-blue-200 border-b-2 border-blue-600'>
                     {/* filter bar for pc */}
                     <div className=' w-1/3 justify-center hidden xl:flex mx-auto '>
                         <button onClick={() => {setFilter("ทำค้าง")}}                value={"ทำค้าง"}
-                            className={`btn btn-primary mx-10 focus:bg-blue-200
+                            className={`btn btn-primary mx-10 focus:bg-sky-100
                             ${  filter === "ทำค้าง" ? "bg-blue-300" : "bg-white"  } 
                             border border-gray-400 py-4 px-6 rounded-lg`}>
                                <ChartBarIcon className='w-4 h-4 relative left-0' /> ทำค้าง
@@ -186,7 +186,7 @@ function ProjectPage() {
                 <main role="main" className="flex flex-col w-screen h-full  px-2 pt-[50px] lg:pt-[50px] mb-4">
                     <div className='overflow-x-auto mx-0 lg:mx-auto '>  
                         <table className=" w-full overflow-x-auto border-2 border-white bg-gray-50">
-                            <thead className='bg-sky-500 text-white '>
+                            <thead className='bg-blue-600 text-white '>
                                 <tr>
                                     <th className='p-2 lg:p-4  min-w-[80px] text-sm  text-center font-medium '>เลขที่เข็ม</th>
                                     <th className='px-1 text-sm  text-center   '>Step1</th>

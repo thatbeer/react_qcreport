@@ -12,27 +12,27 @@ const Step1 = () => {
         <div className='flex flex-col'>
             <div className='mx-auto w-full relative my-2'>
                 <div className=' block '>
-                <div className='py-1 border border-gray-600 rounded-t  flex items-center
-                justify-start font-bold  bg-blue-200'>
+                <div className='py-1 flex items-center border border-black
+                justify-start font-bold   bg-blue-200'>
                     <h1 className='mx-2'>ข้อมูลการเตรียมโครงเหล็ก</h1>
                 </div>
-                <table className='w-full'>
+                <table className='w-full bg-gray-100 '>
                     <tbody className=' '>
                     <tr className='  border border-x border-gray-600 ite '>
-                        <th className='px-2 py-1 text-sm w-1/3 lg:w-1/3 bg-green-200 border-r text-start border-gray-600'>วันที่เริ่ม</th>
-                        <td className='px-2 py-1 text-sm w-1/3 lg:w-2/3 text-start bg-white'>4 ม.ค. 2566 (10:44)</td>
+                        <th className='px-2 py-1 text-sm w-1/3 lg:w-1/3 bg-yellow-200 border-r text-start border-gray-600'>วันที่เริ่ม</th>
+                        <td className='px-2 py-1 text-sm w-1/3 lg:w-2/3 text-start'>4 ม.ค. 2566 (10:44)</td>
                     </tr>
                     <tr className=' border-b border-x border-gray-600  een '>
-                        <th className='px-2 py-1 text-sm w-1/3 lg:w-1/3 bg-green-200 border-r text-start border-gray-600'>วันที่เสร็จ</th>
-                        <td className='px-2 py-1 text-sm w-1/3 lg:w-2/3 text-start bg-white'>4 ม.ค. 2566 (11:27)</td>
+                        <th className='px-2 py-1 text-sm w-1/3 lg:w-1/3 bg-yellow-200 border-r text-start border-gray-600'>วันที่เสร็จ</th>
+                        <td className='px-2 py-1 text-sm w-1/3 lg:w-2/3 text-start'>4 ม.ค. 2566 (11:27)</td>
                     </tr>
                     <tr className=' border-b border-x border-gray-600  een '>
-                        <th className='px-2 py-1 text-sm w-1/3 lg:w-1/3 bg-green-200 border-r text-start border-gray-600'>ชื่อผู้รับเหมาผูกเหล็ก</th>
-                        <td className='px-2 py-1 text-sm w-1/3 lg:w-2/3 text-start bg-white'>จำลอง</td>
+                        <th className='px-2 py-1 text-sm w-1/3 lg:w-1/3 bg-yellow-200 border-r text-start border-gray-600'>ชื่อผู้รับเหมาผูกเหล็ก</th>
+                        <td className='px-2 py-1 text-sm w-1/3 lg:w-2/3 text-start'>จำลอง</td>
                     </tr>
                     <tr className=' border-b border-x border-gray-600  een '>
-                        <th className='px-2 py-1 text-sm w-1/3 lg:w-1/3 bg-green-200 border-r text-start border-gray-600'>Sheet No.</th>
-                        <td className='px-2 py-1 text-sm w-1/3 lg:w-2/3 text-start bg-white'>6</td>
+                        <th className='px-2 py-1 text-sm w-1/3 lg:w-1/3 bg-yellow-200 border-r text-start border-gray-600'>Sheet No.</th>
+                        <td className='px-2 py-1 text-sm w-1/3 lg:w-2/3 text-start'>6</td>
                     </tr>
                     </tbody>
                 </table>
@@ -44,7 +44,7 @@ const Step1 = () => {
 
             <div className='overflow-x-auto my-2 '>  
             <table className=" w-full ">
-                <thead className='bg-blue-200 rounded'>
+                <thead className='bg-blue-200 rounded '>
                     <tr>
                         <th className='p-4 text-sm w-1/7 text-center border border-gray-700 '>โครง</th>
                         <th className='p-4 text-sm w-1/7 text-center border border-gray-700 '>ตามแบบ</th>
