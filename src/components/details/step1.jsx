@@ -13,7 +13,7 @@ const Step1 = () => {
             <div className='mx-auto w-full relative my-2'>
                 <div className=' block '>
                 <div className='py-1 flex items-center border border-black
-                justify-start font-bold   bg-blue-200'>
+                justify-start font-bold   bg-blue-600 text-white'>
                     <h1 className='mx-2'>ข้อมูลการเตรียมโครงเหล็ก</h1>
                 </div>
                 <table className='w-full bg-gray-100 '>
@@ -44,16 +44,16 @@ const Step1 = () => {
 
             <div className='overflow-x-auto my-2 '>  
             <table className=" w-full ">
-                <thead className='bg-blue-200 rounded '>
+                <thead className='bg-blue-300 rounded font-medium '>
                     <tr>
-                        <th className='p-4 text-sm w-1/7 text-center border border-gray-700 '>โครง</th>
-                        <th className='p-4 text-sm w-1/7 text-center border border-gray-700 '>ตามแบบ</th>
-                        <th className='p-4 text-sm w-1/7 text-center border border-gray-700 '>ลูกปูน</th>
-                        <th className='p-4 text-sm  text-center border  border-gray-700 '><pre className='border-b border-dashed border-gray-600 text-md'>MainBar</pre><pre className='text-md'>Spiral</pre></th>
+                        <th className='px-3 py-2 text-sm w-1/7 text-center border border-gray-700 '>โครง</th>
+                        <th className='px-3 py-2 text-sm w-1/7 text-center border border-gray-700 '>ตามแบบ</th>
+                        <th className='px-3 py-2 text-sm w-1/7 text-center border border-gray-700 '>ลูกปูน</th>
+                        <th className='px-3 py-2 text-sm  text-center border  border-gray-700 '><pre className='border-b border-dashed border-gray-600 text-md'>MainBar</pre><pre className='text-md'>Spiral</pre></th>
                         
                     </tr>
                 </thead>
-                <tbody className=' '>
+                <tbody className='bg-gray-100 '>
                    
                         <tr  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-gray-700  '>1</td>
