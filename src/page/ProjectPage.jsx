@@ -101,9 +101,15 @@ function ProjectPage() {
   return (
     <>
         <div className="w-full flex flex-col flex-grow h-screen relative lg:top-10 top-14">
-            <div className='fixed top-[48px] w-full items-center mx-auto bg-blue-100 h-[50px] z-30 py-2  '>
+            <div className='fixed top-[48px] w-full items-center mx-auto bg-sky-200 h-[50px] z-30 py-2  '>
+
+                {/* -----------------------------------------------Sub Navigator----------------------------------------------- */}
                 <Subnavbar titleback={false} isProjectPage={true} PName={state?.projName}/>
-                <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-blue-100'>
+
+
+
+                {/* -----------------------------------------------Filter Container----------------------------------------------- */}
+                <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-sky-200 border-b-2 border-blue-600'>
                     {/* filter bar for pc */}
                     <div className=' w-1/3 justify-center hidden xl:flex mx-auto '>
                         <button onClick={() => {setFilter("ทำค้าง")}}                value={"ทำค้าง"}
@@ -112,9 +118,9 @@ function ProjectPage() {
                             border border-gray-400 py-4 px-6 rounded-lg`}>
                                <ChartBarIcon className='w-4 h-4 relative left-0' /> ทำค้าง
                         </button>
-                        <button onClick={() => {setFilter("เสร็จแล้้ว")}}                value={"เสร็จแล้ว"} 
+                        <button onClick={() => {setFilter("เสร็จแล้ว")}}                value={"เสร็จแล้ว"} 
                             className={`btn btn-primary mx-10 focus:bg-green-200
-                            ${  filter === "เสร็จแล้้ว" ? "bg-green-300" : "bg-white"  } 
+                            ${  filter === "เสร็จแล้ว" ? "bg-green-300" : "bg-white"  } 
                             border border-gray-400 py-4 px-6 rounded-lg`}>
                                <ClipboardDocumentCheckIcon className='w-4 h-4 relative left-0' /> เสร็จแล้ว
                         </button>
@@ -134,9 +140,9 @@ function ProjectPage() {
                         </button>
                     </div>
                     {/* search bar section */}
-                    <div className='relative  xl:absolute xl:right-[3.5rem] flex  text-gray-700 mx-auto xl:mx-2'>
+                    <div className='relative p-2  xl:absolute xl:right-[3.5rem] flex  text-gray-700 mx-auto xl:mx-2'>
                         <input type={'search'} name="search" placeholder='search'
-                            className='border-2 lg:w-full  border-gray-300 bg-white h-8  px-1 rounded-lg focus:outline-none'/>
+                            className='border-2 lg:w-full font-medium border-gray-300 bg-white h-8  px-2 rounded-lg focus:outline-none'/>
                         <button type='submit' className='relative '>
                             <MagnifyingGlassCircleIcon onClick={() => console.log('click search')} className='w-8 h-8 ml-1 text-blue-600 hover:text-blue-300 focus:ring-2 focus:ring-offset-2 focus:ring-white' />
                         </button>
@@ -153,7 +159,7 @@ function ProjectPage() {
                         </button>
                         <button onClick={() => {setFilter("เสร็จแล้ว")}}                value={"เสร็จแล้ว"} 
                             className={`btn btn-primary mx-1 focus:bg-green-200
-                            ${  filter === "เสร็จแล้้ว" ? "bg-green-300" : "bg-white"  } 
+                            ${  filter === "เสร็จแล้ว" ? "bg-green-300" : "bg-white"  } 
                             border border-gray-400 py-2 px-2 rounded-lg`}>
                                  <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' />เสร็จแล้ว
                         </button>
@@ -175,16 +181,14 @@ function ProjectPage() {
 
 
          
-            {/* Body Container */}
-
-            
-            <div className='flex flex-1 mx-auto mt-8 lg:mt-4 pt-[64px]'>
+            {/* -----------------------------------------------Table  Container----------------------------------------------- */}
+            <div className='flex flex-1 mx-auto mt-14 lg:mt-6 pt-[64px]'>
                 <main role="main" className="flex flex-col w-screen h-full  px-2 pt-[50px] lg:pt-[50px] mb-4">
                     <div className='overflow-x-auto mx-0 lg:mx-auto '>  
-                        <table className=" w-full overflow-x-auto border border-black bg-gray-50">
-                            <thead className='bg-blue-200'>
+                        <table className=" w-full overflow-x-auto border-2 border-white bg-gray-50">
+                            <thead className='bg-sky-500 text-white '>
                                 <tr>
-                                    <th className='p-3 min-w-[80px] text-sm  text-center  '>เลขที่เข็ม</th>
+                                    <th className='p-2 lg:p-4  min-w-[80px] text-sm  text-center font-medium '>เลขที่เข็ม</th>
                                     <th className='px-1 text-sm  text-center   '>Step1</th>
                                     <th className='px-1 text-sm  text-center   '>Step2</th>
                                     <th className='px-1 text-sm  text-center   '>Step3</th>
@@ -196,13 +200,13 @@ function ProjectPage() {
                                     <th className='px-1 text-sm  text-center   '>Step9</th>
                                     <th className=' text-sm  text-center   '>Step10</th>
                                     <th className=' text-sm  text-center   '>Step11</th>
-                                    <th className='p-3 text-sm  text-center  '>วันที่ (ประวัติล่าสุด)</th>
+                                    <th className='p-2 text-sm  text-center  '>วันที่ (ประวัติล่าสุด)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {/* Real table */}
                                 { projectListX ? projectListX.map((list) => (
-                                    <tr key={list.pileno}  className="text-center border-y border-gray-700 rounded-t  my-auto items-center justify-center">
+                                    <tr key={list.pileno}  className="text-center border-y-2 border-white rounded-t  my-auto items-center justify-center font-medium">
                                         <td className='p-3 mx-auto my-1 text-sm    '>
                                             <Link to={`/project/report?pileid=${list.pileno}`} title={`pileId${list.pileno}`} 
                                                  state={{...state}}

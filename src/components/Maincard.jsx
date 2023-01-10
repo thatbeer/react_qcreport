@@ -51,9 +51,9 @@ const Maincard = (props) => {
                     flex-inline justify-start items-center mx-auto" style={{width: "100%"}} >
                         <div 
                             className="bg-green-400 duration-100 animate-pulse h-3  flex flex-start items-center justify-center 
-                            text-md font-semibold text-white rounded-2xl" 
+                            text-sm font-semibold text-white rounded-2xl" 
                             style={{width: "89%"}}>
-                            <p>89%</p>
+                            <Link to={`/project?projectid=${projectid}&type=เสร็จแล้ว`} state={{...props}} >89%</Link>
                         </div> 
                     </div>
                     <div className="px-2 block text-start text mx-auto w-auto ">
