@@ -5,7 +5,7 @@ import '@react-pdf-viewer/core/lib/styles/index.css'
 import pdf from '../components/pdf/Guide.pdf'
 import { toolbarPlugin } from '@react-pdf-viewer/toolbar';
 import '@react-pdf-viewer/toolbar/lib/styles/index.css';
-
+import pdffile from '../img/Pylon Rewards_Q1_2023_Rev.00.pdf'
 
 
 const CoinCategory = () => {
@@ -22,7 +22,7 @@ const CoinCategory = () => {
           <Toolbar /> 
 
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.1.81/build/pdf.worker.min.js" >
-              <Viewer fileUrl={pdf}  plugins={[ toolbarPluginInstance]}/>;
+              <Viewer fileUrl={pdffile}  plugins={[ toolbarPluginInstance]}/>;
             </Worker>
  
     
