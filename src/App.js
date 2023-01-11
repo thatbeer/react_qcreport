@@ -36,10 +36,10 @@ function App() {
         <Route path="/project/:report" element={<DetailPage/>} />
         <Route path="/side" element={<SidePage/>} />
         <Route path="/guide" element={<GuidePage/>} />
+        <Route path='/category' element={<CoinCategory />} />
       </Route>
       <Route element={<h1>error 404</h1>} path="*" />
       <Route path='/auth' element={<LoginPage/>} />
-      <Route path='/category' element={<CoinCategory />} />
     </Routes>
   )
 }

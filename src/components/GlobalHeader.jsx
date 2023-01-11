@@ -97,8 +97,8 @@ const GlobalHeader = () =>  {
                     >
                     <span className="sr-only">View notifications</span>
                     <div className='flex flex-row items-center'>
-                        <Link to='/category'>
                             <CurrencyDollarIcon className="h-5 w-5 text-sm text-yellow-400 " aria-hidden="true" />
+                        <Link to='/category'>
                             170000
                         </Link>
                     </div>
