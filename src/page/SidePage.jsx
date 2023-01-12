@@ -5,6 +5,7 @@ import React , { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import MyRadioGroup from "../components/RadioGroup";
+import ViewImage from "../components/ViewImage/ViewImage";
 
 function SidePage() {
     const [value , setValue ] = useState({
@@ -54,7 +55,7 @@ function SidePage() {
                 </div>
             </div>  
                     <hr/>
-
+                    <ViewImage />
 
 
         </div>

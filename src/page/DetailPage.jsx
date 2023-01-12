@@ -216,7 +216,7 @@ const DetailPage = (props) => {
 
         } */}
         {
-            duration - startTime > 200 ? 
+            duration - startTime > 400 ? 
             <>
                 <div className='fixed bottom-0 flex w-full justify-center z-50 bg-rose-600 text-white py-1'    >
                     <div className='flex flex-1 justify-center items-center mx-auto ease-in transition duration-1000 hover:ease-out'>

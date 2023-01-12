@@ -2,6 +2,7 @@ import React from 'react'
 import CheckTab from '../checktab'
 import { CheckIcon } from '@heroicons/react/24/outline'
 import DyCarousel from '../Dy-carousel';
+import ViewImage from '../ViewImage/ViewImage';
 
 
 const Step5 = () => {
@@ -258,10 +259,12 @@ const Step5 = () => {
             </div>
 
             {/* <h1>corousel show picture</h1> */}
-            <DyCarousel />
+            {/* <DyCarousel /> */}
+            
+            <ViewImage />
 
             {/* ps tab */}
-            <div className='relative mt-2'>
+            <div className='relative lg:mt-[8rem]'>
                 <div className='mx-1'>
                     { isBoredPile ? 
                         <>
