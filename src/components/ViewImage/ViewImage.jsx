@@ -9,16 +9,16 @@ import "./ViewImage.style.css"
 //https://www.positronx.io/react-responsive-carousel-tutorial/
 //https://mediajams.dev/post/add-a-responsive-image-carousel-to-your-react-app
 
-const ViewImage = () => {
+const   ViewImage = () => {
   const [activeIndex , setActiveIndex] = useState(0);
   const total = 3
   const onIndexChangeHandler = (index) => {setActiveIndex(index)}
   return (
-    <div className= "  h-auto w-auto lg:w-[600px] lg:h-[400px] lg: mx-auto mt-2 lg:pt-10 lg:px-10">
+    <div className= "  h-auto w-auto lg:w-[800px] lg:h-[600px] lg: mx-auto mt-2 lg:pt-10 lg:px-10">
       <h1 className='text-xl flex justify-center text-center font-bold mx-auto py-2 bg-blue-400 border border-gray-600'>ภาพถ่าย</h1>
       <Carousel infiniteLoop useKeyboardArrows
-       onChange={onIndexChangeHandler} showArrows={true}
-        showIndicators >
+       onChange={onIndexChangeHandler} showArrows={true} showStatus={false}
+       showThumbs={false} >
         <div>
           <img src={"https://www.kraftwerk.at/app/uploads/fly-images/962/reference-img-worlds-of-adventure-park-4-1920x9999.jpg"} alt="img1"/>
           {/* <p className="legend bg-none">1/3</p> */}
@@ -32,7 +32,7 @@ const ViewImage = () => {
           {/* <p className="legend">3/3</p> */}
         </div>
       </Carousel>
-      <div className="pb-2 text-white items-start  relative justify-center text-center bottom-[8.5rem] ">
+      <div className="pb-2 text-white items-start  relative justify-center text-center  ">
         <div className="relative flex  bg-black  justify-stat">
           <pre> {`Image ${activeIndex + 1} of ${total}`}</pre>
         </div>

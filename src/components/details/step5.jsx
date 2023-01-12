@@ -264,7 +264,7 @@ const Step5 = () => {
             <ViewImage />
 
             {/* ps tab */}
-            <div className='relative lg:mt-[8rem]'>
+            <div className='relative '>
                 <div className='mx-1'>
                     { isBoredPile ? 
                         <>
