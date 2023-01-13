@@ -111,9 +111,9 @@ function ProjectPage() {
 
 
                 {/* -----------------------------------------------Filter Container----------------------------------------------- */}
-                <div className='flex flex-col lg:flex-row mx-auto items-center lg:py-1 bg-blue-200 border-b-2 border-blue-600'>
+                <div className='flex flex-col lg:flex-row mx-auto items-center  bg-blue-200 border-b-2 border-blue-600'>
                     {/* filter bar for pc */}
-                    <div className=' w-1/3 justify-center hidden xl:flex mx-auto '>
+                    {/* <div className=' w-1/3 justify-center hidden lg:flex mx-auto '>
                         <button onClick={() => {setFilter("ทำค้าง")}}                value={"ทำค้าง"}
                             className={`btn btn-primary mx-10 focus:bg-sky-100
                             ${  filter === "ทำค้าง" ? "bg-blue-300" : "bg-white"  } 
@@ -140,40 +140,40 @@ function ProjectPage() {
                                 <svg className={`  w-4 h-4 text-amber-500  `} fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                             เขียว-แดง
                         </button>
-                    </div>
+                    </div> */}
                     {/* search bar section */}
-                    <div className='relative px-1 py-2  xl:absolute xl:right-[3rem] flex  text-gray-700 mx-auto xl:mx-2'>
+                    <div className='relative py-2  lg:left-[6rem] flex  text-gray-700 mx-auto'>
                         <input type={'search'} name="search" placeholder='search'
-                            className='border-2 lg:w-full font-medium border-gray-300 bg-white h-8  px-2 rounded-lg focus:outline-none'/>
+                            className='border-2 w-full font-medium border-gray-300 bg-white h-8  px-2 rounded-lg focus:outline-none'/>
                         <button type='submit' className='relative '>
                             <MagnifyingGlassCircleIcon onClick={() => console.log('click search')} className='w-8 h-8 ml-1 text-blue-600 hover:text-blue-300 focus:ring-2 focus:ring-offset-2 focus:ring-white' />
                         </button>
                     </div>
 
                     {/* filter bar for mobile */}
-                    <div className=' justify-between flex xl:hidden mx-auto my-1 z-50'>
+                    <div className=' justify-between flex mx-auto my-1 z-50'>
                         
-                        <button onClick={() => {setFilter("ทำค้าง")}}                value={"ทำค้าง"}
-                            className={`btn btn-primary mx-1 focus:bg-blue-200
-                            ${  filter === "ทำค้าง" ? "bg-blue-300" : "bg-white"  } 
+                        <button onClick={() => {setFilter("ทำค้าง")}} value={"ทำค้าง"}
+                            className={`btn  mx-1 focus:bg-cyan-200 
+                            ${  filter === "ทำค้าง" ? "bg-blue-300 hover:bg-blue-300" : "bg-white"  } 
                             border border-gray-400 py-2 px-2 rounded-lg`}>
                                 <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' /> ทำค้าง
                         </button>
-                        <button onClick={() => {setFilter("เสร็จแล้ว")}}                value={"เสร็จแล้ว"} 
-                            className={`btn btn-primary mx-1 focus:bg-green-200
-                            ${  filter === "เสร็จแล้ว" ? "bg-green-300" : "bg-white"  } 
+                        <button onClick={() => {setFilter("เสร็จแล้ว")}} value={"เสร็จแล้ว"} 
+                            className={`btn  mx-1 focus:bg-green-200
+                            ${  filter === "เสร็จแล้ว" ? "bg-green-300 hover:bg-green-300" : "bg-white"  } 
                             border border-gray-400 py-2 px-2 rounded-lg`}>
                                  <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' />เสร็จแล้ว
                         </button>
-                        <button onClick={() => {setFilter("รอส่งerp")}}                value={"รอส่งerp"}
-                            className={`btn btn-primary mx-1 focus:bg-red-200
-                            ${  filter === "รอส่งerp" ? "bg-red-300" : "bg-white"  } 
+                        <button onClick={() => {setFilter("รอส่งerp")}} value={"รอส่งerp"}
+                            className={`btn  mx-1 focus:bg-red-200
+                            ${  filter === "รอส่งerp" ? "bg-red-300 hover:bg-red-300" : "bg-white"  } 
                             border border-gray-400 py-2 px-2 rounded-lg`}>
                               <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' />   รอส่งerp
                         </button>
-                        <button onClick={() => {setFilter("เขียวแดง")}}                value={"เขียวแดง"}
-                            className={`btn btn-primary mx-1 focus:bg-yellow-200
-                            ${  filter === "เขียวแดง" ? "bg-yellow-300" : "bg-white"  }
+                        <button onClick={() => {setFilter("เขียวแดง")}} value={"เขียวแดง"}
+                            className={`btn  mx-1 focus:bg-yellow-200
+                            ${  filter === "เขียวแดง" ? "bg-yellow-300 hover:bg-yellow-300" : "bg-white"  }
                              border border-gray-400 py-2 px-2 rounded-lg`}>
                             <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' /> เขียว-แดง
                         </button>

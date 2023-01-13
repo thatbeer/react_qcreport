@@ -209,50 +209,50 @@ const Step5 = () => {
 
 
             <div className='overflow-x-auto my-2 '>  
-            <table className="table-fixed lg:table-auto text-xs">
+            <table className="table-fixed lg:table-auto text-xs w-full">
                 <thead className='bg-blue-300 rounded'>
                     <tr className=''>
-                        <th className='px-2 py-1  mx-auto  border border-white hidden'></th>
-                        <th className='px-2 py-1  mx-auto  border border-white'>ลำดับหัวเจาะ</th>
-                        <th className='px-2 py-1  mx-auto  border border-white '>ความลึกวัดจาก<br/>ปากเคสซิ่ง(ม.)</th>
-                        <th className='px-2 py-1  mx-auto   border border-white '>เครื่องจักร/เครน No.</th>
-                        <th className='px-2 py-1  mx-auto   border border-white '>เครื่องเจาะ</th>
-                        <th className='px-2 py-1  mx-auto   border border-white '>วัน/เวลา <br/> (เริ่ม-หยุดเจาะเสาเข็ม)</th>
-                        <th className='px-2 py-1  mx-auto lg:w-[100px]  border border-white '>คนขับ</th>
-                        <th className='px-2 py-1  mx-auto   border border-white '>หลุมพัง</th>
-                        <th className='px-2 py-1  mx-auto   border border-white '>ขนาดฟันข้างของบัคเก็ต(ม.)</th>
+                        <th className='p-1  mx-auto  border border-white hidden'></th>
+                        <th className='p-1  mx-auto  border border-white'>ลำดับหัวเจาะ</th>
+                        <th className='p-1  mx-auto  border border-white '>ความลึกวัดจาก<br/>ปากเคสซิ่ง(ม.)</th>
+                        <th className='p-1  mx-auto   border border-white '>เครื่องจักร/เครน No.</th>
+                        <th className='p-1  mx-auto   border border-white '>เครื่องเจาะ</th>
+                        <th className='p-1  mx-auto   border border-white '>วัน/เวลา <br/> (เริ่ม-หยุดเจาะเสาเข็ม)</th>
+                        <th className='p-1  mx-auto lg:w-[100px]  border border-white '>คนขับ</th>
+                        <th className='p-1  mx-auto   border border-white '>หลุมพัง</th>
+                        <th className='p-1  mx-auto   border border-white '>ขนาดฟันข้างของบัคเก็ต(ม.)</th>
                     </tr>
                 </thead>
                 <tbody className='bg-gray-1002.บัคเก็ต '>
                         <tr  className="text-center border-y border-white   my-auto items-center justify-center">
-                            <td className='px-2 py-1 border-x border-white '>1.สว่าน</td>
-                            <td className='px-2 py-1 border-r border-white '>14.000</td>
-                            <td className='px-2 py-1 border-r border-white '>PR-25</td>
-                            <td className='px-2 py-1 border-r border-white '>{' '}</td>
-                            <td className='px-2 py-1 border-r border-white '>3 ม.ค. 2566 (14:00 - 14:40)</td>
-                            <td className='px-2 py-1 border-r border-white '>บุญมี เชื้อตระกูล</td>
-                            <td className='px-2 py-1 border-r border-white '></td>
-                            <td className='px-2 py-1 border-r border-white '>-</td>
+                            <td className='p-1 border-x border-white '>1.สว่าน</td>
+                            <td className='p-1 border-r border-white '>14.000</td>
+                            <td className='p-1 border-r border-white '>PR-25</td>
+                            <td className='p-1 border-r border-white '>{' '}</td>
+                            <td className='p-1 border-r border-white '>3 ม.ค. 2566 (14:00 - 14:40)</td>
+                            <td className='p-1 border-r border-white '>บุญมี เชื้อตระกูล</td>
+                            <td className='p-1 border-r border-white '></td>
+                            <td className='p-1 border-r border-white '>-</td>
                         </tr>         
                         <tr  className="text-center border-y border-white   my-auto items-center justify-center">
-                            <td className='px-2 py-1 border-x border-white '>2.บัคเก็ต</td>
-                            <td className='px-2 py-1 border-r border-white '>30</td>
-                            <td className='px-2 py-1 border-r border-white '>PR-25</td>
-                            <td className='px-2 py-1 border-r border-white '>{' '}</td>
-                            <td className='px-2 py-1 border-r border-white '>3 ม.ค. 2566 (14:00 - 14:40)</td>
-                            <td className='px-2 py-1 border-r border-white '>บุญมี เชื้อตระกูล</td>
-                            <td className='px-2 py-1 border-r border-white '></td>
-                            <td className='px-2 py-1 border-r border-white '>-</td>
+                            <td className='p-1 border-x border-white '>2.บัคเก็ต</td>
+                            <td className='p-1 border-r border-white '>30</td>
+                            <td className='p-1 border-r border-white '>PR-25</td>
+                            <td className='p-1 border-r border-white '>{' '}</td>
+                            <td className='p-1 border-r border-white '>3 ม.ค. 2566 (14:00 - 14:40)</td>
+                            <td className='p-1 border-r border-white '>บุญมี เชื้อตระกูล</td>
+                            <td className='p-1 border-r border-white '></td>
+                            <td className='p-1 border-r border-white '>-</td>
                         </tr>         
                         <tr  className="text-center border-y border-white   my-auto items-center justify-center">
-                            <td className='px-2 py-1 border-x border-white '>3.บัคเก็ต</td>
-                            <td className='px-2 py-1 border-r border-white  bg-green-600'>68.600</td>
-                            <td className='px-2 py-1 border-r border-white '>PR-25</td>
-                            <td className='px-2 py-1 border-r border-white '>{' '}</td>
-                            <td className='px-2 py-1 border-r border-white '>3 ม.ค. 2566 (14:00 - 14:40)</td>
-                            <td className='px-2 py-1 border-r border-white '>บุญมี เชื้อตระกูล</td>
-                            <td className='px-2 py-1 border-r border-white '></td>
-                            <td className='px-2 py-1 border-r border-white '>-</td>
+                            <td className='p-1 border-x border-white '>3.บัคเก็ต</td>
+                            <td className='p-1 border-r border-white  bg-green-600'>68.600</td>
+                            <td className='p-1 border-r border-white '>PR-25</td>
+                            <td className='p-1 border-r border-white '>{' '}</td>
+                            <td className='p-1 border-r border-white '>3 ม.ค. 2566 (14:00 - 14:40)</td>
+                            <td className='p-1 border-r border-white '>บุญมี เชื้อตระกูล</td>
+                            <td className='p-1 border-r border-white '></td>
+                            <td className='p-1 border-r border-white '>-</td>
                         </tr>         
                 </tbody>
             </table>
