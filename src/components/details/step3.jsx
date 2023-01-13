@@ -10,52 +10,52 @@ const Step3 = () => {
             { isBoredPile ? 
                 <>
                     <div className='mx-auto w-full relative my-2'>
-                    <div className='  bg-gray-100'>
-                    <div className='py-1 border border-gray-600 -t  flex items-center
+                    <div className='  bg-gray-200'>
+                    <div className='py-1 border border-white -t  flex items-center
                     justify-start font-bold  bg-blue-300'>
                         <h1 className='mx-2'>ข้อมูลการวัดตำแหน่ง</h1>
                     </div>
-                    <table className='w-full bg-gray-100'>
+                    <table className='w-full bg-gray-200'>
                         <tbody className='bg-orange-200 '>
-                        <tr className='  border border-x border-gray-600  '>
-                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-gray-600'>วันที่เริ่ม</th>
-                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-100 '>3 ม.ค. 2566 (11:02)</td>
+                        <tr className='  border border-x border-white  '>
+                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-white'>วันที่เริ่ม</th>
+                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-200 '>3 ม.ค. 2566 (11:02)</td>
                         </tr>
-                        <tr className='  border border-x border-gray-600  '>
-                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-gray-600'>วันที่เสร็จ	</th>
-                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-100'>3 ม.ค. 2566 (11:04)</td>
+                        <tr className='  border border-x border-white  '>
+                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-white'>วันที่เสร็จ	</th>
+                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-200'>3 ม.ค. 2566 (11:04)</td>
                         </tr>
-                        <tr className='  border border-x border-gray-600  '>
-                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-gray-600'>ช่างสำรวจ</th>
-                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-100 '>โชคทวี มีโสม</td>
+                        <tr className='  border border-x border-white  '>
+                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-white'>ช่างสำรวจ</th>
+                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-200 '>โชคทวี มีโสม</td>
                         </tr>
-                        <tr className=' border-b border-x border-gray-600   '>
-                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-gray-600'>ตำแหน่งตั้งกล้อง</th>
-                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-100 '>TP4 (1049.136,783.200)</td>
+                        <tr className=' border-b border-x border-white   '>
+                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-white'>ตำแหน่งตั้งกล้อง</th>
+                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-200 '>TP4 (1049.136,783.200)</td>
                         </tr>
-                        <tr className=' border-b border-x border-gray-600   '>
-                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-gray-600'>ตำแหน่งธงหลัง</th>
-                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-100 '>TP2 (1139.528,736.820)</td>
+                        <tr className=' border-b border-x border-white   '>
+                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-white'>ตำแหน่งธงหลัง</th>
+                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-200 '>TP2 (1139.528,736.820)</td>
                         </tr>
-                        <tr className=' border-b border-x border-gray-600   '>
-                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-gray-600'>Resection</th>
-                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-100 '>No</td>
+                        <tr className=' border-b border-x border-white   '>
+                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-white'>Resection</th>
+                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-200 '>No</td>
                         </tr>
                         </tbody>
                     </table>
-                    <div className='py-1 border-x border-gray-600  flex items-center
+                    <div className='py-1 border-x border-white  flex items-center
                     justify-start font-bold  bg-blue-300'>
                         <h1 className='mx-2'>ตำแหน่งเคสซิ่ง</h1>
                     </div>
                     <table className='w-full'>
                         <tbody className='bg-orange-200 '>
-                        <tr className='  border border-x border-gray-600  '>
-                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-gray-600'>ระดับบนท่อปลอกเหล็ก (ม.)</th>
-                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3  bg-green-300 text-white'>1.2100</td>
+                        <tr className='  border border-x border-white  '>
+                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-white'>ระดับบนท่อปลอกเหล็ก (ม.)</th>
+                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3  bg-green-600 text-white'>1.2100</td>
                         </tr>
-                        <tr className=' border-b border-x border-gray-600   '>
-                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-gray-600'>ระดับพื้นดิน (ม.)</th>
-                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-100'>-0.6700</td>
+                        <tr className=' border-b border-x border-white   '>
+                            <th className='px-2 py-1 text-sm w-1/2 text-start lg:w-1/3 border-r border-white'>ระดับพื้นดิน (ม.)</th>
+                            <td className='px-2 py-1 text-sm w-1/2 text-start lg:w-2/3 bg-gray-200'>-0.6700</td>
                         </tr>
                         </tbody>
                     </table>
@@ -65,40 +65,40 @@ const Step3 = () => {
                 :
                 <>
                     <div className='mx-auto w-full relative my-2'>
-                    <div className='  bg-gray-100'>
-                    <div className='py-1 border border-gray-600 -t  flex items-center
+                    <div className='  bg-gray-200'>
+                    <div className='py-1 border border-white -t  flex items-center
                     justify-start font-bold  bg-blue-300'>
                         <h1 className='mx-2'>ข้อมูลการวัดตำแหน่ง</h1>
                     </div>
                     <table className='w-full'>
                         <tbody className=' '>
-                        <tr className='  border border-x border-gray-600  '>
-                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r border-gray-600'>วันที่เริ่ม</th>
-                            <td className='px-2 py-1 text-sm w-1/3 lg:w-2/3 text-start bg-gray-100'>25 ธ.ค. 2565 (14:01)</td>
+                        <tr className='  border border-x border-white  '>
+                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r border-white'>วันที่เริ่ม</th>
+                            <td className='px-2 py-1 text-sm w-1/3 lg:w-2/3 text-start bg-gray-200'>25 ธ.ค. 2565 (14:01)</td>
                         </tr>
-                        <tr className=' border-b border-x border-gray-600   '>
-                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r border-gray-600'>วันที่เสร็จ</th>
-                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-gray-100'>25 ธ.ค. 2565 (14:05)</td>
+                        <tr className=' border-b border-x border-white   '>
+                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r border-white'>วันที่เสร็จ</th>
+                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-gray-200'>25 ธ.ค. 2565 (14:05)</td>
                         </tr>
-                        <tr className=' border-b border-x border-gray-600   '>
-                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r border-gray-600'>ช่างสำรวจ</th>
-                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-gray-100'>1.20</td>
+                        <tr className=' border-b border-x border-white   '>
+                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r border-white'>ช่างสำรวจ</th>
+                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-gray-200'>1.20</td>
                         </tr>
                         </tbody>
                     </table>
-                    <div className='py-1 border-x border-gray-600  flex items-center
+                    <div className='py-1 border-b border-white  flex items-center
                     justify-start font-bold  bg-blue-300'>
                         <h1 className='mx-2'>ตำแหน่งเคสซิ่ง</h1>
                     </div>
                     <table className='w-full'>
                         <tbody className=' '>
-                        <tr className='  border border-x border-gray-600  '>
-                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r border-gray-600'>ระดับท็อปไกด์วอลล์ (ม.)</th>
-                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-gray-100'>0.0180</td>
+                        <tr className='  border border-x border-white  '>
+                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r border-white'>ระดับท็อปไกด์วอลล์ (ม.)</th>
+                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-gray-200'>0.0180</td>
                         </tr>
-                        <tr className=' border-b border-x border-gray-600   '>
-                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r border-gray-600'>ระดับพื้นดิน (ม.)</th>
-                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-gray-100'>-0.6700</td>
+                        <tr className=' border-b border-x border-white   '>
+                            <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 border-r border-white'>ระดับพื้นดิน (ม.)</th>
+                            <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-gray-200'>-0.6700</td>
                         </tr>
                         </tbody>
                     </table>
@@ -137,20 +137,20 @@ const Step3 = () => {
                     <tr className='bg-blue-300'>
                         
 
-                        <td className='px-2 py-1 w-[180px] mx-auto text-sm  border border-gray-700 hidden'></td>
-                        <th className='p-5 text-sm w-1/4 text-center border  border-gray-700 '>ค่าพิกัดหมุด	</th>
-                        <th className='p-5 text-sm w-1/4 text-center border border-gray-700 '>ตามแบบ</th>
-                        <th className='p-5 text-sm w-1/4 text-center border border-gray-700 '>ที่อ่านได้	</th>
-                        <th className='p-5 text-sm w-1/4 text-center border  border-gray-700 '>คลาดเคลื่อน</th>
-                        <td className='px-2 py-1 w-[180px] mx-auto text-sm  border border-gray-700 hidden'></td>
+                        <td className='px-2 py-1 w-[180px] mx-auto text-sm  border border-white hidden'></td>
+                        <th className='p-5 text-sm w-1/4 text-center border  border-white '>ค่าพิกัดหมุด	</th>
+                        <th className='p-5 text-sm w-1/4 text-center border border-white '>ตามแบบ</th>
+                        <th className='p-5 text-sm w-1/4 text-center border border-white '>ที่อ่านได้	</th>
+                        <th className='p-5 text-sm w-1/4 text-center border  border-white '>คลาดเคลื่อน</th>
+                        <td className='px-2 py-1 w-[180px] mx-auto text-sm  border border-white hidden'></td>
                     </tr>
                 </thead>
-                <tbody className='bg-gray-100 '>
-                        <tr  className="text-center border-y border-gray-700   my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>Northing(ม.)</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>1114.497</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>1114.485</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   bg-green-300 '>-0.0120</td>
+                <tbody className='bg-gray-200 '>
+                        <tr  className="text-center border-y border-white   my-auto items-center justify-center">
+                            <td className='p-4 mx-auto my-1 text-sm  border-x border-white  '>Northing(ม.)</td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-white  '>1114.497</td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-white  '>1114.485</td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-white   bg-green-600 '>-0.0120</td>
                         </tr>
                         
                 </tbody>
