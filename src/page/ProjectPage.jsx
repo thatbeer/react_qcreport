@@ -101,15 +101,17 @@ function ProjectPage() {
   return (
     <>
         <div className="w-full flex flex-col flex-grow h-screen relative lg:top-10 top-14">
-            <div className='fixed top-[48px] w-full items-center mx-auto bg-blue-200 h-[50px] z-30 py-2  '>
-
+            <div className='fixed top-[48px] w-full items-center mx-auto bg-blue-200 h-[30px] z-40  '>
                 {/* -----------------------------------------------Sub Navigator----------------------------------------------- */}
                 <Subnavbar titleback={false} isProjectPage={true} PName={state?.projName}/>
+            </div>
+            <div className='relative lg:top-[2.5rem] top-[22px] w-full items-center mx-auto bg-blue-200 h-[30px] z-30 py-2  '>
+
 
 
 
                 {/* -----------------------------------------------Filter Container----------------------------------------------- */}
-                <div className='flex flex-col lg:flex-row mx-auto items-center py-2 bg-blue-200 border-b-2 border-blue-600'>
+                <div className='flex flex-col lg:flex-row mx-auto items-center lg:py-1 bg-blue-200 border-b-2 border-blue-600'>
                     {/* filter bar for pc */}
                     <div className=' w-1/3 justify-center hidden xl:flex mx-auto '>
                         <button onClick={() => {setFilter("ทำค้าง")}}                value={"ทำค้าง"}
@@ -182,7 +184,7 @@ function ProjectPage() {
 
          
             {/* -----------------------------------------------Table  Container----------------------------------------------- */}
-            <div className='flex flex-1 mx-auto mt-14 lg:mt-6 pt-[64px]'>
+            <div className='flex flex-1 mx-auto mt-14 lg:mt-3 pt-[2rem]'>
                 <main role="main" className="flex flex-col w-screen h-full  px-2 pt-[50px] lg:pt-[50px] mb-4">
                     <div className='overflow-x-auto mx-0 lg:mx-auto '>  
                         <table className=" w-full overflow-x-auto border-2 border-white bg-gray-50">
