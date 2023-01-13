@@ -39,11 +39,11 @@ const Step6 = () => {
                 </tr>
                 <tr className='  border border-x border-white  '>
                     <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>เปลี่ยนบัคเก็ตเจาะเป็นบัคเก็ตเก็บตะกอน</th>
-                    <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-green-300 '><CheckIcon className='w-5 h-5' /></td>
+                    <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-green-600 '><CheckIcon className='w-5 h-5' /></td>
                 </tr>
                 <tr className='  border border-x border-white  '>
                     <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>ระยะเวลารอเก็บตะกอน (นาที)	</th>
-                    <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-green-300 '>30</td>
+                    <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-green-600 '>30</td>
                 </tr>
                 <tr className='  border border-x border-white  '>
                     <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>ความลึกจากปากเคสซิ่ง(หลังรอเก็บตะกอน) (ม.)</th>
@@ -59,7 +59,7 @@ const Step6 = () => {
                 </tr>
                 <tr className='  border border-x   border-white  '>
                     <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 text-start border-r bg-orange-200  border-white'>ความลึกวัดจากปากเคสซิ่ง (หลังเก็บตะกอน) (ม.)</th>
-                    <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-green-300 '>68.600</td>
+                    <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-green-600 '>68.600</td>
                 </tr>
                 </tbody>
             </table>

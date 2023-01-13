@@ -14,52 +14,52 @@ const Step11 = () => {
         <div className='flex flex-col mb-6'>
             <div className='mx-auto w-full relative my-2'>
                 <div className=' block '>
-                    <div className='py-1 border border-gray-600   flex items-center
+                    <div className='py-1 border border-white   flex items-center
                     justify-start font-bold  bg-blue-300'>
                         <h1 className=' mx-2'>ข้อมูลถอนเคสซิ่ง</h1>
                     </div>
                     <table className='w-full'>
                         <tbody className='bg-gray-100 '>
-                        <tr className='  border border-x border-gray-600 text-sm '>
-                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-gray-600'>วันที่เริ่ม</th>
+                        <tr className='  border border-x border-white text-sm '>
+                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>วันที่เริ่ม</th>
                             <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>4 ม.ค. 2566 (18:01)</td>
                             
                         </tr>
-                        <tr className='  border border-x border-gray-600 text-sm '>
-                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-gray-600'>วันที่เสร็จ	</th>
+                        <tr className='  border border-x border-white text-sm '>
+                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>วันที่เสร็จ	</th>
                             <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>4 ม.ค. 2566 (18:07)</td>
                         </tr>
-                        <tr className='  border border-x border-gray-600 text-sm '>
-                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-gray-600'>เครื่องจักร/เครน No.	</th>
+                        <tr className='  border border-x border-white text-sm '>
+                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>เครื่องจักร/เครน No.	</th>
                             <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>CR-31</td>
                         </tr>
-                        <tr className='  border border-x border-gray-600 text-sm '>
-                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-gray-600'>ไวโบรแฮมเมอร์ No.</th>
+                        <tr className='  border border-x border-white text-sm '>
+                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>ไวโบรแฮมเมอร์ No.</th>
                             <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>VH-14</td>
                         </tr>
-                        <tr className='  border border-x border-gray-600 text-sm '>
-                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-gray-600'>ผู้ขับ</th>
+                        <tr className='  border border-x border-white text-sm '>
+                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>ผู้ขับ</th>
                             <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>รั้ว พัดภู่</td>
                         </tr>
-                        <tr className='  border border-x border-gray-600 text-sm '>
-                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-gray-600'>ความลึกคอนกรีต วัดจากผิวดิน (ม.)</th>
+                        <tr className='  border border-x border-white text-sm '>
+                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>ความลึกคอนกรีต วัดจากผิวดิน (ม.)</th>
                             <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>11.790</td>
                         </tr>
-                        <tr className='  border border-x border-gray-600 text-sm '>
-                            <th className='px-2 py-1   w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-gray-600'>ความสูงหัวเข็มหลังถอนเคสซิ่ง (ม.)</th>
+                        <tr className='  border border-x border-white text-sm '>
+                            <th className='px-2 py-1   w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>ความสูงหัวเข็มหลังถอนเคสซิ่ง (ม.)</th>
                             {/* ##### RED GREEN */}
-                            <td className='px-2 py-1   w-1/2 lg:w-2/3 text-start  bg-rose-400'>1.900</td>
+                            <td className='px-2 py-1   w-1/2 lg:w-2/3 text-start  bg-red-600 text-white'>1.900</td>
                         </tr>
-                        <tr className='  border border-x border-gray-600 text-sm '>
-                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-gray-600'>ระยะเยิ้มตัวของคอนกรีต (ม.)</th>
+                        <tr className='  border border-x border-white text-sm '>
+                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>ระยะเยิ้มตัวของคอนกรีต (ม.)</th>
                             <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>-</td>
                         </tr>
-                        <tr className='  border border-x border-gray-600 text-sm '>
-                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-gray-600'>เช็คลูกดิ่ง</th>
+                        <tr className='  border border-x border-white text-sm '>
+                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>เช็คลูกดิ่ง</th>
                             <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>Yes</td>
                         </tr>
-                        <tr className='  border border-x border-gray-600 text-sm '>
-                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-gray-600 '>เช็คระดับน้ำ</th>
+                        <tr className='  border border-x border-white text-sm '>
+                            <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white '>เช็คระดับน้ำ</th>
                             <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>Yes</td>
                         </tr>
                         </tbody>

@@ -209,7 +209,7 @@ const Step5 = () => {
 
 
             <div className='overflow-x-auto my-2 '>  
-            <table className="table-fixed lg:table-auto text-sm">
+            <table className="table-fixed lg:table-auto text-xs">
                 <thead className='bg-blue-300 rounded'>
                     <tr className=''>
                         <th className='px-2 py-1  mx-auto  border border-white hidden'></th>
@@ -264,7 +264,7 @@ const Step5 = () => {
             <ViewImage />
 
             {/* ps tab */}
-            <div className='relative '>
+            <div className='relative pt-[5rem]'>
                 <div className='mx-1'>
                     { isBoredPile ? 
                         <>
