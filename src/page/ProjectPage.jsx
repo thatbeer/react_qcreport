@@ -187,7 +187,7 @@ function ProjectPage() {
             <div className='flex flex-1 mx-auto mt-14 lg:mt-3 pt-[2rem]'>
                 <main role="main" className="flex flex-col w-screen h-full  px-2 pt-[50px] lg:pt-[50px] mb-4">
                     <div className='overflow-x-auto mx-0 lg:mx-auto '>  
-                        <table className=" w-full overflow-x-auto border-2 border-gray-400 bg-gray-50">
+                        <table className=" w-full overflow-x-auto border-2 border-white bg-gray-100">
                             <thead className='bg-white-600 text-blue-600 '>
                                 <tr>
                                     <th className='p-2 lg:p-4  min-w-[80px] text-sm  text-center font-medium text-black '>เลขที่เข็ม</th>
@@ -208,7 +208,7 @@ function ProjectPage() {
                             <tbody>
                                 {/* Real table */}
                                 { projectListX ? projectListX.map((list) => (
-                                    <tr key={list.pileno}  className="text-center border-y-2 border-gray-400 rounded-t  my-auto items-center justify-center font-medium">
+                                    <tr key={list.pileno}  className="text-center border-y-2 border-white rounded-t  my-auto items-center justify-center font-medium">
                                         <td className='p-3 mx-auto my-1 text-sm    '>
                                             <Link to={`/project/report?pileid=${list.pileno}`} title={`pileId${list.pileno}`} 
                                                  state={{...state}}
