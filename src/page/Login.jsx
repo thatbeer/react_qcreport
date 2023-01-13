@@ -163,7 +163,7 @@ const LoginPage = () => {
                     <div className="text-sm">
                         <div onClick={() => {setIsOpen(true)}}
                         className="font-medium text-sky-600 hover:text-sky-500
-                            focus:cursor-pointer ">
+                            hover:cursor-pointer ">
                         Forgot your password?
                         </div>
                     </div>
@@ -214,7 +214,7 @@ const LoginPage = () => {
                                     </Dialog.Title>
                                     <div className='my-6 p-4'>
                                         <p className='text-sm text-gray-500'>
-                                            ติดต่อใครดีอะ
+                                            ติดต่อ: <a href="tel:191">191</a>
                                         </p>
                                     </div>
                                     <div className='mt-4'>
