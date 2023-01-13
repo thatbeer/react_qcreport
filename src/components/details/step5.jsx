@@ -209,18 +209,18 @@ const Step5 = () => {
 
 
             <div className='overflow-x-auto my-2 '>  
-            <table className=" table-fixed lg:table-none w-full text-sm">
+            <table className="table lg:table-fixed text-xs">
                 <thead className='bg-blue-300 rounded'>
                     <tr className=''>
-                        <th className='px-2 py-1 w-[180px] mx-auto text-sm  border border-gray-700 hidden'></th>
-                        <th className='px-2 py-1 w-[180px] mx-auto text-sm  border border-gray-700'>ลำดับหัวเจาะ</th>
-                        <th className='px-2 py-1 w-[180px] mx-auto text-sm  border border-gray-700 '>ความลึกวัดจากปากเคสซิ่ง(ม.)</th>
-                        <th className='px-2 py-1 w-[180px] mx-auto  text-sm  border border-gray-700 '>เครื่องจักร/เครน No.</th>
-                        <th className='px-2 py-1 w-[180px] mx-auto  text-sm  border border-gray-700 '>เครื่องเจาะ</th>
-                        <th className='px-2 py-1 w-[180px] mx-auto  text-sm  border border-gray-700 '>วัน/เวลา (เริ่ม-หยุดเจาะเสาเข็ม)</th>
-                        <th className='px-2 py-1 w-[180px] mx-auto  text-sm  border border-gray-700 '>คนขับ</th>
-                        <th className='px-2 py-1 w-[180px] mx-auto  text-sm  border border-gray-700 '>หลุมพัง</th>
-                        <th className='px-2 py-1 w-[180px] mx-auto  text-sm  border border-gray-700 '>ขนาดฟันข้างของบัคเก็ต(ม.)</th>
+                        <th className='px-2 py-1  mx-auto  border border-gray-700 hidden'></th>
+                        <th className='px-2 py-1  mx-auto  border border-gray-700'>ลำดับหัวเจาะ</th>
+                        <th className='px-2 py-1  mx-auto  border border-gray-700 '>ความลึกวัดจากปากเคสซิ่ง(ม.)</th>
+                        <th className='px-2 py-1  mx-auto   border border-gray-700 '>เครื่องจักร/เครน No.</th>
+                        <th className='px-2 py-1  mx-auto   border border-gray-700 '>เครื่องเจาะ</th>
+                        <th className='px-2 py-1  mx-auto   border border-gray-700 '>วัน/เวลา (เริ่ม-หยุดเจาะเสาเข็ม)</th>
+                        <th className='px-2 py-1  mx-auto lg:w-[100px]  border border-gray-700 '>คนขับ</th>
+                        <th className='px-2 py-1  mx-auto   border border-gray-700 '>หลุมพัง</th>
+                        <th className='px-2 py-1  mx-auto   border border-gray-700 '>ขนาดฟันข้างของบัคเก็ต(ม.)</th>
                     </tr>
                 </thead>
                 <tbody className='bg-gray-1002.บัคเก็ต '>

@@ -45,7 +45,7 @@ const Step9 = () => {
           <CheckTab />
 
           <div className='overflow-x-auto my-2 '>  
-              <table className=" w-full">
+              <table className=" w-auto">
                   <thead className='bg-blue-300 rounded'>
                       <tr className=''>
                           <th className='px-3 py-2 text-sm  text-center border border-gray-700 '>คันที่เลขรถ	</th>

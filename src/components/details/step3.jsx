@@ -132,14 +132,17 @@ const Step3 = () => {
 
 
             <div className='overflow-x-auto my-2 '>  
-            <table className="table lg:table-auto w-full">
-                <thead className='bg-blue-300 object-fill'>
-                    <tr className=''>
+            <table className="table-fixed lg:table-auto w-full">
+                <thead className=' object-fill'>
+                    <tr className='bg-blue-300'>
                         
+
+                        <td className='px-2 py-1 w-[180px] mx-auto text-sm  border border-gray-700 hidden'></td>
                         <th className='p-5 text-sm w-1/4 text-center border  border-gray-700 '>ค่าพิกัดหมุด	</th>
                         <th className='p-5 text-sm w-1/4 text-center border border-gray-700 '>ตามแบบ</th>
                         <th className='p-5 text-sm w-1/4 text-center border border-gray-700 '>ที่อ่านได้	</th>
                         <th className='p-5 text-sm w-1/4 text-center border  border-gray-700 '>คลาดเคลื่อน</th>
+                        <td className='px-2 py-1 w-[180px] mx-auto text-sm  border border-gray-700 hidden'></td>
                     </tr>
                 </thead>
                 <tbody className='bg-gray-100 '>
@@ -149,12 +152,7 @@ const Step3 = () => {
                             <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>1114.485</td>
                             <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700   bg-green-300 '>-0.0120</td>
                         </tr>
-                        <tr  className="text-center border-y border-gray-700  my-auto items-center justify-center">
-                            <td className='p-4 mx-auto my-1 text-sm  border-x border-gray-700  '>Eastthing(ม.)</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>792.055</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-gray-700  '>792.027</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r -none border-gray-700 bg-green-300   '>-0.0280</td>
-                        </tr>
+                        
                 </tbody>
             </table>
             </div>

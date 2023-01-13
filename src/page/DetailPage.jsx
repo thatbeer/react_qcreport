@@ -2,8 +2,9 @@ import React , { useState ,useEffect , useRef , Fragment } from 'react'
 import { useLocation  } from 'react-router-dom'
 import useQuery from '../utils/use-query'
 import { useDetectScroll} from '@smakss/react-scroll-direction'
-import { ArrowUpCircleIcon } from '@heroicons/react/24/outline'
+import { ArrowUpCircleIcon , FolderArrowDownIcon } from '@heroicons/react/24/outline'
 import { Transition,Dialog } from '@headlessui/react'
+
 
 import Step1 from '../components/details/step1'
 import Step2 from '../components/details/step2'
@@ -205,6 +206,22 @@ const DetailPage = (props) => {
                     </ul>
                 </div>
             </div>
+                    { pileId ? (
+                        <div className='hidden lg:flex z-30 absolute inset-y-0 top-[6.5rem] left-4 mx-2 pr-2 
+                        hover:cursor-pointer  items-center'>
+                            <div className='flex flex-1 items-center'>
+                                <h2 className='font-bold'>
+                                    {pileId}
+                                </h2>
+                                <FolderArrowDownIcon className='w-8 h-8 text-rose-700 '  onClick={() => {alert('download!')}} />
+
+                            </div>
+                        </div>
+                        )
+                        
+                        :
+                        null
+                    }
         </div>
         {/* check scrolling and time */}
         {/* {

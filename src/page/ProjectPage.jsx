@@ -187,10 +187,10 @@ function ProjectPage() {
             <div className='flex flex-1 mx-auto mt-14 lg:mt-3 pt-[2rem]'>
                 <main role="main" className="flex flex-col w-screen h-full  px-2 pt-[50px] lg:pt-[50px] mb-4">
                     <div className='overflow-x-auto mx-0 lg:mx-auto '>  
-                        <table className=" w-full overflow-x-auto border-2 border-white bg-gray-50">
-                            <thead className='bg-blue-600 text-white '>
+                        <table className=" w-full overflow-x-auto border-2 border-gray-400 bg-gray-50">
+                            <thead className='bg-white-600 text-blue-600 '>
                                 <tr>
-                                    <th className='p-2 lg:p-4  min-w-[80px] text-sm  text-center font-medium '>เลขที่เข็ม</th>
+                                    <th className='p-2 lg:p-4  min-w-[80px] text-sm  text-center font-medium text-black '>เลขที่เข็ม</th>
                                     <th className='px-1 text-sm  text-center   '>Step1</th>
                                     <th className='px-1 text-sm  text-center   '>Step2</th>
                                     <th className='px-1 text-sm  text-center   '>Step3</th>
@@ -202,92 +202,92 @@ function ProjectPage() {
                                     <th className='px-1 text-sm  text-center   '>Step9</th>
                                     <th className=' text-sm  text-center   '>Step10</th>
                                     <th className=' text-sm  text-center   '>Step11</th>
-                                    <th className='p-2 text-sm  text-center  '>วันที่ (ประวัติล่าสุด)</th>
+                                    <th className='p-2 text-sm  text-center text-black '>วันที่ (ประวัติล่าสุด)</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {/* Real table */}
                                 { projectListX ? projectListX.map((list) => (
-                                    <tr key={list.pileno}  className="text-center border-y-2 border-white rounded-t  my-auto items-center justify-center font-medium">
+                                    <tr key={list.pileno}  className="text-center border-y-2 border-gray-400 rounded-t  my-auto items-center justify-center font-medium">
                                         <td className='p-3 mx-auto my-1 text-sm    '>
                                             <Link to={`/project/report?pileid=${list.pileno}`} title={`pileId${list.pileno}`} 
                                                  state={{...state}}
-                                                className='hover:text-blue-400 hover:underline'>
+                                                className='hover:text-blue-400 hover:underline text-blue-600'>
                                                 {list.pileno}
                                             </Link>
                                         </td>
                                         <td className='py-2 text-sm  text-center '>
-                                            <Link tag={1} to={`/project/report?pileid=${list.pileno}`} title={`step1`}
+                                            <Link tag={1} to={`/project/report?pileid=${list.pileno}`} title={`เตรียมโครงเหล็ก`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageStep1 status={list.step1} alt={"step1"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center   '>
-                                            <Link to={`/project/report?pileid=${list.pileno}#step2`} title={`step2`}
+                                            <Link to={`/project/report?pileid=${list.pileno}#step2`} title={`ปักเคสซิ่ง`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step2} alt={"step2"} />
                                                 </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center   '>
-                                            <Link to={`/project/report?pileid=${list.pileno}#step3`} title={`step3`}
+                                            <Link to={`/project/report?pileid=${list.pileno}#step3`} title={`วัดตำแหน่งก่อนเจาะ`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step3} alt={"step3"} />
                                                 </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center   '>
-                                            <Link to={`/project/report?pileid=${list.pileno}#step4`} title={`step4`}
+                                            <Link to={`/project/report?pileid=${list.pileno}#step4`} title={`ทดสอบของเหลว`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step4} alt={"step4"} />
                                                 </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center   '>
-                                            <Link to={`/project/report?pileid=${list.pileno}#step5`} title={`step5`}
+                                            <Link to={`/project/report?pileid=${list.pileno}#step5`} title={`เจาะเสาเข็ม`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step5} alt={"step5"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center   '>
-                                            <Link to={`/project/report?pileid=${list.pileno}#step6`} title={`step6`}
+                                            <Link to={`/project/report?pileid=${list.pileno}#step6`} title={`เก็บตะกอน`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step6} alt={"step6"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center   '>
-                                            <Link to={`/project/report?pileid=${list.pileno}#step7`} title={`step7`}
+                                            <Link to={`/project/report?pileid=${list.pileno}#step7`} title={`ลงโครงเหล็ก`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step7} alt={"step7"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center   '>
-                                            <Link to={`/project/report?pileid=${list.pileno}#step8`} title={`step8`}
+                                            <Link to={`/project/report?pileid=${list.pileno}#step8`} title={`ลงท่อเทรมี่ / เม็ดโฟม`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                <StageOnRail status={list.step8} alt={"step8"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center   '>
-                                            <Link to={`/project/report?pileid=${list.pileno}#step9`} title={`step9`}
+                                            <Link to={`/project/report?pileid=${list.pileno}#step9`} title={`ทดสอบคอนกรีต`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step9} alt={"step9"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center   '>
-                                            <Link to={`/project/report?pileid=${list.pileno}#step10`} title={`step10`}
+                                            <Link to={`/project/report?pileid=${list.pileno}#step10`} title={`เทคอนกรีต`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageOnRail status={list.step10} alt={"step10"} />
                                             </Link>
                                         </td>
                                         <td className='py-1 text-sm  text-center   '>
-                                            <Link to={`/project/report?pileid=${list.pileno}#step11`} title={`step11`}
+                                            <Link to={`/project/report?pileid=${list.pileno}#step11`} title={`ถอนเคสซิ่ง`}
                                                 state={{...state}}
                                                 className='hover:text-blue-400 hover:underline'>
                                                 <StageStep11 status={list.step11} alt={"step11"} />
