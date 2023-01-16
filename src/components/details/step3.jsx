@@ -15,7 +15,7 @@ const Step3 = () => {
                     <div className='mx-auto w-full relative my-2'>
                     <div className='  bg-gray-200'>
                     <div className='py-1 border border-white -t  flex items-center
-                    justify-start font-bold  bg-blue-300'>
+                    justify-start font-bold  bg-blue-500 text-white'>
                         <h1 className='mx-2'>ข้อมูลการวัดตำแหน่ง</h1>
                     </div>
                     <table className='w-full bg-gray-200'>
@@ -47,7 +47,7 @@ const Step3 = () => {
                         </tbody>
                     </table>
                     <div className='py-1 border-x border-white  flex items-center
-                    justify-start font-bold  bg-blue-300'>
+                    justify-start font-bold  bg-blue-500 text-white'>
                         <h1 className='mx-2'>ตำแหน่งเคสซิ่ง</h1>
                     </div>
                     <table className='w-full'>
@@ -90,7 +90,7 @@ const Step3 = () => {
                         </tbody>
                     </table>
                     <div className='py-1 border-b border-white  flex items-center
-                    justify-start font-bold  bg-blue-300'>
+                    justify-start font-bold  bg-blue-500 text-white'>
                         <h1 className='mx-2'>ตำแหน่งเคสซิ่ง</h1>
                     </div>
                     <table className='w-full'>
@@ -137,7 +137,7 @@ const Step3 = () => {
             <div className='overflow-x-auto my-2 '>  
             <table className="table-fixed lg:table-auto w-full">
                 <thead className=' object-fill'>
-                    <tr className='bg-blue-300'>
+                    <tr className='bg-blue-500 text-white'>
                         
 
                         <td className='px-2 py-1 w-[180px] mx-auto text-sm  border border-white hidden'></td>

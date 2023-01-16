@@ -15,56 +15,56 @@ const HeadlessTable = () => {
         
         <div className='mx-auto w-full relative my-2'>
           <div className=' block '>
-          <div className='py-1 border bg-blue-300  border-white   flex items-center
+          <div className='py-1 border bg-blue-500 text-white border-white   flex items-center
            justify-start font-bold '>
             <h1 className='mx-2'>ข้อมูลการปักเคสซิ่ง</h1>
           </div>
-          <table className='w-full'>
+          <table className='w-full bg-gray-200 '>
             {/* <thead>
               <tr>
                 <th>1</th>
                 <th>2</th>
               </tr>
             </thead> */}
-            <tbody className='bg-white '>
+            <tbody className=''>
               <tr className='  border border-x border-white  '>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 text-start bg-orange-200 border-r border-white'>วันที่เริ่ม</th>
-                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start'>3 ม.ค. 2566 (09:00)</td>
+                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-gray-200 '>3 ม.ค. 2566 (09:00)</td>
               </tr>
               <tr className=' border-b border-x border-white   '>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 text-start bg-orange-200 border-r border-white'>วันที่เสร็จ</th>
-                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-white'>3 ม.ค. 2566 (09:15)</td>
+                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-gray-200 '>3 ม.ค. 2566 (09:15)</td>
               </tr>
               <tr className=' border-b border-x border-white   '>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 text-start bg-orange-200 border-r border-white'>เคสซิ่ง ∅ (ม.)</th>
-                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-white'>1.20</td>
+                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-gray-200 '>1.20</td>
               </tr>
               <tr className=' border-b border-x border-white   '>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 text-start bg-orange-200 border-r border-white'>ความยาว (ม.)</th>
-                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-white'>15.000</td>
+                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-gray-200 '>15.000</td>
               </tr>
               <tr className=' border-b border-x border-white   '>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 text-start bg-orange-200 border-r border-white truncate'>เครื่องจักร/เครน No.</th>
-                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-white'>CR-31</td>
+                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-gray-200 '>CR-31</td>
               </tr>
               <tr className=' border-b border-x border-white   '>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 text-start bg-orange-200 border-r border-white truncate'>ไวโบรแฮมเมอร์ No.</th>
-                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-white'>VH-14</td>
+                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-gray-200 '>VH-14</td>
               </tr>
               <tr className=' border-b border-x border-white   '>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 text-start bg-orange-200 border-r border-white'>ผู้ขับ</th>
-                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-white'>รั้ว พัดภู่</td>
+                <td className='px-2 py-1 text-sm w-1/2  lg:w-2/3 text-start bg-gray-200 '>รั้ว พัดภู่</td>
               </tr>
               <tr className=' border-b border-x border-white   '>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 text-start bg-orange-200 border-r border-white'>เช็คลูกดิ่ง</th>
-                <td className='px-2 py-1 text-sm  bg-green-600 h-auto flex  justify-center'>  <RedGreenIcon className="w-6 h-6 text-white " pass="1"/> </td>
+                <td className='px-2 py-1 text-sm  bg-green-600 h-auto flex  justify-center'>  <RedGreenIcon className="w-5 h-5 text-white " pass="1"/> </td>
               </tr>
               <tr className=' border-b border-x border-white    h-full'>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 border-r bg-orange-200 text-start border-white '>เช็คระดับน้ำ</th>
                 {pass2 ? 
-                  <td className='px-2 py-1 text-sm  bg-green-600 h-auto flex  justify-center'><CheckIcon className='w-6 h-6 text-white' /></td>
+                  <td className='px-2 py-1 text-sm  bg-green-600 h-auto flex  justify-center'><CheckIcon className='w-5 h-5 text-white' /></td>
                 : 
-                  <td className=' px-2 py-1 text-sm    bg-red-600 h-auto flex  justify-center'><MinusIcon className='w-6 h-6 text-white'/></td>
+                  <td className=' px-2 py-1 text-sm    bg-red-600 h-auto flex  justify-center'><MinusIcon className='w-5 h-5 text-white'/></td>
                 }
               </tr> 
             </tbody>

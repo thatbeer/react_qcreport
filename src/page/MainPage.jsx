@@ -19,7 +19,7 @@ const projectX = [
 function Mainpage() {
     return (
         < > 
-            <div className="w-full flex flex-col flex-grow h-screen relative lg:top-14 top-16">
+            <div className="w-full flex flex-col flex-grow h-screen relative lg:top-14 top-16 ">
                 <div className="flex flex-col items-center justify-center mx-auto ">
                     {projectX.map((list,idx) => (
                         <ul key={idx} className="lg:mx-auto ">

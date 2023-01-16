@@ -15,11 +15,11 @@ const Step11 = () => {
             <div className='mx-auto w-full relative my-2'>
                 <div className=' block '>
                     <div className='py-1 border border-white   flex items-center
-                    justify-start font-bold  bg-blue-300'>
+                    justify-start font-bold  bg-blue-500 text-white'>
                         <h1 className=' mx-2'>ข้อมูลถอนเคสซิ่ง</h1>
                     </div>
                     <table className='w-full'>
-                        <tbody className='bg-gray-100 '>
+                        <tbody className='bg-gray-200 '>
                         <tr className='  border border-x border-white text-sm '>
                             <th className='px-2 py-1 w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>วันที่เริ่ม</th>
                             <td className='px-2 py-1 w-1/2 lg:w-2/3 text-start '>4 ม.ค. 2566 (18:01)</td>
@@ -81,7 +81,7 @@ const Step11 = () => {
             {/* Graph container */}
 
             <div className='mx-auto border border-gray-700 w-auto min-w-full h-auto relative my-2 justify-center'>
-                <div className='mx-auto bg-blue-300 h-10 border-b border-gray-700'>
+                <div className='mx-auto bg-blue-500 text-white h-10 border-b border-gray-700'>
                     <h1 className='mx-2 py-1 text-bold'>กราฟเปรียบเทียบเวลาการทำงาน และ ความลึก</h1>
                 </div>
                 <div className='flex lg:flex-row flex-col items-center justify-center my-2  '>

@@ -28,7 +28,7 @@ const GlobalHeader = () =>  {
     return (
         <>
         <header className='fixed top-0 z-40 w-full '>
-        <Disclosure as="nav" className="bg-blue-600">
+        <Disclosure as="nav" className="bg-gradient-to-r from-blue-700 to-blue-100">
         {({ open }) => (
             <>
             <div className="mx-auto w-screen px-2 sm:px-6 lg:px-8">
@@ -97,7 +97,7 @@ const GlobalHeader = () =>  {
                     >
                     <span className="sr-only">View notifications</span>
                     <div className='flex flex-row items-center'>
-                            <CurrencyDollarIcon className="h-5 w-5 text-sm text-yellow-400 " aria-hidden="true" />
+                            <CurrencyDollarIcon className="h-5 w-5 text-sm animate-wiggle2 text-yellow-400 " aria-hidden="true" />
                         <Link to='/category' target="_blank">
                             170000
                         </Link>

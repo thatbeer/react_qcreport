@@ -1,7 +1,7 @@
 import React from 'react'
 import CheckTab from '../checktab'
 import { CheckIcon } from '@heroicons/react/24/outline'
-
+import RedGreenIcon from '../../utils/R-G-Icons'
 
 const Step7 = () => {
     const isBoredPile = true;
@@ -11,11 +11,11 @@ const Step7 = () => {
             <div className='mx-auto w-full relative my-2'>
             <div className=' block '>
             <div className='py-2 border border-white   flex items-center
-            justify-start font-bold bg-blue-300'>
+            justify-start font-bold bg-blue-500 text-white'>
                 <h1 className='mx-2'>ข้อมูลการลงโครงเหล็ก</h1>
             </div>
             <table className='w-full'>
-                <tbody className='bg-gray-100 '>
+                <tbody className='bg-gray-200 '>
                 <tr className='  border border-x border-white  '>
                     <th className='py-1 px-2 lg:mx-auto w-1/2 lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>วันที่เริ่ม</th>
                     <td className='py-1 px-2 lg:mx-auto w-1/2 lg:w-2/3 text-start text-sm '>4 ม.ค. 2566 (14:08)</td>
@@ -66,7 +66,7 @@ const Step7 = () => {
 
             <div className='overflow-x-auto my-2 '>  
                 <table className=" w-full">
-                    <thead className='bg-blue-300 '>
+                    <thead className='bg-blue-500 text-white '>
                         <tr>
                             <th className='p-2 text-sm  text-center border border-white '>โครง</th>
                             <th className='p-2 min-h-w-1/6 w-1/6 text-sm  text-center border border-white '>ลงโครงเหล็ก</th>
@@ -75,14 +75,14 @@ const Step7 = () => {
                             
                         </tr>
                     </thead>
-                    <tbody className='bg-gray-100 '>
+                    <tbody className='bg-gray-200 '>
                     <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-x border-white  '>6</td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white bg--300 text-'>
-                                <CheckIcon class="w-6 h-6 mx-auto"/>
+                                <RedGreenIcon pass='1' class="w-6 h-6 mx-auto text-green-300"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white bg--300 text-'>
-                                <CheckIcon class="w-6 h-6 mx-auto"/>
+                                <RedGreenIcon pass='1' class="w-6 h-6 mx-auto text-green-600"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white   '>
                                 <div className='border-b border-dashed border-white'>
@@ -94,13 +94,13 @@ const Step7 = () => {
                         <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-x border-white  '>5</td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white bg--300 text-'>
-                                <CheckIcon class="w-6 h-6 mx-auto"/>
+                                <RedGreenIcon pass='1' class="w-6 h-6 mx-auto text-gray-400"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white bg--300 text-'>
-                                <CheckIcon class="w-6 h-6 mx-auto"/>
+                                <RedGreenIcon pass='1' class="w-6 h-6 mx-auto text-gray-600"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white   '>
-                                <div className='border-b border-dashed border-white'>
+                                <div className='border-b border-dashed border-white '>
                                  หลัก: 8-DB25 SD40 x 10.0000 m.<br/>
                                     </div>
                                     ช่วงที่ 1 : RB9 SR24 x 8.800 m. @0.300
@@ -109,10 +109,10 @@ const Step7 = () => {
                         <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-x border-white  '>4</td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white bg--300 text-'>
-                                <CheckIcon class="w-6 h-6 mx-auto"/>
+                                <RedGreenIcon pass='1' class="w-6 h-6 mx-auto text-white bg-gray-200"/>
                             </td>
-                            <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white bg--300 text-'>
-                                <CheckIcon class="w-6 h-6 mx-auto"/>
+                            <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white'>
+                                <RedGreenIcon pass='1' class="w-6 h-6 mx-auto text-green-700"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white   '>
                                 <div className='border-b border-dashed border-white'>
@@ -124,10 +124,10 @@ const Step7 = () => {
                         <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-x border-white  '>3</td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white bg--300 text-'>
-                                <CheckIcon class="w-6 h-6 mx-auto"/>
+                                <RedGreenIcon pass='1' class="w-6 h-6 mx-auto text-blue-600"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white bg--300 text-'>
-                                <CheckIcon class="w-6 h-6 mx-auto"/>
+                                <RedGreenIcon pass='1' class="w-6 h-6 mx-auto text-orange-400"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white   '>
                                 <div className='border-b border-dashed border-white'>
@@ -139,13 +139,13 @@ const Step7 = () => {
                         <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-x border-white  '>2</td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white bg--300 text-'>
-                                <CheckIcon class="w-6 h-6 mx-auto"/>
+                                <RedGreenIcon pass='1' class="w-6 h-6 mx-auto text-green-500"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white bg--300 text-'>
-                                <CheckIcon class="w-6 h-6 mx-auto"/>
+                                <RedGreenIcon pass='1' class="w-6 h-6 mx-auto"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white   '>
-                                <div className='border-b border-dashed border-white'>
+                                <div className='border-b border-dashed border-white text-blue-300'>
                                 หลัก: 20-DB28 SD50 x 12.0000 m.<br/>
                                     </div>
                                     ช่วงที่ 1 : RB9 SR24 x 10.200 m. @0.150
@@ -154,10 +154,10 @@ const Step7 = () => {
                         <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-x border-white  '>1</td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white bg--300 text-'>
-                                <CheckIcon class="w-6 h-6 mx-auto"/>
+                                <RedGreenIcon pass='1' class="w-6 h-6 mx-auto text-orange-600"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white bg--300 text-'>
-                                <CheckIcon class="w-6 h-6 mx-auto"/>
+                                <RedGreenIcon pass='1' class="w-6 h-6 mx-auto text-gray-800"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white   '>
                                 <div className='border-b border-dashed border-white'>

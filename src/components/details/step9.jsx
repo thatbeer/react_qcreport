@@ -10,11 +10,11 @@ const Step9 = () => {
             <div className='mx-auto w-full relative my-2 text-sm'>
                 <div className=' block '>
                     <div className='py-1 border border-white   items-center
-                    justify-start bg-blue-300'>
+                    justify-start bg-blue-500 text-white'>
                         <h1 className='text-start mx-2 font-bold'>ข้อมูลทดสอบคอนกรีต</h1>
                     </div>
                 <table className='w-full'>
-                    <tbody className='bg-gray-100 '>
+                    <tbody className='bg-gray-200 '>
                     <tr className=' border border-x border-white items-center text-start justify-between '>
                         <th className='py-1 px-2 w-1/2 lg:w-1/3 border-r text-start text-sm bg-orange-200 border-white'>ยี่ห้อคอนกรีต	</th>
                         <td className='py-1 px-2 w-1/2 lg:w-2/3 text-start '>โออาร์ซี</td>
@@ -46,7 +46,7 @@ const Step9 = () => {
 
           <div className='overflow-x-auto my-2 '>  
               <table className=" w-auto">
-                  <thead className='bg-blue-300 rounded'>
+                  <thead className='bg-blue-500 text-white rounded'>
                       <tr className=''>
                           <th className='px-2 py-2 text-sm  text-center border border-white '>คันที่เลขรถ	</th>
                           <th className='px-2 py-2 text-sm  text-center border border-white '>คอนกรีตต่อคัน (ม3)</th>

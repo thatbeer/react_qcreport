@@ -22,10 +22,10 @@ const Step1 = () => {
             <div className='mx-auto w-full relative my-2'>
                 <div className=' block '>
                 <div className='py-1 flex items-center border border-white
-                justify-start font-bold   bg-blue-300'>
+                justify-start font-bold   bg-blue-500 text-white text-white'>
                     <h1 className='mx-2'>ข้อมูลการเตรียมโครงเหล็ก</h1>
                 </div>
-                <table className='w-full bg-gray-100 '>
+                <table className='w-full bg-gray-200 '>
                     <tbody className=' '>
                     <tr className='  border border-x border-white '>
                         <th className='px-2 py-1 text-sm w-1/3 lg:w-1/3 bg-orange-200 border-r text-start border-white'>วันที่เริ่ม</th>
@@ -53,7 +53,7 @@ const Step1 = () => {
 
             <div className='overflow-x-auto my-2 '>  
             <table className=" w-full ">
-                <thead className='bg-blue-300 rounded font-medium '>
+                <thead className='bg-blue-500 text-white rounded font-medium '>
                     <tr>
                         <th className='px-3 py-1 text-sm w-1/7 text-center border border-white '>โครง</th>
                         <th className='px-3 py-1 text-sm w-1/7 text-center border border-white '>ตามแบบ</th>
@@ -61,11 +61,11 @@ const Step1 = () => {
                         <th className='px-3 py-1 text-sm  text-center border  border-white '><pre className='border-b border-dashed border-white text-md'>MainBar</pre><pre className='text-md'>Spiral</pre></th>        
                     </tr>
                 </thead>
-                <tbody className='bg-gray-100 '>
+                <tbody className='bg-gray-200 '>
                         <tr  className="text-center border-y border-white rounded-t  my-auto items-center justify-center">
                             <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>1</td>
-                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><RedGreenIcon pass="1" className="w-10 h-8 font-bold text-white mx-auto " /></td>
-                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCloseSquare class="w-10 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><RedGreenIcon pass="1" className="w-6 h-6 font-bold text-white mx-auto " /></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCloseSquare class="w-6 h-6 font-bold text-white mx-auto "/></td>
                             <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   '>
                                 <div className='border-b border-dashed border-white'>
                                     หลัก: 30-DB28 SD50 x 12.0000 m.
@@ -75,8 +75,8 @@ const Step1 = () => {
                         </tr>
                         <tr  className="text-center border-y border-white rounded-t  my-auto items-center justify-center">
                             <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>2</td>
-                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-6 h-6 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-6 h-6 font-bold text-white mx-auto "/></td>
                             <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   '>
                                 <div className='border-b border-dashed border-white'>หลัก: 20-DB28 SD50 x 12.0000 m.<br/></div>
                                 ช่วงที่ 1: RB9 SR24 x 10.200 m. @0.150
@@ -84,8 +84,8 @@ const Step1 = () => {
                         </tr>
                         <tr  className="text-center border-y border-white rounded-t  my-auto items-center justify-center">
                             <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>3</td>
-                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-6 h-6 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-6 h-6 font-bold text-white mx-auto "/></td>
                             <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   '>
                                 <div className='border-b border-dashed border-white'>หลัก: 16-DB28 SD50 x 12.0000 m.</div>
                                 ช่วงที่ 1: RB9 SR24 x 10.200 m. @0.300
@@ -93,8 +93,8 @@ const Step1 = () => {
                         </tr>
                         <tr  className="text-center border-y border-white rounded  my-auto items-center justify-center">
                             <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>4</td>
-                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-6 h-6 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-6 h-6 font-bold text-white mx-auto "/></td>
                             <td className='px-2 py-1 mx-auto my-1 text-sm  border-r  border-white   '>
                                 <div className='border-b border-dashed border-white'>หลัก: 8-DB25 SD40 x 10.0000 m.</div>
                                 ช่วงที่ 1: RB9 SR24 x 8.200 m. @0.300
@@ -102,8 +102,8 @@ const Step1 = () => {
                         </tr>
                         <tr  className="text-center border-y border-white rounded  my-auto items-center justify-center">
                             <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>5</td>
-                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-6 h-6 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-6 h-6 font-bold text-white mx-auto "/></td>
                             <td className='px-2 py-1 mx-auto my-1 text-sm  border-r  border-white   '>
                                 <div className='border-b border-dashed border-white'>หลัก: 8-DB25 SD40 x 10.0000 m.</div>
                                 ช่วงที่ 1: RB9 SR24 x 8.800 m. @0.300
@@ -111,8 +111,8 @@ const Step1 = () => {
                         </tr>
                         <tr  className="text-center border-y border-white rounded  my-auto items-center justify-center">
                             <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>6</td>
-                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-6 h-6 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-6 h-6 font-bold text-white mx-auto "/></td>
                             <td className='px-2 py-1 mx-auto my-1 text-sm  border-r  border-white   '>
                                 <div className='border-b border-dashed border-white'>หลัก: 8-DB25 SD40 x 7.6500 m.</div>
                                 ช่วงที่ 1: RB9 SR24 x 6.450 m. @0.300

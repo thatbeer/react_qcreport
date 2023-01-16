@@ -12,11 +12,11 @@ const Step6 = () => {
             <div className='mx-auto w-full relative my-2'>
             <div className=' block '>
             <div className='py-1 border border-white   flex items-center
-            justify-start  font-bold bg-blue-300'>
+            justify-start  font-bold bg-blue-500 text-white'>
                 <h1 className='mx-2' >ข้อมูลการเก็บตะกอน</h1>
             </div>
             <table className='w-full'>
-                <tbody className='bg-gray-100 '>
+                <tbody className='bg-gray-200 '>
                 <tr className='  border border-x border-white  '>
                     <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>วันที่เริ่ม</th>
                     <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start '>4 ม.ค. 2566 (12:50)</td>
@@ -39,7 +39,7 @@ const Step6 = () => {
                 </tr>
                 <tr className='  border border-x border-white  '>
                     <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>เปลี่ยนบัคเก็ตเจาะเป็นบัคเก็ตเก็บตะกอน</th>
-                    <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-green-600 text-white '><RedGreenIcon className='w-5 h-5' /></td>
+                    <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-green-600 text-white '><RedGreenIcon pass='1' className='w-5 h-5' /></td>
                 </tr>
                 <tr className='  border border-x border-white  '>
                     <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>ระยะเวลารอเก็บตะกอน (นาที)	</th>

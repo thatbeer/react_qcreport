@@ -7,11 +7,16 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        wiggle: 'wiggle 2.5s ease-in-out infinite'
+        wiggle: 'wiggle 2s ease-in-out infinite',
+        wiggle2: 'wiggle 2.5s ease-in-out infinite'
       },
       keyframes: {
         wiggle: {
           '0%, 100%': { transform: 'rotate(15deg)' },
+          '50%': { transform: 'rotate(45deg)' },
+        },
+        wiggle2: {
+          '0%, 100%': { transform: 'rotate(0deg)' },
           '50%': { transform: 'rotate(45deg)' },
         }
       }

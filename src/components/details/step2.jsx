@@ -2,7 +2,7 @@ import React from 'react'
 import CheckTab from '../checktab';
 import HeadlessTable from '../headlesstable';
 
-import RedGreenIcon from '../../utils/R-G-Icons'
+
 
 const Step2 = () => {
   const isBoredPile = true;

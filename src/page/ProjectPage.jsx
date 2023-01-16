@@ -100,7 +100,7 @@ function ProjectPage() {
 
   return (
     <>
-        <div className="w-full flex flex-col flex-grow h-screen relative lg:top-10 top-14">
+        <div className="w-full flex flex-col flex-grow h-screen relative lg:top-10 top-14 ">
             <div className='fixed top-[48px] w-full items-center mx-auto bg-blue-200 h-[30px] z-40  '>
                 {/* -----------------------------------------------Sub Navigator----------------------------------------------- */}
                 <Subnavbar titleback={false} isProjectPage={true} PName={state?.projName}/>
@@ -142,7 +142,7 @@ function ProjectPage() {
                         </button>
                     </div> */}
                     {/* search bar section old lg:left-[6rem]*/}
-                    <div className='relative py-2  lg:left-[12rem] flex  text-gray-700 mx-auto '>
+                    <div className='relative py-2 lg:w-1/4 w-1/2 flex  text-gray-700 mx-auto '>
                         <input type={'search'} name="search" placeholder='search'
                             className='border-2 w-full font-medium justify-end border-gray-300 bg-white h-8  px-2 rounded-lg focus:outline-none'/>
                         <button type='submit' className='relative '>

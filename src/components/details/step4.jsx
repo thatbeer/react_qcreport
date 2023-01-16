@@ -11,11 +11,11 @@ const Step4 = () => {
             <div className='mx-auto w-full relative my-2'>
             <div className=' block '>
             <div className='py-2 border border-white -t  flex items-center
-            justify-start font-bold text-lg bg-blue-300'>
+            justify-start font-bold text-lg bg-blue-600 text-white'>
                 <h1 className='mx-2'>ข้อมูลการทดสอบของเหลว</h1>
             </div>
             <table className='w-full'>
-                <tbody className='bg-gray-100 '>
+                <tbody className='bg-gray-200 '>
                 <tr className=' border border-x border-white items-center text-start justify-between '>
                     <th className='p-2 lg:w-1/3 w-1/2 text-start border-r bg-orange-200 border-white'>ประเภทสารละลาย</th>
                     <td className='p-2 lg:w-2/3 w-1/2 text-start '>โพลิเมอร์</td>
@@ -29,7 +29,7 @@ const Step4 = () => {
 
             <div className='overflow-x-auto my-2 '>  
             <table className=" w-full">
-                <thead className='bg-blue-300 '>
+                <thead className='bg-blue-600 text-white '>
                     <tr>
                         <th rowSpan={2} className='p-5 text-sm  text-center border border-b-0 border-white '>ลำดับ</th>
                         <th className='px-2 py-1 text-sm  text-center border border-white '>pH</th>
@@ -49,7 +49,7 @@ const Step4 = () => {
 
                     </tr>
                 </thead>
-                <tbody className='bg-gray-100 '>   
+                <tbody className='bg-gray-200 '>   
                         <tr  className="text-start border-y border-white -t  my-auto items-center justify-center">
                             <td className=' text-center p-4 mx-auto my-1 text-sm  border-x border-white'>
                                 <pre>
