@@ -6,11 +6,11 @@ function Statcard() {
         <div className='mx-auto container w-full my-2
             flex flex-col items-center'>
             <div className='flex flex-col h-auto w-full my-2   border
-              border-black divide-y divide-blue-600 bg-gray-100 '>
+              border-white divide-y divide-white bg-gray-200 '>
                 <h1 className='flex items-center justify-center bg-blue-300  
                  rounded-b-none w-full  text-lg font-bold'>
                     <p>ประเภทเสาเข็ม : Bore pile</p></h1>
-                <div className='flex flex-row h-full divide-x divide-gray-500'>
+                <div className='flex flex-row h-full divide-x  divide-white'>
                     <div className='flex flex-col w-full items-center justify-center mx-auto my-2'>
                         <h1 className='text-sm'>Diameter</h1>
                         <p className='text-xl  font-bold'>1.2</p>
@@ -35,3 +35,5 @@ function Statcard() {
 }
 
 export default Statcard
+
+

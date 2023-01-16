@@ -12,7 +12,7 @@ const Step1 = () => {
         <div className='flex flex-col'>
             <div className='mx-auto w-full relative my-2'>
                 <div className=' block '>
-                <div className='py-1 flex items-center border border-black
+                <div className='py-1 flex items-center border border-white
                 justify-start font-bold   bg-blue-300'>
                     <h1 className='mx-2'>ข้อมูลการเตรียมโครงเหล็ก</h1>
                 </div>

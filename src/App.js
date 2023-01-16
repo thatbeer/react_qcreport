@@ -8,6 +8,7 @@ import LoginPage from './page/Login'
 import Mainpage from './page/MainPage'
 import ProjectPage from './page/ProjectPage'
 import SidePage from './page/SidePage'
+import ViewFullImg from './page/ViewFullImg'
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
         <Route path="/side" element={<SidePage/>} />
         <Route path="/guide" element={<GuidePage/>} />
         <Route path='/category' element={<CoinCategory />} />
+        <Route path='/img' element={<ViewFullImg />} />
       </Route>
       <Route element={<h1>error 404</h1>} path="*" />
       <Route path='/auth' element={<LoginPage/>} />
