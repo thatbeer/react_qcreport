@@ -1,12 +1,17 @@
 import React from 'react'
 import CheckTab from '../checktab';
 
-import { CheckIcon , MinusIcon } from '@heroicons/react/24/outline'
+import {  MinusIcon } from '@heroicons/react/24/outline'
 import {ReactComponent as Checker} from '../../img/check.svg'
 import checkPng from '../../img/check32.png'
-import {AiFillCheckCircle} from 'react-icons/ai'
+import {AiFillCheckCircle , AiFillCloseSquare} from 'react-icons/ai'
 import {FiCheckCircle} from 'react-icons/fi'
+
 import {BsCheckCircle , BsShieldFillCheck , BsPatchCheckFill} from 'react-icons/bs'
+
+import RedGreenIcon from '../../utils/R-G-Icons'
+
+
 
 const Step1 = () => {
     const active = true
@@ -50,66 +55,66 @@ const Step1 = () => {
             <table className=" w-full ">
                 <thead className='bg-blue-300 rounded font-medium '>
                     <tr>
-                        <th className='px-3 py-2 text-sm w-1/7 text-center border border-white '>โครง</th>
-                        <th className='px-3 py-2 text-sm w-1/7 text-center border border-white '>ตามแบบ</th>
-                        <th className='px-3 py-2 text-sm w-1/7 text-center border border-white '>ลูกปูน</th>
-                        <th className='px-3 py-2 text-sm  text-center border  border-white '><pre className='border-b border-dashed border-white text-md'>MainBar</pre><pre className='text-md'>Spiral</pre></th>        
+                        <th className='px-3 py-1 text-sm w-1/7 text-center border border-white '>โครง</th>
+                        <th className='px-3 py-1 text-sm w-1/7 text-center border border-white '>ตามแบบ</th>
+                        <th className='px-3 py-1 text-sm w-1/7 text-center border border-white '>ลูกปูน</th>
+                        <th className='px-3 py-1 text-sm  text-center border  border-white '><pre className='border-b border-dashed border-white text-md'>MainBar</pre><pre className='text-md'>Spiral</pre></th>        
                     </tr>
                 </thead>
                 <tbody className='bg-gray-100 '>
                         <tr  className="text-center border-y border-white rounded-t  my-auto items-center justify-center">
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-white  '>1</td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-10 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-10 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white   '>
-                                <pre className='border-b border-dashed border-white'>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>1</td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><RedGreenIcon pass="1" className="w-10 h-8 font-bold text-white mx-auto " /></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCloseSquare class="w-10 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   '>
+                                <div className='border-b border-dashed border-white'>
                                     หลัก: 30-DB28 SD50 x 12.0000 m.
-                                </pre>
+                                </div>
                                 ช่วงที่ 1: RB9 SR24 x 10.500 m. @0.150
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-white rounded-t  my-auto items-center justify-center">
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-white  '>2</td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><BsCheckCircle class="w-8 h-[10px] font-bold text-white mx-auto"/></td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><BsPatchCheckFill class="w-8 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white   '>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>2</td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   '>
                                 <div className='border-b border-dashed border-white'>หลัก: 20-DB28 SD50 x 12.0000 m.<br/></div>
                                 ช่วงที่ 1: RB9 SR24 x 10.200 m. @0.150
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-white rounded-t  my-auto items-center justify-center">
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-white  '>3</td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><FiCheckCircle class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><BsShieldFillCheck class="w-8 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white   '>
-                                <pre className='border-b border-dashed border-white'>หลัก: 16-DB28 SD50 x 12.0000 m.</pre>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>3</td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   '>
+                                <div className='border-b border-dashed border-white'>หลัก: 16-DB28 SD50 x 12.0000 m.</div>
                                 ช่วงที่ 1: RB9 SR24 x 10.200 m. @0.300
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-white rounded  my-auto items-center justify-center">
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-white  '>4</td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r  border-white   '>
-                                <pre className='border-b border-dashed border-white'>หลัก: 8-DB25 SD40 x 10.0000 m.</pre>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>4</td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r  border-white   '>
+                                <div className='border-b border-dashed border-white'>หลัก: 8-DB25 SD40 x 10.0000 m.</div>
                                 ช่วงที่ 1: RB9 SR24 x 8.200 m. @0.300
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-white rounded  my-auto items-center justify-center">
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-white  '>5</td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r  border-white   '>
-                                <pre className='border-b border-dashed border-white'>หลัก: 8-DB25 SD40 x 10.0000 m.</pre>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>5</td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r  border-white   '>
+                                <div className='border-b border-dashed border-white'>หลัก: 8-DB25 SD40 x 10.0000 m.</div>
                                 ช่วงที่ 1: RB9 SR24 x 8.800 m. @0.300
                             </td>
                         </tr>
                         <tr  className="text-center border-y border-white rounded  my-auto items-center justify-center">
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-x border-white  '>6</td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
-                            <td className='px-2 py-3 mx-auto my-1 text-sm  border-r  border-white   '>
-                                <pre className='border-b border-dashed border-white'>หลัก: 8-DB25 SD40 x 7.6500 m.</pre>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>6</td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto"/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><AiFillCheckCircle class="w-8 h-8 font-bold text-white mx-auto "/></td>
+                            <td className='px-2 py-1 mx-auto my-1 text-sm  border-r  border-white   '>
+                                <div className='border-b border-dashed border-white'>หลัก: 8-DB25 SD40 x 7.6500 m.</div>
                                 ช่วงที่ 1: RB9 SR24 x 6.450 m. @0.300
                             </td>
                         </tr>
