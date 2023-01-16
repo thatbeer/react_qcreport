@@ -69,7 +69,7 @@ const Step1 = () => {
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto"/></td>
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white bg-green-600 '><CheckIcon class="w-8 h-8 font-bold text-white mx-auto "/></td>
                             <td className='px-2 py-3 mx-auto my-1 text-sm  border-r border-white   '>
-                                <pre className='border-b border-dashed border-white'>หลัก: 20-DB28 SD50 x 12.0000 m.</pre>
+                                <div className='border-b border-dashed border-white'>หลัก: 20-DB28 SD50 x 12.0000 m.<br/></div>
                                 ช่วงที่ 1: RB9 SR24 x 10.200 m. @0.150
                             </td>
                         </tr>

@@ -61,17 +61,17 @@ const Step9 = () => {
                           <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>
                                 <strong>1</strong>
-                                <pre>741</pre>
+                                <div>741</div>
                                 </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>7.00</td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-300  '>20</td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white  '>20</td>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>-</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>
@@ -79,17 +79,17 @@ const Step9 = () => {
                           <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>
                               <strong>2</strong>
-                                <pre>949</pre>
+                                <div>949</div>
                                 </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>7.00</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>-</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>
@@ -97,17 +97,17 @@ const Step9 = () => {
                           <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>
                               <strong>4</strong>
-                                <pre>731</pre>
+                                <div>731</div>
                                 </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>7.00</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>-</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>
@@ -115,17 +115,17 @@ const Step9 = () => {
                           <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>
                               <strong>5</strong>
-                                <pre>741</pre>
+                                <div>741</div>
                                 </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>6.30</td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  bg-green-300 '>19.0</td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  bg-green-600 text-white '>19.0</td>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>-</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>
@@ -133,17 +133,17 @@ const Step9 = () => {
                           <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>
                               <strong>6</strong>
-                                <pre>750</pre>
+                                <div>750</div>
                                 </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>6.00</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>-</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>
@@ -151,17 +151,17 @@ const Step9 = () => {
                           <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>
                               <strong>7</strong>
-                                <pre>949</pre>
+                                <div>949</div>
                                 </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>6.00</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>-</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>
@@ -169,17 +169,17 @@ const Step9 = () => {
                           <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>
                               <strong>8</strong>
-                                <pre>731</pre>
+                                <div>731</div>
                                 </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>6.00</td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-300  '>19.0</td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white  '>19.0</td>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>-</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>
@@ -187,17 +187,17 @@ const Step9 = () => {
                           <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>
                               <strong>9</strong>
-                                <pre>741</pre>
+                                <div>741</div>
                                 </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>6.00</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>-</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>
@@ -205,17 +205,17 @@ const Step9 = () => {
                           <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  '>
                               <strong>10</strong>
-                                <pre>750</pre>
+                                <div>750</div>
                                 </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>6.00</td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  bg-green-300 '>19</td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  bg-green-600 text-white '>19</td>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
-                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-300 '>
+                              <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>
                                 26 ธ.ค. 65
-                                <pre>(14:30)</pre>
+                                <div>(14:30)</div>
                               </td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '>-</td>
                               <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  '></td>

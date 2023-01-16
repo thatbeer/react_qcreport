@@ -26,11 +26,11 @@ const Step5 = () => {
                         <tbody className='bg-gray-100 '>
                         <tr className='  border border-x border-white  '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>เช็คลูกดิ่ง</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600  '><CheckIcon className='h-5 w-5'/></td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white  '><CheckIcon className='h-5 w-5'/></td>
                         </tr>
                         <tr className=' border-b border-x border-white   '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>เช็คระดับน้ำ</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 '><CheckIcon className='h-5 w-5'/></td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white '><CheckIcon className='h-5 w-5'/></td>
                         </tr>
                         </tbody>
                     </table>
@@ -42,15 +42,15 @@ const Step5 = () => {
                         <tbody className='bg-gray-100 '>
                         <tr className='  border border-x border-white  '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>1.ระดับบนท่อปลอกเหล็ก (ม.)</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 '>1.2100</td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white '>1.2100</td>
                         </tr>
                         <tr className=' border-b border-x border-white   '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm  border-r bg-orange-200 border-white'>2.ระดับพื้นดิน (ม.)</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600  '>1.1400</td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white  '>1.1400</td>
                         </tr>
                         <tr className=' border-b border-x border-white   '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>3.ระดับตัดหัวเสาเข็ม (ม.)</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 '>-12.5500</td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white '>-12.5500</td>
                         </tr>
                         <tr className=' border-b border-x border-white   '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>4.ความยาวเคสซิ่ง(ม.)</th>
@@ -74,7 +74,7 @@ const Step5 = () => {
                         <tbody className='bg-gray-100 '>
                         <tr className='  border border-x border-white  '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>ระยะเผื่อโครงเหล็กจม (ม.)</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600  '>0.500</td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white  '>0.500</td>
                         </tr>
                         <tr className=' border-b border-x border-white   '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>ความสูงจุดหิ้วโครงเหล็กเหนือระดับตัดหัวเข็ม (ม.)</th>
@@ -108,11 +108,11 @@ const Step5 = () => {
                         <tbody className='bg-gray-100 '>
                         <tr className='  border border-x border-white  '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>เช็คลูกดิ่ง</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600  '><CheckIcon className='h-5 w-5'/></td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white  '><CheckIcon className='h-5 w-5'/></td>
                         </tr>
                         <tr className=' border-b border-x border-white   '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>เช็คระดับน้ำ</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 '><CheckIcon className='h-5 w-5'/></td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white '><CheckIcon className='h-5 w-5'/></td>
                         </tr>
                         </tbody>
                     </table>
@@ -125,15 +125,15 @@ const Step5 = () => {
                         <tbody className='bg-gray-100 '>
                         <tr className='  border border-x border-white  '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>1.ระดับพื้นดิน (ม.)</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 '>0.4750</td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white '>0.4750</td>
                         </tr>
                         <tr className=' border-b border-x border-white   '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>2.ระดับท็อปไกด์วอลล์ (ม.)</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600  '>-0.2200</td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white  '>-0.2200</td>
                         </tr>
                         <tr className=' border-b border-x border-white   '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>3.ระดับล่างไกด์วอลล์ (ม.)</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 '>-5.6000</td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white '>-5.6000</td>
                         </tr>
                         <tr className=' border-b border-x border-white   '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>4.ระดับตัดหัวเสาเข็ม (ม.)</th>
@@ -157,7 +157,7 @@ const Step5 = () => {
                         <tbody className='bg-gray-100 '>
                         <tr className='  border border-x border-white  '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>ระยะเผื่อโครงเหล็กจม (ม.)</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600  '>0.500</td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white  '>0.500</td>
                         </tr>
                         <tr className=' border-b border-x border-white   '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>ความสูงจุดหิ้วโครงเหล็กเหนือระดับตัดหัวเข็ม (ม.)</th>
@@ -246,7 +246,7 @@ const Step5 = () => {
                         </tr>         
                         <tr  className="text-center border-y border-white   my-auto items-center justify-center">
                             <td className='p-1 border-x border-white '>3.บัคเก็ต</td>
-                            <td className='p-1 border-r border-white  bg-green-600'>68.600</td>
+                            <td className='p-1 border-r border-white  bg-green-600 text-white'>68.600</td>
                             <td className='p-1 border-r border-white '>PR-25</td>
                             <td className='p-1 border-r border-white '>{' '}</td>
                             <td className='p-1 border-r border-white '>3 ม.ค. 2566 (14:00 - 14:40)</td>
@@ -264,7 +264,7 @@ const Step5 = () => {
             <ViewImage />
 
             {/* ps tab */}
-            <div className='relative pt-[5rem]'>
+            <div className='relative pt-[8rem]'>
                 <div className='mx-1'>
                     { isBoredPile ? 
                         <>

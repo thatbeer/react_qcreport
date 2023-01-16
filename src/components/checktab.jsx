@@ -11,7 +11,7 @@ const CheckTab = (props) => {
                     <h1 className='font-bold text-sm px-2 tracking-wide min-w-1/3'><strong>Note: </strong> จะขึนแถบสีแดงเมื่อมีการป้อนข้อมูลลงหมายเหตุ</h1>
                 </div>
                 {/* green/red container */}
-                <div className={`w-3/4 p-2 ${active ? 'bg-green-600' : 'bg-red-600'} text-blue-100
+                <div className={`w-3/4 p-2 ${active ? 'bg-green-600' : 'bg-red-600'} text-white
                 border border-l-none border-white h-full rounded-r text-start truncate items-center`}
                 // style={`${active ? 'bg-emerald-400' : 'bg-red-400'} class`}
                 >{note}</div>

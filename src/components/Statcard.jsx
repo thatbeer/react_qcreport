@@ -7,7 +7,7 @@ function Statcard() {
             flex flex-col items-center'>
             <div className='flex flex-col h-auto w-full my-2   border
               border-white divide-y divide-white bg-gray-200 '>
-                <h1 className='flex items-center justify-center bg-blue-300  
+                <h1 className='flex items-center justify-center bg-blue-500  text-white
                  rounded-b-none w-full  text-lg font-bold'>
                     <p>ประเภทเสาเข็ม : Bore pile</p></h1>
                 <div className='flex flex-row h-full divide-x  divide-white'>

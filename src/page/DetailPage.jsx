@@ -307,37 +307,37 @@ const DetailPage = (props) => {
                 {/* Search Container as SIDE BAR */}
                     <div className='pt-[30px] lg:pt-[10px] text-sans'>
                         <Statcard />
-                        <h1 ref={ref1} id="step1" className='text-3xl font-bold'>1. เตรียมโครงเหล็ก</h1>
+                        <h1 ref={ref1} id="step1" className='text-xl font-bold'>1. เตรียมโครงเหล็ก</h1>
                         <Step1    />
                         <hr className='my-2 '/>
-                        <h1 ref={ref2} id="step2" className='text-3xl font-bold'>2. ปักเคสซิ่ง</h1>
+                        <h1 ref={ref2} id="step2" className='text-xl font-bold'>2. ปักเคสซิ่ง</h1>
                         <Step2 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref3} id="step3" className='text-3xl font-bold'>3. วัดตำแหน่งก่อนเจาะ</h1>
+                        <h1 ref={ref3} id="step3" className='text-xl font-bold'>3. วัดตำแหน่งก่อนเจาะ</h1>
                         <Step3 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref4} id="step4" className='text-3xl font-bold'>4. ทดสอบของเหลว</h1>
+                        <h1 ref={ref4} id="step4" className='text-xl font-bold'>4. ทดสอบของเหลว</h1>
                         <Step4 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref5} id="step5" className='text-3xl font-bold'>5. เจาะเสาเข็ม</h1>
+                        <h1 ref={ref5} id="step5" className='text-xl font-bold'>5. เจาะเสาเข็ม</h1>
                         <Step5 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref6} id="step6" className='text-3xl font-bold'>6. เก็บตะกอน</h1>
+                        <h1 ref={ref6} id="step6" className='text-xl font-bold'>6. เก็บตะกอน</h1>
                         <Step6 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref7} id="step7" className='text-3xl font-bold'>7. ลงโครงเหล็ก</h1>
+                        <h1 ref={ref7} id="step7" className='text-xl font-bold'>7. ลงโครงเหล็ก</h1>
                         <Step7 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref8} id="step8" className='text-3xl font-bold'>8. ลงท่อเทรมี่ / เม็ดโฟม</h1>
+                        <h1 ref={ref8} id="step8" className='text-xl font-bold'>8. ลงท่อเทรมี่ / เม็ดโฟม</h1>
                         <Step8 />
                         <hr className='my-2 '/>
-                        <h1 ref={ref9} id="step9" className='text-3xl font-bold'>9. ทดสอบคอนกรีต</h1>
+                        <h1 ref={ref9} id="step9" className='text-xl font-bold'>9. ทดสอบคอนกรีต</h1>
                         <Step9 />
                         <hr className='my-2 '/>
-                        <h1  ref={ref10} id="step10" className='text-3xl font-bold'>10. เทคอนกรีต</h1>
+                        <h1  ref={ref10} id="step10" className='text-xl font-bold'>10. เทคอนกรีต</h1>
                         <Step10 />
                         <hr className='my-2 '/>
-                        <h1  ref={ref11} id="step11" className='text-3xl font-bold'>11. ถอนเคสซิ่ง</h1>
+                        <h1  ref={ref11} id="step11" className='text-xl font-bold'>11. ถอนเคสซิ่ง</h1>
                         <Step11    /> 
                     </div>
                 </div >

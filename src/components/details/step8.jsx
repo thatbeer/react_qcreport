@@ -37,7 +37,7 @@ const Step8 = () => {
                         </tr>
                         <tr className='  border border-x border-white '>
                             <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>ความยาวท่อเทรมีรวม (ม.)</th>
-                            <td className='p-1 w-1/2 lg:w-2/3 text-start text-sm bg-green-600 '>68.23</td>
+                            <td className='p-1 w-1/2 lg:w-2/3 text-start text-sm bg-green-600 text-white '>68.23</td>
                         </tr>
                         </tbody>
                     </table>

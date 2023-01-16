@@ -150,7 +150,7 @@ const Step3 = () => {
                             <td className='p-4 mx-auto my-1 text-sm  border-x border-white  '>Northing(ม.)</td>
                             <td className='p-4 mx-auto my-1 text-sm  border-r border-white  '>1114.497</td>
                             <td className='p-4 mx-auto my-1 text-sm  border-r border-white  '>1114.485</td>
-                            <td className='p-4 mx-auto my-1 text-sm  border-r border-white   bg-green-600 '>-0.0120</td>
+                            <td className='p-4 mx-auto my-1 text-sm  border-r border-white   bg-green-600 text-white '>-0.0120</td>
                         </tr>
                         
                 </tbody>

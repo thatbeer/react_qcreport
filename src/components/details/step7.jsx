@@ -34,7 +34,7 @@ const Step7 = () => {
                 </tr>
                 <tr className='  border border-x border-white  '>
                     <th className='py-1 px-2 lg:mx-auto w-1/2 lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>ระยะเผื่อโครงเหล็กจม (ม.)	</th>
-                    <td className='py-1 px-2 lg:mx-auto w-1/2 lg:w-2/3 text-start text-sm bg-green-300'>0.500</td>
+                    <td className='py-1 px-2 lg:mx-auto w-1/2 lg:w-2/3 text-start text-sm bg-green-600 text-white'>0.500</td>
                 </tr>
                 <tr className='  border border-x border-white  '>
                     <th className='py-1 px-2 lg:mx-auto w-1/2 lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>ความสูงจุดหิ้วโครงเหล็กเหนือระดับตัดหัวเข็ม (ม.)</th>
@@ -85,9 +85,9 @@ const Step7 = () => {
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white   '>
-                                <pre className='border-b border-dashed border-white'>
-                                    หลัก: 8-DB25 SD40 x 7.6500 m.
-                                    </pre>
+                                <div className='border-b border-dashed border-white'>
+                                    หลัก: 8-DB25 SD40 x 7.6500 m. <br/>
+                                    </div>
                                     ช่วงที่ 1 : RB9 SR24 x 6.450 m. @0.300
                             </td>
                         </tr>
@@ -100,9 +100,9 @@ const Step7 = () => {
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white   '>
-                                <pre className='border-b border-dashed border-white'>
-                                 หลัก: 8-DB25 SD40 x 10.0000 m.
-                                    </pre>
+                                <div className='border-b border-dashed border-white'>
+                                 หลัก: 8-DB25 SD40 x 10.0000 m.<br/>
+                                    </div>
                                     ช่วงที่ 1 : RB9 SR24 x 8.800 m. @0.300
                             </td>
                         </tr>
@@ -115,9 +115,9 @@ const Step7 = () => {
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white   '>
-                                <pre className='border-b border-dashed border-white'>
-                                หลัก: 8-DB25 SD40 x 10.0000 m.
-                                    </pre>
+                                <div className='border-b border-dashed border-white'>
+                                หลัก: 8-DB25 SD40 x 10.0000 m.<br/>
+                                    </div>
                                     ช่วงที่ 1 : RB9 SR24 x 8.200 m. @0.300
                             </td>
                         </tr>
@@ -130,9 +130,9 @@ const Step7 = () => {
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white   '>
-                                <pre className='border-b border-dashed border-white'>
-                                หลัก: 16-DB28 SD50 x 12.0000 m.
-                                    </pre>
+                                <div className='border-b border-dashed border-white'>
+                                หลัก: 16-DB28 SD50 x 12.0000 m.<br/>
+                                    </div>
                                     ช่วงที่ 1 : RB9 SR24 x 10.200 m. @0.300
                             </td>
                         </tr>
@@ -145,9 +145,9 @@ const Step7 = () => {
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white   '>
-                                <pre className='border-b border-dashed border-white'>
-                                หลัก: 20-DB28 SD50 x 12.0000 m.
-                                    </pre>
+                                <div className='border-b border-dashed border-white'>
+                                หลัก: 20-DB28 SD50 x 12.0000 m.<br/>
+                                    </div>
                                     ช่วงที่ 1 : RB9 SR24 x 10.200 m. @0.150
                             </td>
                         </tr>
@@ -160,9 +160,9 @@ const Step7 = () => {
                                 <CheckIcon class="w-6 h-6 mx-auto"/>
                             </td>
                             <td className='px-1 py-1 mx-auto my-1 text-sm  border-r border-white   '>
-                                <pre className='border-b border-dashed border-white'>
-                                หลัก: 30-DB28 SD50 x 12.0000 m.
-                                    </pre>
+                                <div className='border-b border-dashed border-white'>
+                                หลัก: 30-DB28 SD50 x 12.0000 m.<br/>
+                                    </div>
                                     ช่วงที่ 1 : RB9 SR24 x 10.500 m. @0.150
                             </td>
                         </tr>

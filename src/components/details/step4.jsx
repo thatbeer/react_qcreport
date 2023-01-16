@@ -58,10 +58,10 @@ const Step4 = () => {
                                 </pre>
                                 <strong>ก่อนเจาะ</strong>
                             </td>
-                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-300 ' ><pre className='border-b border-dashed border-white'>8.0</pre>{"[8.0 - 10.0]"}</td>
-                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-300 ' ><pre className='border-b border-dashed border-white'>1.02</pre>{"[<= 1.02]"}</td>
-                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-300 ' ><pre className='border-b border-dashed border-white'>65</pre>{"[>= 55]"}</td>
-                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-300 ' ><pre className='border-b border-dashed border-white'>0.00</pre>{"[<=0.30]"}</td>
+                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white ' ><pre className='border-b border-dashed border-white'>8.0</pre>{"[8.0 - 10.0]"}</td>
+                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white ' ><pre className='border-b border-dashed border-white'>1.02</pre>{"[<= 1.02]"}</td>
+                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white ' ><pre className='border-b border-dashed border-white'>65</pre>{"[>= 55]"}</td>
+                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white ' ><pre className='border-b border-dashed border-white'>0.00</pre>{"[<=0.30]"}</td>
                             <td className=' text-center p-4 mx-auto my-1 text-sm  border-x border-white'><pre>3 ม.ค. 2566 (14:30)</pre><pre>3 ม.ค. 2566 (14:40)</pre></td>
                             <td className=' text-start p-4 mx-auto my-1 text-sm  border-x border-white'><pre>โอ๋</pre>คาวี บอกแก้ว</td>
                         </tr>
@@ -73,10 +73,10 @@ const Step4 = () => {
                                 </pre>
                                 ปากหลุม
                             </td>
-                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-300 ' ><pre className='border-b border-dashed border-white'>8.0</pre>{"[8.0 - 10.0]"}</td>
-                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-300 ' ><pre className='border-b border-dashed border-white'>1.01</pre>{"[<= 1.02]"}</td>
-                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-300 ' ><pre className='border-b border-dashed border-white'>55</pre>{"[>= 55]"}</td>
-                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-300 ' ><pre className='border-b border-dashed border-white'>0.10</pre>{"[<=0.30]"}</td>
+                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white ' ><pre className='border-b border-dashed border-white'>8.0</pre>{"[8.0 - 10.0]"}</td>
+                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white ' ><pre className='border-b border-dashed border-white'>1.01</pre>{"[<= 1.02]"}</td>
+                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white ' ><pre className='border-b border-dashed border-white'>55</pre>{"[>= 55]"}</td>
+                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white ' ><pre className='border-b border-dashed border-white'>0.10</pre>{"[<=0.30]"}</td>
                             <td className=' text-center p-4 mx-auto my-1 text-sm  border-x border-white'><pre>26 ธ.ค. 2565 (08:48)</pre><pre>26 ธ.ค. 2565 (08:48)</pre></td>
                             <td className=' text-start p-4 mx-auto my-1 text-sm  border-x border-white'><pre>พัน</pre>ประพันธ์ พฤฒิพฤกษ์</td>
                         </tr>
@@ -87,10 +87,10 @@ const Step4 = () => {
                                 </pre>
                                 กลางหลุม
                             </td>
-                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-300 ' ><pre className='border-b border-dashed border-white'>8.0</pre>{"[8.0 - 10.0]"}</td>
-                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-300 ' ><pre className='border-b border-dashed border-white'>1.01</pre>{"[<= 1.02]"}</td>
-                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-300 ' ><pre className='border-b border-dashed border-white'>48</pre>{"[>= 55]"}</td>
-                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-300 ' ><pre className='border-b border-dashed border-white'>0.10</pre>{"[<=0.30]"}</td>
+                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white ' ><pre className='border-b border-dashed border-white'>8.0</pre>{"[8.0 - 10.0]"}</td>
+                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white ' ><pre className='border-b border-dashed border-white'>1.01</pre>{"[<= 1.02]"}</td>
+                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white ' ><pre className='border-b border-dashed border-white'>48</pre>{"[>= 55]"}</td>
+                            <td className=' text-center p-4 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white ' ><pre className='border-b border-dashed border-white'>0.10</pre>{"[<=0.30]"}</td>
                             <td className=' text-center p-4 mx-auto my-1 text-sm  border-x border-white'><pre>4 ม.ค. 2566 (17:31)</pre><pre>4 ม.ค. 2566 (17:33)</pre></td>
                             <td className=' text-start p-4 mx-auto my-1 text-sm  border-x border-white'><pre>พัน</pre>ประพันธ์ พฤฒิพฤกษ์</td>
                         </tr>
