@@ -1,7 +1,8 @@
 import React from 'react'
 import { FolderArrowDownIcon , ChevronUpDownIcon , Bars3Icon} from '@heroicons/react/24/outline'
 import { Link, useNavigate } from 'react-router-dom'
-
+import {GrDocumentPdf} from 'react-icons/gr'
+import {VscFilePdf} from 'react-icons/vsc'
 
 const projectX = [
   {projectId: "DA21" ,name: "63-09 ทางพิเศษพระราม 3 สัญญาที่/ (MLp 06 to MLP 07)"},
@@ -35,8 +36,8 @@ const Subnavbar = (props) => {
                     { pileId ? (
                     <div className='flex items-center justify-center' >
                       {pileId}
-                      <FolderArrowDownIcon className='lg:hidden z-30 lg:relative h-8 w-8  text-red-500 
-                    hover:cursor-pointer ' onClick={() => {alert('download!')}} />
+                      <VscFilePdf className='lg:hidden z-30 lg:relative h-8 w-8 pl-1 text-red-700
+                    hover:cursor-pointer ' color='red' onClick={() => {alert('download!')}} />
                       <div>
                     </div>
                     </div>) : null

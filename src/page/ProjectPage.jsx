@@ -188,7 +188,7 @@ function ProjectPage() {
                 <main role="main" className="flex flex-col w-screen h-full  px-2 pt-[50px] lg:pt-[50px] mb-4">
                     <div className='overflow-x-auto mx-0 lg:mx-auto '>  
                         <table className=" w-full overflow-x-auto border-2 border-white bg-gray-100">
-                            <thead className='bg-white-600 text-blue-600 '>
+                            <thead className='bg-white-600 text-blue-800 '>
                                 <tr>
                                     <th className='p-2 lg:p-4  min-w-[80px] text-sm  text-center font-medium text-black '>เลขที่เข็ม</th>
                                     <th className='px-1 text-sm  text-center   '>Step1</th>

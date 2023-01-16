@@ -1,10 +1,13 @@
 import React from 'react'
 import { CheckIcon } from '@heroicons/react/24/outline'
 import {MinusIcon} from '@heroicons/react/24/outline'
+import RedGreenIcon from '../utils/R-G-Icons'
+
 
 const exist = true
 const pass1 = true
 const pass2 = false
+
 const HeadlessTable = () => {
   const isBoredPile = true;
   return (
@@ -54,11 +57,7 @@ const HeadlessTable = () => {
               </tr>
               <tr className=' border-b border-x border-white   '>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 text-start bg-orange-200 border-r border-white'>เช็คลูกดิ่ง</th>
-                {pass1 ? 
-                  <td className='px-2 py-1 text-sm  bg-green-600 h-auto  flex justify-center'><CheckIcon className='w-6 h-6 text-white' /></td>
-                : 
-                  <td className='px-2 py-1 text-sm   bg-red-600 h-auto flex  justify-center'><MinusIcon className='w-6 h-6 text-white'/></td>
-                }
+                <td className='px-2 py-1 text-sm  bg-green-600 h-auto flex  justify-center'>  <RedGreenIcon className="w-6 h-6 text-white " pass="1"/> </td>
               </tr>
               <tr className=' border-b border-x border-white    h-full'>
                 <th className='px-2 py-1 text-sm w-1/2  lg:w-1/3 border-r bg-orange-200 text-start border-white '>เช็คระดับน้ำ</th>

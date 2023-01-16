@@ -4,7 +4,8 @@ import useQuery from '../utils/use-query'
 import { useDetectScroll} from '@smakss/react-scroll-direction'
 import { ArrowUpCircleIcon , FolderArrowDownIcon } from '@heroicons/react/24/outline'
 import { Transition,Dialog } from '@headlessui/react'
-
+import {GrDocumentPdf} from 'react-icons/gr'
+import {VscFilePdf} from 'react-icons/vsc'
 
 import Step1 from '../components/details/step1'
 import Step2 from '../components/details/step2'
@@ -216,7 +217,7 @@ const DetailPage = (props) => {
                                 <h2 className='font-bold'>
                                     {pileId}
                                 </h2>
-                                <FolderArrowDownIcon className='w-8 h-8 text-rose-700 '  onClick={() => {alert('download!')}} />
+                                <VscFilePdf className='w-7 h-7 text-rose-700 '  onClick={() => {alert('download!')}} />
 
                             </div>
                         </div>
