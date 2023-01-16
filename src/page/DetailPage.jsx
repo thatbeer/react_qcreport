@@ -24,6 +24,7 @@ import Statcard from '../components/Statcard';
 
 const DetailPage = (props) => {
     // const { search } = useLocation();
+    const [isKept, setIsKept] = useState(true)
     const location  = useLocation()
     console.log("state=>",location.state)
     // const hash = location.hash.substring(1);
@@ -68,6 +69,8 @@ const DetailPage = (props) => {
 
     const closeModal = () => {
         setIsOpenModal(false)
+        setIsKept(false)
+        
     }
     const openModal = () => {
         setIsOpenModal(true)
@@ -232,7 +235,7 @@ const DetailPage = (props) => {
         : null
 
         } */}
-        {
+        { isKept ? (
             duration - startTime > 400 ? 
             <>
                 <div className='fixed bottom-0 flex w-full justify-center z-50 bg-rose-600 text-white py-1'    >
@@ -295,7 +298,7 @@ const DetailPage = (props) => {
                     </Dialog>
                 </Transition>
             </>
-            : null
+            : null ) : null
         }
         {/* {
             duration - startTime > 100 && isOpenModal && <div className='fixed top-0 '></div>
