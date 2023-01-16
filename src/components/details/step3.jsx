@@ -1,6 +1,9 @@
 import React from 'react'
 import CheckTab from '../checktab'
 
+
+
+
 const Step3 = () => {
     const isBoredPile = true;
   return (

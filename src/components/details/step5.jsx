@@ -5,6 +5,8 @@ import DyCarousel from '../Dy-carousel';
 import ViewImage from '../ViewImage/ViewImage';
 
 
+import RedGreenIcon from '../../utils/R-G-Icons'
+
 const Step5 = () => {
     const isBoredPile = true;
   return (
@@ -26,11 +28,11 @@ const Step5 = () => {
                         <tbody className='bg-gray-100 '>
                         <tr className='  border border-x border-white  '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>เช็คลูกดิ่ง</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white  '><CheckIcon className='h-5 w-5'/></td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white  '><RedGreenIcon pass={1} className='h-5 w-5'/></td>
                         </tr>
                         <tr className=' border-b border-x border-white   '>
                             <th className='px-2 py-1 w-3/5  lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>เช็คระดับน้ำ</th>
-                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white '><CheckIcon className='h-5 w-5'/></td>
+                            <td className='px-2 py-1 w-2/5  lg:w-2/3 text-start text-sm bg-green-600 text-white '><RedGreenIcon pass={1} className='h-5 w-5'/></td>
                         </tr>
                         </tbody>
                     </table>

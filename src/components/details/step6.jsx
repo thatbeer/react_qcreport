@@ -1,7 +1,7 @@
 import React from 'react'
 import CheckTab from '../checktab'
 import { CheckIcon } from '@heroicons/react/24/outline'
-
+import RedGreenIcon from '../../utils/R-G-Icons'
 
 
 const Step6 = () => {
@@ -39,7 +39,7 @@ const Step6 = () => {
                 </tr>
                 <tr className='  border border-x border-white  '>
                     <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>เปลี่ยนบัคเก็ตเจาะเป็นบัคเก็ตเก็บตะกอน</th>
-                    <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-green-600 text-white '><CheckIcon className='w-5 h-5' /></td>
+                    <td className='px-2 py-1 text-sm w-1/2 lg:w-2/3 text-start bg-green-600 text-white '><RedGreenIcon className='w-5 h-5' /></td>
                 </tr>
                 <tr className='  border border-x border-white  '>
                     <th className='px-2 py-1 text-sm w-1/2 lg:w-1/3 text-start border-r bg-orange-200 border-white'>ระยะเวลารอเก็บตะกอน (นาที)	</th>

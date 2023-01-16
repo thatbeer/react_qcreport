@@ -141,10 +141,10 @@ function ProjectPage() {
                             เขียว-แดง
                         </button>
                     </div> */}
-                    {/* search bar section */}
-                    <div className='relative py-2  lg:left-[6rem] flex  text-gray-700 mx-auto'>
+                    {/* search bar section old lg:left-[6rem]*/}
+                    <div className='relative py-2  lg:left-[12rem] flex  text-gray-700 mx-auto '>
                         <input type={'search'} name="search" placeholder='search'
-                            className='border-2 w-full font-medium border-gray-300 bg-white h-8  px-2 rounded-lg focus:outline-none'/>
+                            className='border-2 w-full font-medium justify-end border-gray-300 bg-white h-8  px-2 rounded-lg focus:outline-none'/>
                         <button type='submit' className='relative '>
                             <MagnifyingGlassCircleIcon onClick={() => console.log('click search')} className='w-8 h-8 ml-1 text-blue-600 hover:text-blue-300 focus:ring-2 focus:ring-offset-2 focus:ring-white' />
                         </button>
