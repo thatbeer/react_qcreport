@@ -26,7 +26,7 @@ const Subnavbar = (props) => {
 
   return (
     <>
-        <div className='relatvie mx-auto  min-h-[30px]  border-b-2 bg-blue-200 border-blue-600'>
+        <div className='relatvie mx-auto  min-h-[30px]  border-b-2 bg-blue-100 border-blue-600'>
             <div className='flex px-6 mx-auto py-1 justify-center items-center '>
                 <div className={`flex flex-col mx-auto items-center ${ isProjectPage ? "w-full" : "w-3/4"}
                 justify-center sm:justify-start sm:items-stretch text-xl font-bold mt-2 lg:m-0 sm:mt-0`}>

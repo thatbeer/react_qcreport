@@ -101,17 +101,17 @@ function ProjectPage() {
   return (
     <>
         <div className="w-full flex flex-col flex-grow h-screen relative lg:top-10 top-14 ">
-            <div className='fixed top-[48px] w-full items-center mx-auto bg-blue-200 h-[30px] z-40  '>
+            <div className='fixed top-[48px] w-full items-center mx-auto bg-blue-100 h-[30px] z-40  '>
                 {/* -----------------------------------------------Sub Navigator----------------------------------------------- */}
                 <Subnavbar titleback={false} isProjectPage={true} PName={state?.projName}/>
             </div>
-            <div className='relative lg:top-[2.5rem] top-[22px] w-full items-center mx-auto bg-blue-200 h-[30px] z-30 py-2  '>
+            <div className='relative lg:top-[2.5rem] top-[22px] w-full items-center mx-auto bg-blue-100 h-[30px] z-30 py-2  '>
 
 
 
 
                 {/* -----------------------------------------------Filter Container----------------------------------------------- */}
-                <div className='flex flex-col lg:flex-row mx-auto items-center  bg-blue-200 border-b-2 border-blue-600'>
+                <div className='flex flex-col lg:flex-row mx-auto items-center  bg-blue-100 border-b-2 border-blue-600'>
                     {/* filter bar for pc */}
                     {/* <div className=' w-1/3 justify-center hidden lg:flex mx-auto '>
                         <button onClick={() => {setFilter("ทำค้าง")}}                value={"ทำค้าง"}
@@ -154,27 +154,26 @@ function ProjectPage() {
                     <div className=' justify-between flex mx-auto my-1 z-50'>
                         
                         <button onClick={() => {setFilter("ทำค้าง")}} value={"ทำค้าง"}
-                            className={`btn  mx-1 focus:bg-cyan-200 
-                            ${  filter === "ทำค้าง" ? "bg-blue-300 hover:bg-blue-300" : "bg-white"  } 
-                            border border-gray-400 py-2 px-2 rounded-lg`}>
+                            className={`btn border-b-4 mx-1 focus:bg-cyan-200  focus:border transtition-all duration-500
+                            ${  filter === "ทำค้าง" ? "bg-blue-300 hover:bg-blue-300" : "bg-gray-100"  } 
+                            border border-blue-700 py-2 px-2 rounded-lg`}>
                                 <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' /> ทำค้าง
                         </button>
                         <button onClick={() => {setFilter("เสร็จแล้ว")}} value={"เสร็จแล้ว"} 
-                            className={`btn  mx-1 focus:bg-green-200
-                            ${  filter === "เสร็จแล้ว" ? "bg-green-300 hover:bg-green-300" : "bg-white"  } 
-                            border border-gray-400 py-2 px-2 rounded-lg`}>
+                            className={`btn border-b-4 mx-1 focus:bg-green-200 focus:border transtition-all duration-500
+                            ${  filter === "เสร็จแล้ว" ? "bg-green-300 hover:bg-green-300" : "bg-gray-100"  } 
+                            border border-blue-700 py-2 px-2 rounded-lg`}>
                                  <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' />เสร็จแล้ว
                         </button>
                         <button onClick={() => {setFilter("รอส่งerp")}} value={"รอส่งerp"}
-                            className={`btn  mx-1 focus:bg-red-200
-                            ${  filter === "รอส่งerp" ? "bg-red-300 hover:bg-red-300" : "bg-white"  } 
-                            border border-gray-400 py-2 px-2 rounded-lg`}>
+                            className={`btn border-b-4 mx-1 focus:bg-red-200 focus:border transtition-all duration-500                           ${  filter === "รอส่งerp" ? "bg-red-300 hover:bg-red-300" : "bg-gray-100"  } 
+                            border border-blue-700 py-2 px-2 rounded-lg`}>
                               <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' />   รอส่งerp
                         </button>
                         <button onClick={() => {setFilter("เขียวแดง")}} value={"เขียวแดง"}
-                            className={`btn  mx-1 focus:bg-yellow-200
-                            ${  filter === "เขียวแดง" ? "bg-yellow-300 hover:bg-yellow-300" : "bg-white"  }
-                             border border-gray-400 py-2 px-2 rounded-lg`}>
+                            className={`btn border-b-4 mx-1 focus:bg-yellow-200 focus:border transtition-all duration-500 
+                            ${  filter === "เขียวแดง" ? "bg-yellow-300 hover:bg-yellow-300" : "bg-gray-100"  }
+                             border border-blue-700 py-2 px-2 rounded-lg`}>
                             <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' /> เขียว-แดง
                         </button>
                     </div>
@@ -191,21 +190,21 @@ function ProjectPage() {
                             <thead className='bg-white-600 text-blue-800 '>
                                 <tr>
                                     <th className='p-2 lg:p-4  min-w-[80px] text-sm  text-center font-medium text-black '>เลขที่เข็ม</th>
-                                    <th className='px-1 text-sm  text-center   '>Step1</th>
-                                    <th className='px-1 text-sm  text-center   '>Step2</th>
-                                    <th className='px-1 text-sm  text-center   '>Step3</th>
-                                    <th className='px-1 text-sm  text-center   '>Step4</th>
-                                    <th className='px-1 text-sm  text-center   '>Step5</th>
-                                    <th className='px-1 text-sm  text-center   '>Step6</th>
-                                    <th className='px-1 text-sm  text-center   '>Step7</th>
-                                    <th className='px-1 text-sm  text-center   '>Step8</th>
-                                    <th className='px-1 text-sm  text-center   '>Step9</th>
-                                    <th className=' text-sm  text-center   '>Step10</th>
-                                    <th className=' text-sm  text-center   '>Step11</th>
+                                    <th className='px-1 text-sm  text-center hover:cursor-help 'title={`เตรียมโครงเหล็ก`}>Step1</th>
+                                    <th className='px-1 text-sm  text-center hover:cursor-help 'title={`ปักเคสซิ่ง`}  >Step2</th>
+                                    <th className='px-1 text-sm  text-center hover:cursor-help 'title={`วัดตำแหน่งก่อนเจาะ`}  >Step3</th>
+                                    <th className='px-1 text-sm  text-center hover:cursor-help 'title={`ทดสอบของเหลว`}  >Step4</th>
+                                    <th className='px-1 text-sm  text-center hover:cursor-help 'title={`เจาะเสาเข็ม`}  >Step5</th>
+                                    <th className='px-1 text-sm  text-center hover:cursor-help 'title={`เก็บตะกอน`}  >Step6</th>
+                                    <th className='px-1 text-sm  text-center hover:cursor-help 'title={`ลงโครงเหล็ก`}  >Step7</th>
+                                    <th className='px-1 text-sm  text-center hover:cursor-help 'title={`ลงท่อเทรมี่ / เม็ดโฟม`}  >Step8</th>
+                                    <th className='px-1 text-sm  text-center hover:cursor-help 'title={`ทดสอบคอนกรีต`}  >Step9</th>
+                                    <th className=' text-sm  text-center hover:cursor-help ' title={`เทคอนกรีต`} >Step10</th>
+                                    <th className=' text-sm  text-center hover:cursor-help' title={`ถอนเคสซิ่ง`}  >Step11</th>
                                     <th className='p-2 text-sm  text-center text-black '>วันที่ (ประวัติล่าสุด)</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody> 
                                 {/* Real table */}
                                 { projectListX ? projectListX.map((list) => (
                                     <tr key={list.pileno}  className="text-center border-y-2 border-white rounded-t  my-auto items-center justify-center font-medium">
