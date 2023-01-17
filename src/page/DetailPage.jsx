@@ -92,6 +92,7 @@ const DetailPage = (props) => {
         }
     },[duration,scrollDir])
 
+    
 
 
     // const [scrollTime, setScrollTime] = useState(0);
@@ -138,8 +139,32 @@ const DetailPage = (props) => {
         }
     },[location])
 
-   
+    /// check if detail11 is reached
+    const [isLastComponentVisible, setIsLastComponentVisible] = useState(false);
 
+    
+    useEffect(() => {
+        const handleScroll = () => {
+          if (ref11.current) {
+            const lastComponentRect = ref11.current.getBoundingClientRect();
+            if (lastComponentRect.bottom > window.innerHeight) {
+              console.log('note reached')
+            } else {
+              setIsLastComponentVisible(true);
+            }
+          }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
+
+   
+    useEffect(() => {
+        console.log(isLastComponentVisible)
+    })
    
 
 
@@ -197,17 +222,17 @@ const DetailPage = (props) => {
                 <Subnavbar titleback={true} pileId={pileId} PName={location.state?.projName} />
                 <div className="overflow-x-auto fixed min-h-6  left-0 px-1 py-1 bg-blue-100 border-b-2 border-blue-600 w-screen z-20 ">
                     <ul className='flex px-1 flex-row mx-auto items-center justify-center '>
-                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-indigo-400 lg:shadow-lg tex-tblue-600 hover:text-white focus:text-white focus:bg-indigo-400 focus:border-none                               mx-1 w-6 z-30 text-center' onClick={handleClick2Ref1}><a >1</a></button>
-                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-indigo-400 lg:shadow-lg tex-tblue-600 hover:text-white focus:text-white focus:bg-indigo-400 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref2}><a  >2</a></button>
-                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-indigo-400 lg:shadow-lg tex-tblue-600 hover:text-white focus:text-white focus:bg-indigo-400 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref3}><a >3</a></button>
-                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-indigo-400 lg:shadow-lg tex-tblue-600 hover:text-white focus:text-white focus:bg-indigo-400 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref4}><a >4</a></button>
-                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-indigo-400 lg:shadow-lg tex-tblue-600 hover:text-white focus:text-white focus:bg-indigo-400 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref5}><a >5</a></button>
-                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-indigo-400 lg:shadow-lg tex-tblue-600 hover:text-white focus:text-white focus:bg-indigo-400 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref6}><a >6</a></button>
-                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-indigo-400 lg:shadow-lg tex-tblue-600 hover:text-white focus:text-white focus:bg-indigo-400 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref7}><a >7</a></button>
-                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-indigo-400 lg:shadow-lg tex-tblue-600 hover:text-white focus:text-white focus:bg-indigo-400 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref8}><a >8</a></button>
-                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-indigo-400 lg:shadow-lg tex-tblue-600 hover:text-white focus:text-white focus:bg-indigo-400 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref9}><a >9</a></button>
-                        <button className='lg:px-0 px-1 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-indigo-400 lg:shadow-lg tex-tblue-600 hover:text-white focus:text-white focus:bg-indigo-400 focus:border-none                                  mx-1 w-6 z-30 text-start lg:text-center ' onClick={handleClick2Ref10}><a >10</a></button>
-                        <button className='lg:px-0 px-1 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-indigo-400 lg:shadow-lg tex-tblue-600 hover:text-white focus:text-white focus:bg-indigo-400 focus:border-none                                  mx-1 w-6 z-30 text-start lg:text-center ' onClick={handleClick2Ref11}><a >11</a></button>
+                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-blue-700 lg:shadow-lg tex-tblue-600 hover:text-white hover:border-green-300 focus:text-white focus:bg-blue-700 focus:border-none                               mx-1 w-6 z-30 text-center' onClick={handleClick2Ref1}><a >1</a></button>
+                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-blue-700 lg:shadow-lg tex-tblue-600 hover:text-white hover:border-green-300 focus:text-white focus:bg-blue-700 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref2}><a  >2</a></button>
+                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-blue-700 lg:shadow-lg tex-tblue-600 hover:text-white hover:border-green-300 focus:text-white focus:bg-blue-700 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref3}><a >3</a></button>
+                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-blue-700 lg:shadow-lg tex-tblue-600 hover:text-white hover:border-green-300 focus:text-white focus:bg-blue-700 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref4}><a >4</a></button>
+                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-blue-700 lg:shadow-lg tex-tblue-600 hover:text-white hover:border-green-300 focus:text-white focus:bg-blue-700 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref5}><a >5</a></button>
+                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-blue-700 lg:shadow-lg tex-tblue-600 hover:text-white hover:border-green-300 focus:text-white focus:bg-blue-700 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref6}><a >6</a></button>
+                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-blue-700 lg:shadow-lg tex-tblue-600 hover:text-white hover:border-green-300 focus:text-white focus:bg-blue-700 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref7}><a >7</a></button>
+                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-blue-700 lg:shadow-lg tex-tblue-600 hover:text-white hover:border-green-300 focus:text-white focus:bg-blue-700 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref8}><a >8</a></button>
+                        <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-blue-700 lg:shadow-lg tex-tblue-600 hover:text-white hover:border-green-300 focus:text-white focus:bg-blue-700 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref9}><a >9</a></button>
+                        <button className='lg:px-0 px-1 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-blue-700 lg:shadow-lg tex-tblue-600 hover:text-white hover:border-green-300 focus:text-white focus:bg-blue-700 focus:border-none                                  mx-1 w-6 z-30 text-start lg:text-center ' onClick={handleClick2Ref10}><a >10</a></button>
+                        <button className='lg:px-0 px-1 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-blue-700 lg:shadow-lg tex-tblue-600 hover:text-white hover:border-green-300 focus:text-white focus:bg-blue-700 focus:border-none                                  mx-1 w-6 z-30 text-start lg:text-center ' onClick={handleClick2Ref11}><a >11</a></button>
                     </ul>
                 </div>
             </div>
@@ -237,8 +262,8 @@ const DetailPage = (props) => {
         : null
 
         } */}
-        { isKept ? (
-            duration - startTime > 400 ? 
+        {  isKept  ? (
+            duration - startTime > 400  ? 
             <>
                 <div className='fixed bottom-0 flex w-full justify-center z-50 bg-rose-600 text-white py-1'    >
                     <div className='flex flex-1 justify-center items-center mx-auto ease-in transition duration-1000 hover:ease-out'>

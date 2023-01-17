@@ -103,9 +103,6 @@ const Step10 = () => {
                                     <th className='px-4 py-2 text-xs tracking-wide text-center border border-white '>{item.cut}</th>
                                 </tr>
                             ))}
-                            
-                        
-                            
                     </tbody>
                 </table>
             </div>

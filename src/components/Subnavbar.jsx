@@ -59,7 +59,7 @@ const Subnavbar = (props) => {
                             p-2 bg-blue-100 w-auto border border-gray-600">
                             { projectX.map((project) => (
                               <Link to={`/project?projectid=${project.projectId}`} 
-                              className='p-1 border-b border-gray-700 truncate text-sm'>
+                              className='p-1  truncate text-sm text-blue-900 hover:underline'>
                                 {project.name}
                               </Link>
                             ))}

@@ -173,25 +173,26 @@ function ProjectPage() {
                         
                         <button onClick={() => {setFilter("ทำค้าง")}} value={"ทำค้าง"}
                             className={`btn border-b-4 mx-1 focus:bg-cyan-200  focus:border transtition-all duration-500
-                            ${  filter === "ทำค้าง" ? "bg-blue-300 hover:bg-blue-300" : "bg-gray-100"  } 
-                            border border-blue-700 py-2 px-2 rounded-lg`}>
+                            ${  filter === "ทำค้าง" ? "bg-blue-700 text-white border-none hover:bg-blue-700" : "bg-gray-100"  } 
+                            border border-blue-700 py-2 px-2 rounded-lg focus:border-none focus:bg-blue-700`}>
                                 <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' /> ทำค้าง
                         </button>
                         <button onClick={() => {setFilter("เสร็จแล้ว")}} value={"เสร็จแล้ว"} 
                             className={`btn border-b-4 mx-1 focus:bg-green-200 focus:border transtition-all duration-500
-                            ${  filter === "เสร็จแล้ว" ? "bg-green-300 hover:bg-green-300" : "bg-gray-100"  } 
-                            border border-blue-700 py-2 px-2 rounded-lg`}>
+                            ${  filter === "เสร็จแล้ว" ? "bg-blue-700 text-white border-none hover:bg-blue-700" : "bg-gray-100"  } 
+                            border border-blue-700 py-2 px-2 rounded-lg focus:border-none focus:bg-blue-700`}>
                                  <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' />เสร็จแล้ว
                         </button>
                         <button onClick={() => {setFilter("รอส่งerp")}} value={"รอส่งerp"}
-                            className={`btn border-b-4 mx-1 focus:bg-red-200 focus:border transtition-all duration-500                           ${  filter === "รอส่งerp" ? "bg-red-300 hover:bg-red-300" : "bg-gray-100"  } 
-                            border border-blue-700 py-2 px-2 rounded-lg`}>
+                            className={`btn border-b-4 mx-1 focus:bg-red-200 focus:border transtition-all duration-500                           
+                            ${  filter === "รอส่งerp" ? "bg-blue-700 text-white border-none hover:bg-blue-700" : "bg-gray-100"  } 
+                            border border-blue-700 py-2 px-2 rounded-lg focus:border-none focus:bg-blue-700 `}>
                               <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' />   รอส่งerp
                         </button>
                         <button onClick={() => {setFilter("เขียวแดง")}} value={"เขียวแดง"}
                             className={`btn border-b-4 mx-1 focus:bg-yellow-200 focus:border transtition-all duration-500 
-                            ${  filter === "เขียวแดง" ? "bg-yellow-300 hover:bg-yellow-300" : "bg-gray-100"  }
-                             border border-blue-700 py-2 px-2 rounded-lg`}>
+                            ${  filter === "เขียวแดง" ? "bg-blue-700 text-white border-none hover:bg-blue-700" : "bg-gray-100"  }
+                             border border-blue-700 py-2 px-2 rounded-lg focus:border-none focus:bg-blue-700`}>
                             <ClipboardDocumentCheckIcon className='w-4 h-4 relative -left-1' /> เขียว-แดง
                         </button>
                     </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import CheckTab from '../checktab'
 import { CheckIcon } from '@heroicons/react/24/outline'
 import RedGreenIcon from '../../utils/R-G-Icons'
-
+import CheckForTable from '../../utils/Check4table'
 
 const Step8 = () => {
     const isBoredPile = true;
@@ -35,7 +35,7 @@ const Step8 = () => {
                         </tr>
                         <tr className='  border border-x border-white '>
                             <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>ใส่เม็ดโฟมแล้ว</th>
-                            <td className='p-1 w-1/2 lg:w-2/3 text-start text-sm '><RedGreenIcon color="green" pass="1" className='w-5 h-5'/></td>
+                            <td className='p-1 w-1/2 lg:w-2/3 text-start text-sm '><CheckForTable pass="0" /></td>
                         </tr>
                         <tr className='  border border-x border-white '>
                             <th className='p-1 w-1/2 lg:w-1/3 text-start text-sm border-r bg-orange-200 border-white'>ความยาวท่อเทรมีรวม (ม.)</th>
@@ -81,7 +81,7 @@ const Step8 = () => {
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  bg-gray-200'>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white bg-green-600 text-white '>12</td>
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white  bg-gray-200'>2.20</td>
-                                <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white relative justify-center '><RedGreenIcon pass="1" color="green" className='mx-auto w-5 h-5'/></td>
+                                <td className='px-2 py-1 mx-auto my-1 text-sm  border-r border-white relative justify-center '><CheckForTable pass="1"/></td>
                             </tr>
                             <tr  className="text-center border-y border-white  bg-gray-200 my-auto items-center justify-center">
                                 <td className='px-2 py-1 mx-auto my-1 text-sm  border-x border-white  bg-gray-200'>11</td>
