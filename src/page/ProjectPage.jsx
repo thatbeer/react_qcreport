@@ -78,7 +78,24 @@ function ProjectPage() {
     const [ filter , setFilter] = useState(filterbyQuery);
     
     
+    // on serach ffunction 
+    const [onsearch, setOnsearch] = useState("");
+    const [searchresult , setSearchResult] = useState([])
+
+    const onSearchHandler = (event) => {
+        const searchField = event.target.value.toLocaleLowerCase()
+        setOnsearch(searchField);
+    }
+    const FetchData = ['x','y','z']
+    // useEffect(() => {
+    //     const newItems = FetchData.filter((data,index) => {
+    //         return data.title.toLocaleLowerCase().includes(onsearch);
+    //     });
+        
+    //     setSearchResult(newItems);
     
+
+    // },[])
 
 
     
@@ -94,6 +111,7 @@ function ProjectPage() {
 
     useEffect(() => {
         console.log(filter)
+        // console.log(onsearch)
     },[filter])
 
 
@@ -143,7 +161,7 @@ function ProjectPage() {
                     </div> */}
                     {/* search bar section old lg:left-[6rem]*/}
                     <div className='relative py-2 lg:w-1/4 w-1/2 inline-0 flex lg:left-[8rem] text-gray-700 mx-auto '>
-                        <input type={'search'} name="search" placeholder='search'
+                        <input type={'search'} onChange={onSearchHandler} value={onsearch} name="search" placeholder='search'
                             className='border-2 w-full font-medium justify-end border-gray-300 bg-white h-8  px-2 rounded-lg focus:outline-none'/>
                         <button type='submit' className='relative '>
                             <MagnifyingGlassCircleIcon onClick={() => console.log('click search')} className='w-8 h-8 ml-1 text-blue-600 hover:text-blue-300 focus:ring-2 focus:ring-offset-2 focus:ring-white' />
