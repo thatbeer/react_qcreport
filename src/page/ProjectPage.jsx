@@ -105,13 +105,13 @@ function ProjectPage() {
                 {/* -----------------------------------------------Sub Navigator----------------------------------------------- */}
                 <Subnavbar titleback={false} isProjectPage={true} PName={state?.projName}/>
             </div>
-            <div className='relative lg:top-[2.5rem] top-[22px] w-full items-center mx-auto bg-blue-100 h-[30px] z-30 py-2  '>
+            <div className='relative lg:top-[2.5rem] top-[26px] w-full items-center mx-auto bg-blue-100 h-[30px] z-30 py-2  '>
 
 
 
 
                 {/* -----------------------------------------------Filter Container----------------------------------------------- */}
-                <div className='flex flex-col lg:flex-row mx-auto items-center  bg-blue-100 border-b-2 border-blue-600'>
+                <div className='flex flex-col lg:flex-row mx-auto items-center lg:pr-[8rem]  bg-blue-100 border-b-2 border-blue-600'>
                     {/* filter bar for pc */}
                     {/* <div className=' w-1/3 justify-center hidden lg:flex mx-auto '>
                         <button onClick={() => {setFilter("ทำค้าง")}}                value={"ทำค้าง"}
@@ -142,7 +142,7 @@ function ProjectPage() {
                         </button>
                     </div> */}
                     {/* search bar section old lg:left-[6rem]*/}
-                    <div className='relative py-2 lg:w-1/4 w-1/2 flex  text-gray-700 mx-auto '>
+                    <div className='relative py-2 lg:w-1/4 w-1/2 inline-0 flex lg:left-[8rem] text-gray-700 mx-auto '>
                         <input type={'search'} name="search" placeholder='search'
                             className='border-2 w-full font-medium justify-end border-gray-300 bg-white h-8  px-2 rounded-lg focus:outline-none'/>
                         <button type='submit' className='relative '>
