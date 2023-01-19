@@ -119,17 +119,22 @@ function ProjectPage() {
   return (
     <>
         <div className="w-full flex flex-col flex-grow h-screen relative lg:top-10 top-14 ">
-            <div className='fixed top-[48px] w-full items-center mx-auto bg-blue-100 h-[30px] z-40  '>
+            <div className='fixed top-[48px] w-full items-center mx-auto  h-[30px] z-40  '>
                 {/* -----------------------------------------------Sub Navigator----------------------------------------------- */}
                 <Subnavbar titleback={false} isProjectPage={true} PName={state?.projName}/>
             </div>
-            <div className='relative lg:top-[2.5rem] top-[26px] w-full items-center mx-auto bg-blue-100 h-[30px] z-30 py-2  '>
+
+
+
+
+            {/* not follow screen : realative lg:top-[2.5rem] top-[26px] , follow :follow : fixed pt-[50px] lg:pt-[44px] lg:top-[2.5rem] top-[30px] */}
+            <div className=' follow : fixed pt-[50px] lg:pt-[44px] lg:top-[2.5rem] top-[30px] w-full items-center mx-auto h-[30px] z-30 py-1  '>
 
 
 
 
                 {/* -----------------------------------------------Filter Container----------------------------------------------- */}
-                <div className='flex flex-col lg:flex-row mx-auto items-center lg:pr-[8rem]  bg-blue-100 border-b-2 border-blue-600'>
+                <div className='flex flex-col lg:flex-row mx-auto items-center lg:pr-[8rem] border-b-2 border-blue-600 bg-gradient-to-r from-sky-300 via-blue-100 to-sky-300'>
                     {/* filter bar for pc */}
                     {/* <div className=' w-1/3 justify-center hidden lg:flex mx-auto '>
                         <button onClick={() => {setFilter("ทำค้าง")}}                value={"ทำค้าง"}
@@ -160,7 +165,7 @@ function ProjectPage() {
                         </button>
                     </div> */}
                     {/* search bar section old lg:left-[6rem]*/}
-                    <div className='relative py-2 lg:w-1/4 w-1/2 inline-0 flex lg:left-[8rem] text-gray-700 mx-auto '>
+                    <div className='relative pt-4 lg:py-2 lg:w-1/4 w-1/2 inline-0 flex lg:left-[10rem] text-gray-700 mx-auto '>
                         <input type={'search'} onChange={onSearchHandler} value={onsearch} name="search" placeholder='search'
                             className='border-2 w-full font-medium justify-end border-gray-300 bg-white h-8  px-2 rounded-lg focus:outline-none'/>
                         <button type='submit' className='relative '>

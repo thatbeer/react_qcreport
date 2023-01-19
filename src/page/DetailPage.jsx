@@ -221,7 +221,7 @@ const DetailPage = (props) => {
             <div className='relative lg:top-12 top-10'>
                 <Subnavbar titleback={true} pileId={pileId} PName={location.state?.projName} />
                 { true ?
-                (<div className="overflow-x-auto fixed min-h-6  left-0 px-1 py-1 bg-blue-100 border-b-2 border-blue-600 w-screen z-20 ">
+                (<div className="overflow-x-auto fixed min-h-6  left-0 px-1 py-1 border-b-2 border-blue-600 w-screen z-20 bg-gradient-to-r from-sky-300 via-blue-100 to-sky-300 ">
                     <ul className='flex px-1 flex-row mx-auto items-center justify-center '>
                         <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-blue-700 lg:shadow-lg text-blue-800 hover:text-white hover:border-green-300 focus:text-white focus:bg-blue-700 focus:border-none                               mx-1 w-6 z-30 text-center' onClick={handleClick2Ref1}><a >1</a></button>
                         <button className='px-2 rounded-full border-b-2 border-blue-600 bg-blue-300 hover:bg-blue-700 lg:shadow-lg text-blue-800 hover:text-white hover:border-green-300 focus:text-white focus:bg-blue-700 focus:border-none                                  mx-1 w-6 z-30 text-center ' onClick={handleClick2Ref2}><a  >2</a></button>
