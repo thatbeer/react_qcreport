@@ -28,7 +28,7 @@ const Subnavbar = (props) => {
     // border to open the line divide the subnav and utils border-b-2 border-blue-600
     <>
         <div className='relatvie mx-auto  min-h-[30px]  borer-b-2 border-blu-600 bg-gradient-to-r from-sky-300 via-blue-100 to-sky-300'>
-            <div className='flex px-6 mx-auto py-1 justify-center items-center '>
+            <div className='flex px-6 mx-auto pt-1  py-2 justify-center items-center '>
                 <div className={`flex flex-col mx-auto items-center ${ isProjectPage ? "w-full" : "w-3/4"}
                 justify-center sm:justify-start sm:items-stretch text-xl font-bold mt-2 lg:m-0 sm:mt-0`}>
                   <p className={`truncate w-full text-center lg:text-start text-orange-gray-600 ${titleback ? "hover:text-blue-700 hover:cursor-pointer" : ""}  z-40 `}
