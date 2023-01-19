@@ -78,22 +78,9 @@ const DetailPage = (props) => {
         setIsOpenModal(true)
     }
     
-    useEffect(() => {
-        function handleScroll() {
-            if (scrollDir === "down") {
-                setDuration(duration + 1);
-                setStartTime(0)
-            }
-        }
-        window.addEventListener('scroll',handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll',handleScroll)
-        }
-    },[duration,scrollDir])
-
     
-
+    
+    
 
     // const [scrollTime, setScrollTime] = useState(0);
     // const [scrollStart, setScrollStart] = useState(0);
@@ -145,8 +132,8 @@ const DetailPage = (props) => {
     
     useEffect(() => {
         const handleScroll = () => {
-          if (ref11.current) {
-            const lastComponentRect = ref11.current.getBoundingClientRect();
+            if (ref11.current) {
+                const lastComponentRect = ref11.current.getBoundingClientRect();
             if (lastComponentRect.bottom > window.innerHeight) {
               console.log('note reached')
             } else {
@@ -166,6 +153,21 @@ const DetailPage = (props) => {
         console.log("reach bottom",isLastComponentVisible)
     })
    
+    useEffect(() => {
+        function handleScroll() {
+            if (scrollDir === "down") {
+                setDuration(duration + 1);
+                setStartTime(0)
+            }
+        }
+        window.addEventListener('scroll',handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll',handleScroll)
+        }
+    },[duration,scrollDir])
+
+    console.log("diff",duration - startTime)
 
     const userData = JSON.parse(localStorage.getItem("user"));
     //---------------------------- handifull navigator to each steps ----------------------------//
@@ -265,7 +267,7 @@ const DetailPage = (props) => {
 
         } */}
         {  true ? (isKept  ? (
-            duration - startTime > 400  ? 
+            duration - startTime > 200  ? 
             <>
                 <div className='fixed bottom-0 flex w-full justify-center z-50 bg-rose-600 text-white py-1'    >
                     <div className='flex flex-1 justify-center items-center mx-auto ease-in transition duration-1000 hover:ease-out'>
