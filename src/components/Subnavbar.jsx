@@ -25,7 +25,7 @@ const Subnavbar = (props) => {
   const {titleback , pileId ,isProjectPage ,PName } = props
 
   return (
-    // border to open the line divide the subnav and utils borer-b-2 border-blu-600
+    // border to open the line divide the subnav and utils border-b-2 border-blue-600
     <>
         <div className='relatvie mx-auto  min-h-[30px]  borer-b-2 border-blu-600 bg-gradient-to-r from-sky-300 via-blue-100 to-sky-300'>
             <div className='flex px-6 mx-auto py-1 justify-center items-center '>
