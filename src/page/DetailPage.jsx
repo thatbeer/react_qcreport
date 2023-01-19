@@ -264,7 +264,7 @@ const DetailPage = (props) => {
         : null
 
         } */}
-        {  userData.permissionData !== null ? (isKept  ? (
+        {  true ? (isKept  ? (
             duration - startTime > 400  ? 
             <>
                 <div className='fixed bottom-0 flex w-full justify-center z-50 bg-rose-600 text-white py-1'    >
