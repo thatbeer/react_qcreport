@@ -110,8 +110,8 @@ function ProjectPage() {
     // }, [query]);
 
     useEffect(() => {
-        console.log(filter)
-        // console.log(onsearch)
+        console.log("filter with type",filter)
+        console.log("searching",onsearch)
     },[filter])
 
 
