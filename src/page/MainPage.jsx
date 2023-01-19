@@ -1,5 +1,5 @@
 import Maincard from "../components/Maincard"
-
+import { useQuery , useMutation } from "@tanstack/react-query"
 
 const projectX = [
     { projectId: "1", erp:"0" , coin:"0", name: "63-09 ทางพิเศษพระราม 3 สัญญาที่/ (MLp 06 to MLP 07)"},
@@ -17,6 +17,7 @@ const projectX = [
 
 
 function Mainpage() {
+    // const Query = useQuery( {queryKey: ["project"], queryFn:async () => await(1000).then(() => [...projectX])})
     return (
         < > 
             <div className="w-full flex flex-col flex-grow h-screen relative lg:top-14 top-16 ">

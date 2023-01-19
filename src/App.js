@@ -11,6 +11,7 @@ import SidePage from './page/SidePage'
 import ViewFullImg from './page/ViewFullImg'
 
 
+
 function App() {
   const navigate = useNavigate();
 
