@@ -18,6 +18,10 @@ const projectX = [
 
 function Mainpage() {
     // const Query = useQuery( {queryKey: ["project"], queryFn:async () => await(1000).then(() => [...projectX])})
+    const token = localStorage.getItem("accessToken")
+    const userData = JSON.parse(localStorage.getItem("user"));
+    console.log(token)
+    console.log(userData)
     return (
         < > 
             <div className="w-full flex flex-col flex-grow h-screen relative lg:top-14 top-16 ">

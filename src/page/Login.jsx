@@ -43,7 +43,8 @@ const LoginPage = () => {
         }).then(data => data.json())
     }
 
-
+    
+    
     const handleSubmit = async event => {
         event.preventDefault();
         const response = await loginUser({
@@ -66,7 +67,39 @@ const LoginPage = () => {
             resetFormFields();
         }
     }
-
+    
+    const PylonUser = async (credential) => {
+        return fetch('http://119.110.209.84:84/pylonexdev/api/v0/Login/onLogin',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body : JSON.stringify(credential)
+        }).then(data => data.json())
+    }
+    
+    const handlePylon = async event => {
+        event.preventDefault();
+        const response = await PylonUser({
+            username,
+            password
+        });
+        if (response.message === "Login Successful.") {
+            swal("Success", response.message, "success", {
+            buttons: false,
+            timer: 2000,
+            })
+            .then((value) => {
+            localStorage.setItem('accessToken', response.data.token);
+            localStorage.setItem('user', JSON.stringify(response.data));
+            resetFormFields();
+            navigate('/')
+            });
+        } else {
+            swal("Failed", response.message, "error");
+            resetFormFields();
+        }
+    }
     const token = localStorage.getItem("accessToken")
     useEffect(() => {
         console.log(formfields)
@@ -104,7 +137,7 @@ const LoginPage = () => {
 
 
                 {/* form container */}
-                <form className="mt-4 space-y-6" onSubmit={handleSubmit}>
+                <form className="mt-4 space-y-6" onSubmit={handlePylon}>
                     <input type="hidden" name="remember" defaultValue="true" />
                     <div className="-space-y-px rounded-md shadow-sm ">
                     <div className='mb-2'>

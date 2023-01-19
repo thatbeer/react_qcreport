@@ -25,6 +25,8 @@ const navigation = [
 
   
 const GlobalHeader = () =>  {
+    const userData = JSON.parse(localStorage.getItem("user"));
+    console.log("woo",userData.names)
     return (
         <>
         <header className='fixed top-0 z-50 w-full '>
@@ -91,18 +93,22 @@ const GlobalHeader = () =>  {
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 
                     sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                     {/* Notification button for later add ons */} 
-                    <button
-                    type="button"
-                    className="flex rounded-full bg-gray-800 px-2 py-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                    >
-                    <span className="sr-only">View notifications</span>
-                    <div className='flex flex-row items-center'>
-                            <CurrencyDollarIcon className="h-5 w-5 text-sm animate-wiggle2 text-yellow-400 " aria-hidden="true" />
-                        <Link to='/category' target="_blank">
-                            170000
-                        </Link>
-                    </div>
-                    </button>
+                    { userData.permissionData != null ? 
+                        (
+                            <button
+                            type="button"
+                            className="flex rounded-full bg-gray-800 px-2 py-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                            >
+                            <span className="sr-only">View notifications</span>
+                                <div className='flex flex-row items-center'>
+                                        <CurrencyDollarIcon className="h-5 w-5 text-sm animate-wiggle2 text-yellow-400 " aria-hidden="true" />
+                                    <Link to='/category' target="_blank">
+                                        170000
+                                    </Link>
+                                </div>
+                            </button>
+                        ) : null
+                    }
 
                     {/* Profile dropdown */}
                     <Menu as="div" className="relative ml-3">
@@ -132,9 +138,9 @@ const GlobalHeader = () =>  {
                             {({ active }) => (
                             <p
                                 
-                                className={classNames(active ? '' : '', 'block px-4 py-2 text-sm text-gray-700')}
+                                className={classNames(active ? '' : '', 'block px-3 py-2 text-sm text-gray-700 font-bold bg-blue-200')}
                             >
-                                {"{Name here}"}
+                                {userData.names}
                             </p>
                             )}
                         </Menu.Item>
@@ -148,7 +154,7 @@ const GlobalHeader = () =>  {
                             </Link>
                             )}
                         </Menu.Item>
-                        <Menu.Item>
+                        { userData.permissionData != null ? (<Menu.Item>
                             {({ active }) => (
                             <Link
                                 to="/side"
@@ -157,7 +163,7 @@ const GlobalHeader = () =>  {
                                 Administrator
                             </Link>
                             )}
-                        </Menu.Item>
+                        </Menu.Item>): null }
                         <Menu.Item>
                             {({ active }) => (
                             <Link
