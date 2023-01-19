@@ -1,6 +1,10 @@
+import { useContext } from 'react';
 import { Navigate } from 'react-router-dom';
+import AuthContext from '../store/Auth';
 
-const ProtectedRoute = ({ children, user }) => {
+const ProtectedRoute = ({ children }) => {
+  const {user} = useContext(AuthContext);
+
   if (!user) {
     return <Navigate to='/' />;
   }
@@ -9,12 +13,3 @@ const ProtectedRoute = ({ children, user }) => {
 
 export default ProtectedRoute;
 
-
-{/* <Route
-  path='dashboard'
-  element={
-    <ProtectedRoute user={user}>
-      <Dashboard user={user} />
-    </ProtectedRoute>
-  }
-/> */}

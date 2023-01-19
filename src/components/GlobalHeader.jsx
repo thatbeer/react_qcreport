@@ -4,7 +4,8 @@ import { Bars3Icon, ArrowUpCircleIcon, CurrencyDollarIcon } from '@heroicons/rea
 import { Link, Outlet } from 'react-router-dom';
 import Logo from '../img/brand.png';
 import IconUser from '../img/ico-user.png'
-
+import { useContext } from 'react';
+import AuthContext from '../store/Auth';
 
 const navigation = [
     { name: 'Sub', to: '/project', current: false },
@@ -25,8 +26,14 @@ const navigation = [
 
   
 const GlobalHeader = () =>  {
-    const userData = JSON.parse(localStorage.getItem("user"));
-    console.log("woo",userData.names)
+    
+    // const userData = JSON.parse(localStorage.getItem("user"));
+    // console.log("woo")
+
+    const {user} = useContext(AuthContext);
+    console.log("user from login",user)
+    console.log("username:",user['fname'])
+
     return (
         <>
         <header className='fixed top-0 z-50 w-full '>
@@ -138,9 +145,9 @@ const GlobalHeader = () =>  {
                             {({ active }) => (
                             <p
                                 
-                                className={classNames(active ? '' : '', 'block px-3 py-2 text-sm text-gray-700 font-bold bg-blue-200')}
+                                className={classNames(active ? '' : '', 'truncate block px-3 py-2 text-sm text-gray-700 font-bold bg-blue-200')}
                             >
-                                {userData.names}
+                                {user['fname']}
                             </p>
                             )}
                         </Menu.Item>

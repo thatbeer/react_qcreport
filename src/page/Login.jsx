@@ -5,6 +5,9 @@ import { LockClosedIcon } from '@heroicons/react/20/solid'
 import swal from 'sweetalert';
 import { useNavigate } from 'react-router-dom';
 
+import AuthContext from '../store/Auth';
+import { useContext } from 'react';
+
 const InitialForm = {
     username:'',
     password:'',
@@ -13,6 +16,7 @@ const InitialForm = {
 
 const LoginPage = () => {
     const navigate = useNavigate();
+    const {user , setUser} = useContext(AuthContext);
 
 
     const [isOpen , setIsOpen ] = useState(false);
@@ -59,6 +63,7 @@ const LoginPage = () => {
             .then((value) => {
             localStorage.setItem('accessToken', response['accessToken']);
             localStorage.setItem('user', JSON.stringify(response['user']));
+            setUser(JSON.stringify(response['user']))
             resetFormFields();
             navigate('/')
             });
