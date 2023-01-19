@@ -266,7 +266,7 @@ const DetailPage = (props) => {
         : null
 
         } */}
-        {  true ? (isKept  ? (
+        {  isKept ? (isLastComponentVisible  ? (
             duration - startTime > 200  ? 
             <>
                 <div className='fixed bottom-0 flex w-full justify-center z-50 bg-rose-600 text-white py-1'    >
