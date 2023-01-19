@@ -18,7 +18,7 @@ const LoginPage = () => {
     const navigate = useNavigate();
     const {user , setUser} = useContext(AuthContext);
 
-
+    // check if user tick a remember me box
     const [isOpen , setIsOpen ] = useState(false);
     const [formfields , setFormfields] = useState(InitialForm);
     const {username, password} = formfields;
@@ -61,8 +61,13 @@ const LoginPage = () => {
             timer: 2000,
             })
             .then((value) => {
-            localStorage.setItem('accessToken', response['accessToken']);
-            localStorage.setItem('user', JSON.stringify(response['user']));
+                if (!isOpen) {
+                    localStorage.setItem('accessToken', response['accessToken']);
+                    localStorage.setItem('user', JSON.stringify(response['user']));
+                } else {
+                    sessionStorage.setItem('accessToken', response['accessToken']);
+                    sessionStorage.setItem('user', JSON.stringify(response['user']));
+                }
             setUser(JSON.stringify(response['user']))
             resetFormFields();
             navigate('/')

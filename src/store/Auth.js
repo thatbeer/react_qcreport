@@ -34,9 +34,11 @@ export const AuthProvider = ({children}) => {
         
     }
 
+    const [ isRememberMe , setIsRememberMe ] = useState(false);
+
 
   return (
-    <AuthContext.Provider value={{user , setUser , login , logout }}>
+    <AuthContext.Provider value={{user , setUser , login , logout , isRememberMe, setIsRememberMe }}>
         {children}
     </AuthContext.Provider> 
   )
