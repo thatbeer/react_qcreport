@@ -209,7 +209,7 @@ const Piledata = [
                 status: "1"
             },
             {
-                pileId: "MLP04-21L/2",
+                pileId: "MLP04-21L/2", 
                 "progress": {
                     "step1": "1",
                     "step2": "7",

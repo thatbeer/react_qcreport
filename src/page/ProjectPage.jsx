@@ -45,16 +45,16 @@ const ButtonTypes = [
 
 
 const projectListX = [
-    {pileno:"PB-79",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:11:29"},
-    {pileno:"PB-21",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:12:34"},
-    {pileno:"PB-26",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:13:12"},
-    {pileno:"PB-23",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:14:52"},
-    {pileno:"PB-87",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:21:21"},
-    {pileno:"PB-01",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:25:17"},
-    {pileno:"PB-32",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:54:14"},
-    {pileno:"PB-12",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:56:12"},
-    {pileno:"PB-42",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:58:08"},
-    {pileno:"PB-20",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:59:12"},
+    {pileno:"RON3-14/2",step1:"2",step2:"7",step3:"2",step4:"6",step5:"2",step6:"7",step7:"1",step8:"3",step9:"0",step10:"4",step11:"7",updated:"12/12/22 09:11:29",status:"1",zone:"Rig 2"},
+    {pileno:"PB-21",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:12:34",status:"0"},
+    {pileno:"PB-26",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:13:12",status:"1"},
+    {pileno:"PB-23",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:14:52",status:"1",zone:"rama Xxxxxxxxxxxxx"},
+    {pileno:"PB-87",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:21:21",status:"0"},
+    {pileno:"PB-01",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:25:17",status:"0"},
+    {pileno:"PB-32",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:54:14",status:"3"},
+    {pileno:"PB-12",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:56:12",status:"1"},
+    {pileno:"PB-42",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:58:08",status:"1"},
+    {pileno:"PB-20",step1:"2",step2:"3",step3:"2",step4:"6",step5:"2",step6:"1",step7:"1",step8:"3",step9:"0",step10:"4",step11:"5",updated:"12/12/22 09:59:12",status:"1"},
 ]
 
 
@@ -236,7 +236,9 @@ function ProjectPage() {
                                             <Link to={`/project/report?pileid=${list.pileno}`} title={`pileId${list.pileno}`} 
                                                  state={{...state}}
                                                 className='hover:text-blue-400 hover:underline text-blue-600'>
-                                                {list.pileno}
+                                                    {list.zone ? (
+                                                        <div>{list.zone} <br/> {list.pileno}</div>
+                                                    ) : (<div>{list.pileno}</div>) }
                                             </Link>
                                         </td>
                                         <td className='py-2 text-sm  text-center '>
