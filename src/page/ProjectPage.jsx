@@ -128,7 +128,7 @@ function ProjectPage() {
 
 
             {/* not follow screen : realative lg:top-[2.5rem] top-[26px] , follow :follow : fixed pt-[50px] lg:pt-[44px] lg:top-[2.5rem] top-[30px] */}
-            <div className=' follow : fixed pt-[50px] lg:pt-[44px] lg:top-[2.5rem] top-[30px] w-full items-center mx-auto h-[30px] z-30 py-1  '>
+            <div className=' follow : fixed pt-[50px] lg:pt-[48px] lg:top-[2.5rem] top-[30px] w-full items-center mx-auto h-[30px] z-30 py-1  '>
 
 
 
